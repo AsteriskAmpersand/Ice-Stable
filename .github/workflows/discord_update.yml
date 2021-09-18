@@ -1,0 +1,12 @@
+on: [push]
+jobs:
+  discord_test_message:
+    runs-on: ubuntu-latest
+    name: discord commits
+    steps:
+      - name: Send message to discord
+        uses: Sniddl/discord-commits@v1.3
+        with:
+          webhook: ${{ secrets.DISCORD }}
+          message: "**New ICE Version Release**"
+          embed: '{ "title": "{{ commit.title }}", "description": "{{ commit.description }}", "url": "{{ commit.url }}" }'
