@@ -8,5 +8,5 @@ jobs:
         uses: Sniddl/discord-commits@v1.3
         with:
           webhook: ${{ secrets.DISCORD }}
-          message: "**New ICE Version Release**"
+          message: "**New ICE Version Release** {{ github.context.payload.repository.url}}"
           embed: '{ "title": "{{ commit.title }}", "description": "{{ commit.description }}", "url": "{{ commit.url }}" }'
