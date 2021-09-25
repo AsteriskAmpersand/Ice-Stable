@@ -396,30 +396,32 @@ Hunting Horn has a lot of untapped potential, mainly as a result of poor damage 
 
 The full details can be found below:
 - Right Swing:
-  - MV increased to 32 (up from 27).
+  - MV increased to 36 (up from 27).
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
 - Left Swing:
-  - MV increased to 32 (up from 22).
+  - MV increased to 36 (up from 22).
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
 - Forward Smash (aka Forward Slam):
-  - MV increased to 36 (up from 28).
+  - MV increased to 42 (up from 28).
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
 - Backwards Strike (aka Back Slam):
-  - MV incrased to 50 (up from 37).
-  - Element and Status Modifiers increased to 1.5x (up from 1.0x).
+  - MV incrased to 54 (up from 37).
+  - Element and Status Modifiers increased to 1.2x (up from 1.0x).
 - Hilt Stab:
+  - MV incrased to 12 (up from 10).
   - Element and Status Modifiers increased to 0.60x (down from 1.0x).
 - Overhead Smash (aka Superpound):
-  - MV increased to 17+50 (up from 14+39).
+  - MV increased to 16+50 (up from 14+39).
   - Element and Status Modifiers increased to 1.2x+1.2x (up from 1.0x+1.0x).
 - Flourish:
-  - MV increased to 17+24 (up from 15+22).
+  - MV increased to 16+32 (up from 15+22).
   - Element and Status Modifiers increased to 1.2x+1.2x (up from 1.0x+1.0x).
 - Echo Attack (aka Echo Spin):
   - First Hit:
+    - MV incrased to 12 (up from 10).
     - Element and Status Modifiers increased to 0.60x (down from 1.0x).
   - Spinning Hits:
-    - MV decreased to 15 (down from 17).
+    - MV decreased to 16 (down from 17).
 - Recital:
   - MV increased to 32 (up from 29).
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
@@ -432,17 +434,17 @@ The full details can be found below:
   - MV increased to 40 (up from 35).
   - Element and Status Modifiers increased to 1.5x (up from 1.0x).
 - Shockwave:
-  - MV increased to 40 (up from 35).
-  - Element and Status Modifiers increased to 1.5x (up from 1.0x).
+  - MV increased to 32 (up from 27).
+  - Element and Status Modifiers increased to 1.2x (up from 1.0x).
   - Now affected by affinity and can deal critical damage.
 - Echo Wave "Impact":
-  - MV changed to 25/100/175 (was 50/100/150).
+  - MV changed to 40/100/160 (was 50/100/150).
   - Now affected by affinity and can deal critical damage.
 - Echo Wave "Dragon":
-  - MV changed to 20/80/140 (was 45/65/85).
+  - MV changed to 30/75/120 (was 45/65/85).
   - Now uses the equipped weapon's element type and element damage.
-  - Element modifier increased to 2.4x/9.6x/16.8x (up from 1.0x/1.0x/1.0x).
-  - Element damage no longer affected with Attack stat.
+  - Element modifier increased to 4.0x/10.0x/16.0x (up from 1.0x/1.0x/1.0x).
+  - Element damage no longer scales with Attack stat.
   - Now affected by affinity and can deal critical damage.
 - Jumping Smash:
   - MV increased to 40 (up from 35).
