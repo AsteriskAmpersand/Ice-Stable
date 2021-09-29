@@ -58,7 +58,7 @@ If you were trying ICE before we switched to GitHub downloads, follow these one-
 # Save File System #
 ICE manages your character data in a separate save file named "SAVEDATA_ICE". The game normally uses the file named "SAVEDATA1000". These are both located in the standard save folder found at: `...\Steam\userdata\<steamId>\582010\remote\`
 
-Because ICE encorporates changes that are not backwards compatible with the base game, it is necessary for us to separate your save data in this way.
+Because ICE incorporates changes that are not backwards compatible with the base game, it is necessary for us to separate your save data in this way.
 
 If enabled, ICE will automatically use the "SAVEDATA_ICE" save file. Otherwise, your game will continue to use the "SAVEDATA1000" save file as normal.
 Should you want to copy your progress over to ICE:
