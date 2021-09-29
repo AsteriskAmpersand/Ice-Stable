@@ -11,12 +11,13 @@ Iceborne Community Edition is a holistic rework of MHW: Iceborne. We attempt to 
 ## First Time Installation ##
 Follow these steps if you've never installed ICE before:
 1. Install Stracker's Loader and all it's prerequisites found here: <https://www.nexusmods.com/monsterhunterworld/mods/1982/>
-2. Click on the green "Code" button and then "Download ZIP".
-3. Extract the contents of the ZIP directly to your root Monster Hunter World install folder (where MonsterHunterWorld.exe is located).
-4. When asked about file conflicts, overwrite any existing files.
-5. (Optional) Install any mods you want to use with ICE in the "ICE\ntPC" folder. Install any plugins in "ICE\plugins".
-6. Launch game in Admin Mode (required only on first time installs)
-7. Check save file management section when you are asked to create a new save file when launching the game.
+2. On this Github page, click on the green "Code" button and then "Download ZIP".
+3. Extract the contents of the ZIP file to a temporary location (Desktop, Downloads, etc).
+4. Copy all the contents within the "ice-stable-main" (or "ice-experimental-main") folder directly to your root Monster Hunter World install folder (default path is `...\Steam\steamapps\common\Monster Hunter World\`. You have the right folder if "MonsterHunterWorld.exe" exists in that folder).
+5. When asked about file conflicts, overwrite any existing files.
+6. (Optional) Install any mods you want to use with ICE in the `...\Monster Hunter World\ICE\ntPC\` folder. Install any plugins in `...\Monster Hunter World\ICE\ntPC\plugins\`.
+7. Launch game in Admin Mode (required only on first time installs). 
+8. Check save file management section when you are asked to create a new ICE save file when launching the game.
 
 ## Updating Or Re-installing ICE ##
 Follow these steps if you want to grab the latest version of ICE:
@@ -35,20 +36,27 @@ If you want to uninstall ICE:
 - (Easy Version) In the Monster Hunter World folder, delete the main ICE folder.
 - (Full Version) In the Monster Hunter World folder, delete the main ICE folder, cryptbase.dll, loader.dll, ice_managed_code.dll. Then reinstall Stracker's Loader if you need it for other mods: <https://www.nexusmods.com/monsterhunterworld/mods/1982/>
 
+## Installing Other Mods with ICE ##
+If you want to install mods alongside ICE, we strongly recommend hunters stick with cosmetic/visual mods only. Gameplay mods will likely cause conflicts and compatibility issues. If you do wish to try gameplay mods at your own risk, we ask you to be considerate of other hunters and play offline only, just like you would without ICE.
+1. Install mods in the `...\Monster Hunter World\ICE\ntPC\` folder. This ntPC folder is used instead of nativePC, while ICE is enabled.
+2. Similarly, plugins are installed in the `...\Monster Hunter World\ICE\ntPC\plugins\` folder.
+While ICE is enabled, mods and plugins are only loaded from the above folders. This allows you to manage your mods for ICE separately.
+
 ## Migrating from old ICE ##
-If you were trying ICE before we switched to github downloads, follow these one-time steps to update your ICE install:
-1. Delete your old nativePC folder meant for ICE (save any mods you still want though, if you don't have a copy elsewhere)
-2. Click on the green "Code" button and then "Download ZIP".
-3. Extract the contents of the ZIP directly to your root Monster Hunter World install folder (where MonsterHunterWorld.exe is located).
-4. When asked about file conflicts, overwrite any existing files.
-5. (Optional) Install any mods you want to use with ICE in the "ICE\ntPC" folder. Install any plugins in "ICE\plugins".
-6. Launch game in Admin Mode (required only on first time installs)
-7. Check save file management section when you are asked to create a new save file when launching the game.
+If you were trying ICE before we switched to GitHub downloads, follow these one-time steps to update your ICE install:
+1. Delete your old nativePC folder meant for ICE (save any mods you still want though, if you don't have a copy elsewhere).
+2. On this Github page, click on the green "Code" button and then "Download ZIP".
+3. Extract the contents of the ZIP file to a temporary location (Desktop, Downloads, etc).
+4. Copy all the contents within the "ice-stable-main" (or "ice-experimental-main") folder directly to your root Monster Hunter World install folder (default path is `...\Steam\steamapps\common\Monster Hunter World\`. You have the right folder if "MonsterHunterWorld.exe" exists in that folder).
+5. When asked about file conflicts, overwrite any existing files.
+6. (Optional) Install any mods you want to use with ICE in the `...\Monster Hunter World\ICE\ntPC\` folder. Install any plugins in `...\Monster Hunter World\ICE\ntPC\plugins\`.
+7. Launch game in Admin Mode (required only on first time installs)
+8. Check save file management section when you are asked to create a new save file when launching the game.
 
 - - - -
 
 # Save File System #
-ICE manages your character data in a separate save file named "SAVEDATA_ICE". The game normally uses the file named "SAVEDATA1000". These are both located in the standard save folder found at: "...\Steam\userdata\<steamId>\582010\remote\"
+ICE manages your character data in a separate save file named "SAVEDATA_ICE". The game normally uses the file named "SAVEDATA1000". These are both located in the standard save folder found at: `...\Steam\userdata\<steamId>\582010\remote\`
 
 Because ICE encorporates changes that are not backwards compatible with the base game, it is necessary for us to separate your save data in this way.
 
@@ -65,7 +73,7 @@ If you boot up the game with ICE enabled for the first time and it says no save 
 1. Hit yes to create a new ICE save but DON'T select a language.
 2. If you want to start a new save file, then continue with the setup process and skip the rest of the steps. Otherwise...
 3. Close the game after the game creates the save file but before selecting a language.
-4. Navigate to your save folder at "...\Steam\userdata\<steamid>\582010\remote\".
+4. Navigate to your save folder at `...\Steam\userdata\<steamid>\582010\remote\`.
 5. Delete the "SAVEDATA_ICE" file that's in that folder.
 6. Make a copy of your "SAVEDATA1000" file and rename that copy to "SAVEDATA_ICE"
 7. Start the game again.
@@ -666,6 +674,7 @@ Too much of Switch Axe's damage output was locked behind phial bonuses (especial
     - Element Modifier increased to 1.2x (up from 1.0x).
     - Raw damage multiplier increased to 2.0x (up from 1.4x).
     - Amp State is now terminated upon completing a Zero Sum Discharge.
+    - When releasing early, the chance of hitting the wrong Monster part has been greatly decreased, especially for fast-moving Monsters.
 - Element Discharge (Mounted):
   - Thrust:
     - MV increased to 22 (up from 20).
@@ -684,11 +693,11 @@ Too much of Switch Axe's damage output was locked behind phial bonuses (especial
 - "Sword: Hop":
   - All sword hops can now be cancelled into a roll, just like forward hop.
   - Reduced endlag on sword hops.
-  - Forward: Hop distance increased to 2.45m (up from 1.8m)
-  - Left: Hop distance increased to 2.5m (up from 1.7m)
-  - Right: Hop distance increased to 2.5m (up from 2.0m)
-  - Backward: Hop distance increased to 2.35m (up from 1.7m)
-  - > These hops were both unable to out distance and unable iframe through Monster attacks without heavy skill investment. This change makes it possible to at least out distance some attacks now, while keeping these hops generally weaker than other weapon hops. Also fixes an odd descrepancy in vanilla where left hop is significantly shorter than right hop.
+  - Forward: Hop distance increased to 2.45m (up from 1.8m).
+  - Left: Hop distance increased to 2.5m (up from 1.7m).
+  - Right: Hop distance increased to 2.5m (up from 2.0m).
+  - Backward: Hop distance increased to 2.35m (up from 1.7m).
+  - > Sword hops in vanilla have a significant issue with spacing, as the limited distance combined with the low iframes make it difficult or in many cases impossible to iframe or out space attacks without investing in evasion skills. These changes aim to improve the overall survivability and mobility of sword mode. Also fixes an odd descrepancy in vanilla where left hop is significantly shorter than right hop.
 - Special Claw Shot:
   - MV increased to 8+61 (up from 7+55).
   - Element Modifier increased to 1.2x (up from 1.0x).
@@ -862,6 +871,8 @@ Many of the following changes are intended to address ammo-to-ammo balance, with
   - MV increased to 100+10 (up from 70+19).
   - Fire damage decreased to 0+0 (was 40+20).
   - > Wyvern ammo wasn't particular strong, but having a sizable portion its damage be fire-based limited its usefulness.
+- Elemental Ammo:
+  - MV decreased to 16 (from 22).
 - Dragon Ammo:
   - MV increased to 4 (up from 2).
   - Dragon damage increased to 36 (up from 18).
