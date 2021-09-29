@@ -870,12 +870,15 @@ Many of the following changes are intended to address ammo-to-ammo balance, with
 - Wyvern Ammo:
   - MV increased to 100+10 (up from 70+19).
   - Fire damage decreased to 0+0 (was 40+20).
-  - > Wyvern ammo wasn't particular strong, but having a sizable portion its damage be fire-based limited its usefulness.
+  - > Wyvern ammo wasn't particular strong, but the fire damage further limited its usefulness.
 - Elemental Ammo:
-  - MV decreased to 16 (from 22).
+  - Damage decreased by 20%
+  - Damage reduced to 0% after the 6th hit (down from 20% after the 9th hit).
 - Dragon Ammo:
   - MV increased to 4 (up from 2).
   - Dragon damage increased to 36 (up from 18).
+  - Damage reduced to 0% after the 6th hit (down from 20% after the 9th hit).
+  - > The damage increase compensates for damage lost from reduction in number of hits.
 - Cluster Ammo:
   - MV increased to 19/22/28 (up from 17/20/26).
   - Fire damage decreased to 0/0/0 (down from 5/8/10).
