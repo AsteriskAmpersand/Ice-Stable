@@ -872,7 +872,7 @@ Many of the following changes are intended to address ammo-to-ammo balance, with
   - Fire damage decreased to 0+0 (was 40+20).
   - > Wyvern ammo wasn't particular strong, but the fire damage further limited its usefulness.
 - Elemental Ammo:
-  - Damage decreased by 20%
+  - Damage decreased by 17.5%
   - Damage reduced to 0% after the 6th hit (down from 20% after the 9th hit).
 - Dragon Ammo:
   - MV increased to 4 (up from 2).
