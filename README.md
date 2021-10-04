@@ -147,7 +147,10 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
 - Focus:
   - Bonus gauge generation increased to 10/18/25% (up from 5/10/20%).
   - > This change helps gauge-based weapons reach certain meaningful breakpoints.
-- Heroics: Base Attack bonus changed from 0/5/5/10/15/25/40% to 5/10/15/20/25/30/40%. 
+- Heroics: Base Attack bonus changed from 0/5/5/10/15/25/40% to 5/10/15/20/25/30/40%.
+- Flinch Free:
+  - "Brace" decoration size decreased to Lv1 (from Lv3).
+  - Now negates airborne launches from other hunters at Lv1. (See "Airborne Launches" under "Quality of Life" section for more details)
 - Fortify:
   - Duration increased to 9.1 hours (up from 50 minutes). 
   - > This partially reverts a nerf from IB, as Capcom's nerf only encouraged players to restart their Guiding Lands session every 50 minutes, rather than actually addressing any real issues.
@@ -205,13 +208,21 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 - Chat channel no longer changes during certain actions (joining party/session/etc).
 - Despawn time for item drops from Monsters increased to 30 minutes (up from 1 or 2 minutes).
   - > This was done to help avoid situations where a hunter has to choose between interrupting their epic fight or forfeiting their rightfully earned loot. This wasn't a very interesting decision, in our opinion.
-- Cutscene Skip option enabled on most cutscenes in the game. Given most players will be experiencing ICE as a second (or later) playthrough, this quality of life improvement should help quicken the time required to complete main story quests across all ranks.
-  - > Dev Comment: This is still a work-in-progress. Some cutscene audio might not skip correctly!
+- Cutscene Skip option enabled on most cutscenes in the game. Given most players will be experiencing ICE as a second (or later) playthrough, this quality of life improvement should help shorten the time required to complete main story quests across all ranks.
+  - > This is still a work-in-progress feature. Some cutscene audio might not skip correctly due to not being defined by the game as cutscene audio.
+- Airborne Launches:
+  - Hunters can now protect themselves from being launched airborne by other hunters, using any of the available options that would protect against trips (including Flinch Free Lv1).
+  - Monster attacks are unaffected by this change.
+- Guarding on Shield Weapons:
+  - Guarding behavior changed to ignore attacks from other hunters.
+  - Hunters will still see a hit effect (sparks), but the guarding hunter no longer consumes stamina and does not get locked into any follow-up guard reaction animations.
+  - This change does not affect how hunters react to attacks they cannot block (from behind, unblockable attacks, etc).
+  - > In vanilla, shield weapons experienced extra downsides compared to other weapons when fighting in close proxity with other hunters. In particular, Lance hunters could have their Counter Thrusts triggered early by another hunter, resulting in getting hit by the Monster attack that they were preparing to counter. With this change, these unnecessary situations are removed from the game.
   
 ### ──────────【 Bug Fixes 】────────── ###
 
 - DPS Tick Fix: The engine components responsible for specifically handling ticking damage effects have been upgraded to mitigate the negative effects of frame rate on player damage output. In some cases, player damage could be reduced as much as 25% just for not playing at a stable 60fps. Some examples here: <https://bit.ly/MHWEffectsOfFPS>
-- Moonshots Fix: Aim behavior has been adjusted for Bow and Bowgun at short ranges to mitigate the occurrence of projectiles that incorrectly fly straight up (and seemly towards the moon/sky) and completely miss the intended target. This is sometimes refered to as "moonshots" by the community. An example can be seen here around the midpoint of the clip: <https://twitter.com/Irh_umbreon/status/1409001644411408391>
+- Moonshots Fix: Aim behavior has been adjusted for Bow and Bowgun at short ranges to mitigate the occurrence of projectiles that incorrectly fly straight up (seemingly towards the moon/sky) and completely miss the intended target. This is sometimes refered to as "moonshots" by the community. An example can be seen here around the midpoint of the clip: <https://twitter.com/Irh_umbreon/status/1409001644411408391>
 
 
 ## Weapon Changes (Stable Build) ##
@@ -224,7 +235,7 @@ The following changes are intended to offer a new playstyle option for GS that i
   - Overhead Slash, Wide Slash, and Rising Slash increase combo count by 1, up to a maximum of 3.
   - These moves can now combo directly into Jumping Wide Slash (Triangle+R2). 
   - Jumping Wide Slash's power level will match the hunter's current combo count.
-  - Side Blow can be used after Overhead Slash, without resetting current combo count.
+  - Side Blow can be used after Overhead Slash, without resetting the current combo count.
   - Combo count resets when performing any other actions or attacks (idle, evading, etc) not mentioned above.
 - Overhead Slash:
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
@@ -306,7 +317,7 @@ However, there is one notable change which has a large potential effect on plays
 The full changes are as follows:
 - Spirit Decay:
   - Spirit Decay has been removed (was 5% lost every 6 seconds, reset on attacks).
-  - > This mechanic in theory encourages players to be more aggressive, but not so much in implementation. Because of how lenient the timer is, and the fact that IS and SHB regen buffs disable decay entirely, the decay only really came into play on area transitions. As such, this change is intended for QoL purposes.
+  - > This mechanic in theory encourages hunters to be more aggressive, but not so much in implementation. Because of how lenient the timer is, and the fact that IS and SHB regen buffs disable decay entirely, the decay only really came into play on area transitions. As such, this change is intended for QoL purposes.
 - Step Slash:
   - MV increased to 26 (up from 24).
 - Overhead Slash:
@@ -354,7 +365,7 @@ The full changes are as follows:
 - Foresight Slash:
   - Spirit cost increased to 25% (up from 10%).
   - Spirit deletion after use has been removed (was deleting 100% spirit).
-  - Spirit generation on successful counter decreased to 25% (down from 100%).
+  - Spirit generation on successful counters decreased to 25% (down from 100%).
   - > In vanilla, FSS's ability to instantly fill the Spirit bar (or delete the bar on failed counters) negated most of the value in generating Spirit with other moves. With these changes, FSS is no longer a Spirit generator, but it still remains a powerful defensive tool.
 - Special Sheathe:
   - Quick Sheathe bonus effect changed to apply fully to sheathing animation.
@@ -366,9 +377,9 @@ The full changes are as follows:
   - Successful counter changes buff duration to 30 seconds.
   - Now combos into Spirit Blade II (was previously Spirit Blade I).
 - Iai Spirit Slash:
-  - On successful counter, upgrades Spirit Gauge by one level.
+  - On successful counters, upgrades Spirit Gauge by one level.
   - Spirit Cost increased to 35% (up from 0%).
-  - On successful counter at Red Gauge: 10% Spirit is refunded.
+  - On successful counters at Red Gauge: 10% Spirit is refunded.
   - > With these changes, ISS is now a high risk and high reward alternative to FSS. Hunters now have the option to choose between these two counters with different strengths and weaknesses to suit the situation.
   - The damage and properties of the first hit have been moved into the second hit.
     - MV changed to 0+78/0+92/0+120 by Gauge level (was 19+55/31+72/39+86).
@@ -397,10 +408,10 @@ Certain moves for Hammer lacked the necessary innate knockback resistance needed
 
 #### 【 General Changes 】 ####
 Hunting Horn has a lot of untapped potential, mainly as a result of poor damage tuning across its kit. While it has many interesting and unique attacks, most of them are too weak or situational to see much use. ICE aims to address these issues in the following ways:
-- Damage output (when fully buffed) has been made competitive with other weapons. While it will likely still be on the weaker side when it comes to individual damage output, it now won't be lagging so horribly behind that it encourages players to take other weapons entirely.
+- Damage output (when fully buffed) has been made competitive with other weapons. While it will likely still be on the weaker side when it comes to individual damage output, it now won't be lagging so horribly behind that it encourages hunters to take other weapons entirely.
 - Shockwaves and Echo Waves now are affected by affinity and can deal critical damage. This change allows these attacks to properly scale along with the hunter and stay relevant across all points in progression.
 - Recital and Encore damage has been raised to allow these moves to play a larger role in fights. They should be a strong option that a hunter can choose to fit in where possible when they have songs queued, instead of relying only on Echo Attack and Superpound for general damage.
-- Echo Wave "Dragon" is now Echo Wave "Element". Element type and damage based off the equipped weapon's element stats.
+- Echo Wave "Dragon" is now Echo Wave "Element". Element type and damage based on the equipped weapon's element stats.
 - Echo Wave "Impact" and "Element" are now positioned as high damage options that hunters can mix in with existing combos for extra damage.
 
 The full details can be found below:
@@ -414,11 +425,11 @@ The full details can be found below:
   - MV increased to 42 (up from 28).
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
 - Backwards Strike (aka Back Slam):
-  - MV incrased to 54 (up from 37).
+  - MV increased to 54 (up from 37).
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
 - Hilt Stab:
-  - MV incrased to 12 (up from 10).
-  - Element and Status Modifiers increased to 0.60x (down from 1.0x).
+  - MV increased to 12 (up from 10).
+  - Element and Status Modifiers decreased to 0.60x (down from 1.0x).
 - Overhead Smash (aka Superpound):
   - MV increased to 16+50 (up from 14+39).
   - Element and Status Modifiers increased to 1.2x+1.2x (up from 1.0x+1.0x).
@@ -427,18 +438,16 @@ The full details can be found below:
   - Element and Status Modifiers increased to 1.2x+1.2x (up from 1.0x+1.0x).
 - Echo Attack (aka Echo Spin):
   - First Hit:
-    - MV incrased to 12 (up from 10).
-    - Element and Status Modifiers increased to 0.60x (down from 1.0x).
+    - MV increased to 12 (up from 10).
+    - Element and Status Modifiers decreased to 0.60x (down from 1.0x).
   - Spinning Hits:
     - MV decreased to 16 (down from 17).
 - Recital:
   - MV increased to 32 (up from 29).
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
-  - Movement speed while playing songs has been increased.
 - Encore:
   - MV increased to 40 (up from 35).
   - Element and Status Modifiers increased to 1.5x (up from 1.0x).
-  - Movement speed while playing songs has been increased.
 - Midair Recital:
   - MV increased to 40 (up from 35).
   - Element and Status Modifiers increased to 1.5x (up from 1.0x).
@@ -451,9 +460,10 @@ The full details can be found below:
   - Now affected by affinity and can deal critical damage.
 - Echo Wave "Dragon":
   - MV changed to 30/75/120 (was 45/65/85).
-  - Now uses the equipped weapon's element type and element damage.
-  - Element modifier increased to 4.0x/10.0x/16.0x (up from 1.0x/1.0x/1.0x).
+  - Base Dragon damage removed (was 60/120/180). Now uses the equipped weapon's element type and element damage.
   - Element damage no longer scales with Attack stat.
+  - Element Modifier increased to 4.0x/10.0x/16.0x (up from 1.0x/1.0x/1.0x).
+  - > While the change to element modifier looks significant, it's mainly compensating for the loss of Attack stat scaling.
   - Now affected by affinity and can deal critical damage.
 - Jumping Smash:
   - MV increased to 40 (up from 35).
@@ -525,7 +535,7 @@ Lance has a solid playstyle and was only lacking damage to compete with other we
 Gunlance has received a major rework with three major changes:
 - Normal, Long, and Wide shelling types have been unified into a single new "Omni" type, which combines the strengths of all three. Hunters can now actively choose between all shelling attacks in combat, rather than being locked into spamming only a single optimal shelling attack for an entire run.
 - Wyrmstake Blast has been removed due to various problems with the implementation and the mostly negative impacts it had on Gunlance gameplay. Since Gunlance received Wyrmstake Blast instead of Master Rank's 1.5x Fixed Damage multiplier, we have opted to bake the damage difference into each shelling attack, as compensation. Shelling attacks should deal roughly 80% to 90% of the damage they used to deal while Wyrmstake Blast was active.
-- As a replacement to Wyrmstake Blast, the (mostly decorative) shield has gained a core role in Gunlance gameplay in the form of a guardpoint on Quick Reload. This guardpoint enables a more aggresive playstyle and allows players to keep pressuring monsters if timed correctly. For small or medium knocbacks, players can follow-up with any options already available after a Quick Reload, including comboing into an Overhead Smash and Full Burst.
+- As a replacement to Wyrmstake Blast, the (mostly decorative) shield has gained a core role in Gunlance gameplay in the form of a guardpoint on Quick Reload. This guardpoint enables a more aggressive playstyle and allows hunters to keep pressuring monsters if timed correctly. For small or medium knockbacks, hunters can follow-up with any options already available after a Quick Reload, including comboing into an Overhead Smash and Full Burst.
 
 The details of these changes are below:
 - Base shell capacity is 4. Capacity Boost skill can increase this by 2 (was 1).
@@ -561,7 +571,7 @@ The details of these changes are below:
   - Now usable while at full ammo.
 
 #### 【 General Changes 】 ####
-Most of the following changes were made to ensure normal attacks would keep up with shelling attacks, so that hunters can continue benefitting from using a mix of normal and shelling attacks.
+Most of the following changes were made to ensure normal attacks would keep up with shelling attacks, so that hunters can continue benefiting from using a mix of normal and shelling attacks.
 - Lateral Thrust:
   - MV increased to 32 (up from 24).
 - Guard Thrust:
@@ -589,7 +599,7 @@ Sword Gauge generation has been changed to be focused around the active use of A
   - Gauge generation decreased to 10% (down from 15%). 
   - Also counts as an Axe Mode Attack, so generates 18% gauge in total.
 - Sword Mode Attacks:
-  - Gauge consumption has been increased.
+  - Gauge consumption increased.
   - See General Changes section for details on individual attacks.
 - All sources of Sword Gauge generation are now affected by Focus skill (10%/15%/25%).
   - > In vanilla, Focus was in an unfortunate position where it did technically affect Amp generation, but not by enough to warrant the use of the skill. This change increases its overall viability without making it a necessity for general SA gameplay. Since it also affects Sword Gauge generation now, it can be a good option when facing Monsters where Axe Mode is less useful.
@@ -600,7 +610,7 @@ Too much of Switch Axe's damage output was locked behind phial bonuses (especial
 - Power Element Phial: Total Element multiplier decreased to 1.21x (down from 1.45x).
 - Exhaust Phial: Bonus Stun buildup for Sword Mode increased to 10 (up from 5).
 - Sword Mode attacks:
-  - MVs have been increased. See General Changes section for details on individual attacks.
+  - MVs increased. See General Changes section for details on individual attacks.
   - Element Modifiers of most attacks increased to 1.20x (up from 1.00x).
 
 #### 【 General Changes 】 ####
@@ -697,7 +707,7 @@ Too much of Switch Axe's damage output was locked behind phial bonuses (especial
   - Left: Hop distance increased to 2.5m (up from 1.7m).
   - Right: Hop distance increased to 2.5m (up from 2.0m).
   - Backward: Hop distance increased to 2.35m (up from 1.7m).
-  - > Sword hops in vanilla have a significant issue with spacing, as the limited distance combined with the low iframes make it difficult or in many cases impossible to iframe or out space attacks without investing in evasion skills. These changes aim to improve the overall survivability and mobility of sword mode. Also fixes an odd descrepancy in vanilla where left hop is significantly shorter than right hop.
+  - > Sword hops in vanilla have a significant issue with spacing, as the limited distance combined with the low iframes make it difficult or in many cases impossible to iframe or out space attacks without investing in evasion skills. These changes aim to improve the overall survivability and mobility of sword mode. Also fixes an odd discrepancy in vanilla where the left hop is significantly shorter than the right hop.
 - Special Claw Shot:
   - MV increased to 8+61 (up from 7+55).
   - Element Modifier increased to 1.2x (up from 1.0x).
@@ -815,7 +825,7 @@ The changes below mainly are intended to bring up underpowered moves to increase
   - Gunners will mostly take the same damage as they did before this change (i.e. much higher than blademasters).
   - Gunners will only notice a change in late endgame content where one-shot attacks become more common.
   - When taking these one-shot attacks, Gunners can still take lethal damage without adequate defenses, but the reduced damage may help gunners survive some of the weaker one-shot attacks.
-  - > For context: Gunners normally receive a 30% reduction in base defense (before flat additive bonuses), which in late endgame content roughly equates to 40% increased damage taken from all sources. The element resistance bonus for Gunners does not significantly help put a dent into this penalty because elemental Monster attacks are comprised of mostly raw damage (usually 66% to 75% raw).
+  - > For context: Gunners normally receive a 30% reduction in base defense (before flat additive bonuses), which in late endgame content roughly equates to 40% increased damage taken from all sources. The element resistance bonus for Gunners does not significantly help put a dent into this penalty because elemental Monster attacks consist of mostly raw damage (usually 66% to 75% raw).
 - Spare Shot / True Spare Shot:
   - Proc algorithm changed to be deterministic, instead of random.
   - Procs once every 5 shots for Spare Shot and every 3.33 shots for True Spare Shot.
@@ -856,9 +866,9 @@ Many of the following changes are intended to address ammo-to-ammo balance, with
   - Projectile speed increased to 30/30/25 m/s (up from 25/25/20).
   - Super Crit Start Distance decreased by 70%.
   - Damage reduced to 0% after the 6th hit (down from 20% after the 9th hit).
-  - > These changes are intended to allow Pierce to perform more consistenly across different sized monsters, making it a good option in more matchups.
+  - > These changes are intended to allow Pierce to perform more consistently across different sized monsters, making it a good option in more matchups.
 - Spread Ammo:
-  - Spread patterns changed to be grouped around central point (was horizontal line).
+  - Spread patterns changed to be grouped around a central point (was horizontal line).
 - Sticky Ammo:
   - Damage Type changed to Blunt (was "HZV independent").
   - MV increased to 20/29/40 (up from 12/17/24).
@@ -870,7 +880,7 @@ Many of the following changes are intended to address ammo-to-ammo balance, with
 - Wyvern Ammo:
   - MV increased to 100+10 (up from 70+19).
   - Fire damage decreased to 0+0 (was 40+20).
-  - > Wyvern ammo wasn't particular strong, but the fire damage further limited its usefulness.
+  - > Wyvern ammo wasn't particularly strong, but the fire damage further limited its usefulness.
 - Elemental Ammo:
   - Damage decreased by 17.5%
   - Damage reduced to 0% after the 6th hit (down from 20% after the 9th hit).
@@ -899,7 +909,7 @@ Many of the following changes are intended to address ammo-to-ammo balance, with
   - Stacking x4: Increased guard thresholds removed.
 - Clutch Claw Weapon Attack:
   - Backward impulse decreased to 300 (down from 800).
-  - > With this change, player will be dropped closer to the monster.
+  - > With this change, hunters will be dropped closer to the monster.
 - Wyvernsnipe:
   - Main projectile: MV increased to 30 (up from 20).
   - Explosions: MV increased to 50/75/110 (up from 38/49/81).
@@ -924,9 +934,10 @@ Many of the following changes are intended to address ammo-to-ammo balance, with
   - Now changes "Neutral unsheathed roll" to "evade reload slide", if equipped.
 - Clutch Claw Weapon Attack:
   - Backward impulse decreased to 250 (down from 700).
-  - > With this change, player will be dropped closer to the monster.
+  - > With this change, hunters will be dropped closer to the monster.
 - Wyvernblast:
   - Charge consumption decreased to 1/2/3 (down from 1/2/4).
 - Wyvernblast Type 2:
   - MV increased to 43/75/87/130 (up from 26/49/73/110). 
   - Fire damage decreased to 0/0/0/0 (down from 3/5/6/7).
+
