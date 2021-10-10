@@ -206,17 +206,34 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 
 ### ──────────【 Quality of Life 】────────── ###
 
+#### 【 User Interface Changes 】 ####
 - Equipment UIs now show true Attack (aka Raw) and true Element values for weapons.
   - > This removes the useless bloat multipliers that aren't actually used by the game for any calculations.
 - Chat channel no longer changes during certain actions (joining party/session/etc).
+
+#### 【 Systems Changes 】 ####
 - Despawn time for item drops from Monsters increased to 30 minutes (up from 1 or 2 minutes).
   - > This was done to help avoid situations where a hunter has to choose between interrupting their epic fight or forfeiting their rightfully earned loot. This wasn't a very interesting decision, in our opinion.
 - Cutscene Skip option enabled on most cutscenes in the game. Given most players will be experiencing ICE as a second (or later) playthrough, this quality of life improvement should help shorten the time required to complete main story quests across all ranks.
   - > This is still a work-in-progress feature. Some cutscene audio might not skip correctly due to not being defined by the game as cutscene audio.
+- Astera Lift System:
+  - Hunters can now utilize the lift system from the entrance of Astera, where they generally arrive after quests or expeditions (in front of the Resource Center).
+  - When traveling to the "Tradeyard" using the lift system, the hunter will now arrive in the center of the Tradeyard.
+  - > These changes are intended to decrease the amount of downtime that would otherwise be required to navigate around Astera, allowing hunters to spend more time hunting and less time walking.
+- Botanical Research Center:
+  - Fertilizer usage limit per quest removed (was 1 per quest).
+  - Fertilizer maximum stackable duration increased to 20 quests (up from 9).
+  - > Theses changes remove the constant attention required to maintain the Botanical Research Center. Hunters will only have to check on their BRC to reapply fertilizers as often as they need to collect their harvests (about every 15 to 20 quests once fully upgraded). These changes also make it so that restarting fertilizers (if expired) isn't a significant hassle.
+  - Fertilizer balancing:
+    - Research Point costs for Mega Fertilizer, Choice Mushroom Substrate, Thick Summoner Jelly, and Ancient Catalyst have been reduced. 
+    - Ancient Catalyst duration increased to 5 quests (up from 4), to justify its higher cost relative to normal Catalyst.
+    - > Since these fertilizers have lost their main advantage of allowing hunters to stack fertilzers faster between quests, they are now positioned as slightly more efficient versions of the basic fertilizers.
+
+#### 【 Combat Changes 】 ####
 - Airborne Launches:
   - Hunters can now protect themselves from being launched airborne by other hunters, using any of the available options that would protect against being knocked onto their butts. For example, Flinch Free Lv2 will reduce the launch to a trip, and Flinch Free Lv3 will negate the launch entirely.
   - Monster attacks are unaffected by this change.
-- Guarding on Shield Weapons:
+- Guarding with Shield Weapons:
   - Guarding behavior changed to ignore attacks from other hunters.
   - Hunters will still see a hit effect (sparks), but the guarding hunter no longer consumes stamina and does not get locked into any follow-up guard reaction animations.
   - This change does not affect how hunters react to attacks they cannot block (attacks from behind, unblockable attacks, etc).
