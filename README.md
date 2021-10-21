@@ -97,7 +97,11 @@ Details can be found here: https://docs.google.com/spreadsheets/d/1nzN2zYD1VbeEu
 
 AT Velkhana's unique HZV mechanic has also been slightly modified to account for these changes:
 - Shot HZV Multipliers increased to 1.1/1.0/0.9 (up from 1.0/0.8/0.6)
-These values ensure that aura Lv1 and Lv2 still are WEX zones on an unbroken head, and that at Lv3 tenderized unbroken head and untenderized broken head are WEX zones. These values are below tenderized values in the vanilla tenderization formula and below melee multipliers values keeping in line with the assumed original developer intent.
+These multipliers ensure that the head hitzone still counts towards WEX zones for gunners under the following conditions:
+- Any time during aura Lv1
+- Any time during aura Lv2
+- Tenderized or broken head during aura Lv3
+These values follow the assumed original developer intent, as they are below tenderized values in the vanilla tenderization formula and below melee multipliers values.
 
 ### ──────────【 Player 】────────── ###
 - Attack cap increased to 3.0x (up from 2.0x). This reverts a nerf from IB.
@@ -660,8 +664,7 @@ Too much of Switch Axe's damage output was locked behind phial bonuses (especial
 - "Axe: Sweep Morph":
   - MV decreased to 16+58+29 (down from 20+70+35).
 - "Sword: Phial Burst":
-  - Delay significantly decreased to mitigate situations of missing the intended attack location
-  - on fast moving monsters.
+  - Delay significantly decreased to mitigate situations of missing the intended attack location on fast moving monsters.
   - Now also applies to Axe mode attacks.
 - "Sword: Overhead Slash":
   - MV increased to 38 (up from 29).
