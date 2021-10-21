@@ -934,9 +934,9 @@ Many of the following changes are intended to address ammo-to-ammo balance, with
   - Normal Ammo damage multiplier decreased to 1.20x (down from 1.30x).
   - Pierce Ammo damage multiplier decreased to 1.15x (down from 1.30x).
   - Spread Ammo damage multiplier removed (down from 1.30x).
-- Shield Mod: 
-  - Stacking x3: Increased guard thresholds removed.
-  - Stacking x4: Increased guard thresholds removed.
+- Shield Mod:
+  - Increased Guard Strength now caps at Shield mods x2 (equivalent to CB & GS Guard Strength at 14/39/40+).
+  - > Shield mods x3 now grants no bonus over Shield mods x2. Shield mods x4 still grants reduced chip damage.
 - Clutch Claw Weapon Attack:
   - Backward impulse decreased to 300 (down from 800).
   - > With this change, hunters will be dropped closer to the monster.
