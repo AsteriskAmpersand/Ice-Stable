@@ -435,8 +435,8 @@ Hunting Horn has a lot of untapped potential, mainly as a result of poor damage 
 - Damage output (when fully buffed) has been made competitive with other weapons. While it will likely still be on the weaker side when it comes to individual damage output, it now won't be lagging so horribly behind that it encourages hunters to take other weapons entirely.
 - Shockwaves and Echo Waves now are affected by affinity and can deal critical damage. This change allows these attacks to properly scale along with the hunter and stay relevant across all points in progression.
 - Recital and Encore damage has been raised to allow these moves to play a larger role in fights. They should be a strong option that a hunter can choose to fit in where possible when they have songs queued, instead of relying only on Echo Attack and Superpound for general damage.
-- Echo Wave "Dragon" is now Echo Wave "Element". Element type and damage based on the equipped weapon's element stats.
-- Echo Wave "Impact" and "Element" are now positioned as high damage options that hunters can mix in with existing combos for extra damage.
+- Echo Wave "Dragon" is now Echo Wave "Element". Element type and damage based on the equipped weapon's element stats. Some elemental Hunting Horns have had their notes changed to allow them to play Echo Wave "Element".
+- Echo Wave "Impact" and "Element" are now positioned as high damage options that hunters can mix in with existing combos for extra damage. 
 
 The full details can be found below:
 - Right Swing:
@@ -794,6 +794,9 @@ Too much of Switch Axe's damage output was locked behind phial bonuses (especial
     - PEP's bonus Element Modifier decreased to +0.8x (down from +1.0x) to cancel out buff.
 
 ### ──────────【 Insect Glaive 】────────── ###
+
+#### [ Equipment ] ####
+- Default Kinsect Boost type on Safi IGs changed to Element Boost (was Speed Boost).
 
 #### 【 Kinsect Changes 】 ####
 - Extract Durations:
