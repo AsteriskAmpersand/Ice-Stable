@@ -433,10 +433,10 @@ Certain moves for Hammer lacked the necessary innate knockback resistance needed
 #### 【 General Changes 】 ####
 Hunting Horn has a lot of untapped potential, mainly as a result of poor damage tuning across its kit. While it has many interesting and unique attacks, most of them are too weak or situational to see much use. ICE aims to address these issues in the following ways:
 - Damage output (when fully buffed) has been made competitive with other weapons. While it will likely still be on the weaker side when it comes to individual damage output, it now won't be lagging so horribly behind that it encourages hunters to take other weapons entirely.
-- Shockwaves and Echo Waves now are affected by affinity and can deal critical damage. This change allows these attacks to properly scale along with the hunter and stay relevant across all points in progression.
+- Shockwaves and Echo Waves now are affected by affinity and can deal critical damage. They are also affected by Sharpness. These changes allow these attacks to properly scale along with the hunter and stay relevant across all points in progression.
 - Recital and Encore damage has been raised to allow these moves to play a larger role in fights. They should be a strong option that a hunter can choose to fit in where possible when they have songs queued, instead of relying only on Echo Attack and Superpound for general damage.
-- Echo Wave "Dragon" is now Echo Wave "Element". Element type and damage based on the equipped weapon's element stats. Some elemental Hunting Horns have had their notes changed to allow them to play Echo Wave "Element".
-- Echo Wave "Impact" and "Element" are now positioned as high damage options that hunters can mix in with existing combos for extra damage. 
+- Echo Wave "Dragon" has been replaced with Element Echo Wave. Element Echo Waves deal damage based on the element type and damage of the equipped weapon. Some elemental Hunting Horns have had their notes changed to allow them to play Element Echo Waves.
+- Impact and Element Echo Wave are now positioned as high damage options that hunters can mix in with existing combos for extra damage. Single Echo Waves after a Recital can offer a decent boost in damage, while preparing 3 Echo Waves ahead of time can lead to staggering levels of damage during extra long damage opportunities.
 
 The full details can be found below:
 - Right Swing:
@@ -479,16 +479,20 @@ The full details can be found below:
   - MV increased to 32 (up from 27).
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
   - Now affected by affinity and can deal critical damage.
-- Echo Wave "Impact":
+  - Now affected by sharpness damage modifiers.
+- Impact Echo Wave:
   - MV changed to 40/100/160 (was 50/100/150).
   - Now affected by affinity and can deal critical damage.
-- Echo Wave "Dragon":
+  - Now affected by sharpness damage modifiers.
+- Element Echo Wave (previously Echo Wave "Dragon"):
   - MV changed to 30/75/120 (was 45/65/85).
-  - Base Dragon damage removed (was 60/120/180). Now uses the equipped weapon's element type and element damage.
-  - Element damage no longer scales with Attack stat.
-  - Element Modifier increased to 4.0x/10.0x/16.0x (up from 1.0x/1.0x/1.0x).
-  - > While the change to element modifier looks significant, it's mainly compensating for the loss of Attack stat scaling.
+  - Deals element damage based on the equipped weapon's element type and damage.
+    - Base Dragon damage removed (was 60/120/180).
+    - Element damage no longer scales with Attack stat.
+    - Element Modifier increased to 4.0x/10.0x/16.0x (up from 1.0x/1.0x/1.0x).
+    - > While the increase to element modifier looks significant, it is mainly compensating for the equally significant loss of Attack stat scaling.
   - Now affected by affinity and can deal critical damage.
+  - Now affected by sharpness damage modifiers.
 - Jumping Smash:
   - MV increased to 40 (up from 35).
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
@@ -877,8 +881,6 @@ The changes below mainly are intended to bring up underpowered moves to increase
   - Element Modifier increased to 0.3x/0.3x/0.45x/0.45x (up from 0.15x/0.2x/0.3x/0.3x).
   - Status Modifier increased to 0.3x/0.35x/0.4x/0.5x (up from 0.15x/0.2x/0.3x/0.3x).
   - Fixed Damage Removed (was 1/1/2/2).
-- Wall Shot:
-  - MV increased to 28/35 (up from 22/29).
 - Clutch Claw Weapon Attack:
   - Final Hit: 
     - Partbreak Modifier increased to 1.875x (up from 1.0x). 
