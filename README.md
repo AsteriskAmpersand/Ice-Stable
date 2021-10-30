@@ -58,25 +58,35 @@ If you were trying ICE before we switched to GitHub downloads, follow these one-
 # Save File System #
 ICE manages your character data in a separate save file named "SAVEDATA_ICE". The game normally uses the file named "SAVEDATA1000". These are both located in the standard save folder found at: `...\Steam\userdata\<steamId>\582010\remote\`
 
-Because ICE incorporates changes that are not backwards compatible with the base game, it is necessary for us to separate your save data in this way.
-
-If enabled, ICE will automatically use the "SAVEDATA_ICE" save file. Otherwise, your game will continue to use the "SAVEDATA1000" save file as normal.
-Should you want to copy your progress over to ICE:
-1. Remove "SAVEDATA_ICE" if it exists (or throw it another folder for safe keeping).
-2. Make a new copy of "SAVEDATA1000".
-3. Rename that copy to "SAVEDATA_ICE".
+Because ICE incorporates changes that are not backwards compatible with the base game, it is necessary for us to separate your save data in this way. This system also allows hunters to quickly switch between ICE and vanilla freely without having to swap out save files. If enabled, ICE will automatically use the "SAVEDATA_ICE" save file. Otherwise, your game will continue to use the "SAVEDATA1000" save file as normal.
 
 As always, it is recommended to make backups of your saves. It only takes one mistake to lose all your save data.
 
 ## Creating Your ICE Save File ##
 If you boot up the game with ICE enabled for the first time and it says no save data detected, but you want to use your existing character data, then just follow these steps:
 1. Hit yes to create a new ICE save but DON'T select a language.
-2. If you want to start a new save file, then continue with the setup process and skip the rest of the steps. Otherwise...
+2. If you want to start a new save file, then continue with the setup process in-game and skip the rest of the steps. Otherwise, continue with step 3.
 3. Close the game after the game creates the save file but before selecting a language.
 4. Navigate to your save folder at `...\Steam\userdata\<steamid>\582010\remote\`.
 5. Delete the "SAVEDATA_ICE" file that's in that folder.
 6. Make a copy of your "SAVEDATA1000" file and rename that copy to "SAVEDATA_ICE"
 7. Start the game again.
+
+## Updating Your ICE Save File ##
+If you've continued to play on your vanilla save and want to overwrite your ICE save progress, then follow these steps:
+1. Remove "SAVEDATA_ICE" if it exists (or throw it into another folder for safe keeping).
+2. Make a new copy of "SAVEDATA1000".
+3. Rename that copy to "SAVEDATA_ICE".
+
+- - - -
+
+# Known Issues #
+
+## Language Support ##
+ICE currently only officially supports English language for text. You can use any voice language you prefer though.
+
+## Incorrect Text / Descriptions ##
+Much of the text found in ICE has not yet been updated to reflect changes made to the game. Our primary focus is on testing gameplay changes first, in an effort to avoid losing time and effort to keep descriptions up-to-date as we try different changes. Once we're further in development, we'll put more effort into covering changes we've made, and also updating descriptions from the game that are inaccurate or ambigious.
 
 - - - -
 
@@ -194,7 +204,7 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 
 > Dev Comment: We understand these changes result in a decrease in the endgame power of hunters. While these endgame sets served as a nice final reward from Capcom for "finishing" the game, we don't think the power creep introduced by these sets are healthy in the context of ICE where we will be continually adding to the game. If/when we get around to incorporating additional endgame content, we may come back to revisit these changes when it's appropriate to have gear at these power levels.
 
-- Fatalis and Velkhana Gamma Sets have been reduced in skills and deco slots.
+- Fatalis and Velkhana Gamma Sets have been reduced in skills and deco slots. Fatalis Set no longer has access to Transcendence.
 - These sets should still be competitive compared to options before their introduction.
 - Changes to armors will be tracked separately on the Armor Spreadsheet.
 
@@ -326,7 +336,7 @@ There are no changes yet for this weapon.
 
 #### 【 Spirit Economy Rework 】 ####
 Spirit generation and consumption has been reworked in an effort to make Spirit management a more impactful component of Long Sword gameplay. The new Spirit changes will offer hunters a deeper system that better ties together the LS moveset. A summary of the biggest changes are listed here, but full details can be found in the General Changes section, along with explanations of the changes.
-- Foresight Slash no longer generates 100% spirit on success, but it also no longer deletes your 100% spirit on use. 
+- Foresight Slash no longer generates 100% spirit on success, but it also no longer deletes 100% spirit on use. 
 - Spirit regeneration buffs from Iai Slash and Spirit Helmbreaker have been drastically reduced.
 - Spirit Roundslash no longer deletes remaining Spirit on use, however its cost has been increased.
 - Spirit consuming moves have been adjusted where necessary to justify their Spirit costs.
@@ -334,9 +344,9 @@ Spirit generation and consumption has been reworked in an effort to make Spirit 
 
 #### 【 General Changes 】 ####
 The following changes generally fall in one of a few categories:
--Adjustments to Raw vs Element damage balance to increase the variety in competitive weapon options
--Small buffs to bring up weaker or under-utilized moves
--Adjustments to Spirit consuming moves, to ensure their benefits match their Spirit costs
+- Adjustments to Raw vs Element damage balance to increase the variety in competitive weapon options
+- Small buffs to bring up weaker or under-utilized moves
+- Adjustments to Spirit consuming moves, to ensure their benefits match their Spirit costs
 However, there is one notable change which has a large potential effect on playstyle: Iai Spirit Slash now can level up the Spirit Gauge on a successful counter, but at a cost of 35% Spirit. With this change, ISS is now a high risk and high reward alternative to FSS. Hunters now have the option to choose between these two counters with different strengths and weaknesses to suit a given situation, rather than relying heavily on Foresight Slash and Spirit Roundslash.
 The full changes are as follows:
 - Spirit Decay:
@@ -429,6 +439,11 @@ Certain moves for Hammer lacked the necessary innate knockback resistance needed
 - Side Slap -> Overhead Smash II -> Upswing Combo
 
 ### ──────────【 Hunting Horn 】────────── ###
+
+#### 【 Draw Attack 】 ####
+Forward Smash (aka Forward Slam) will no longer be performed when drawing the weapon while moving. Instead, the hunter will now simply perform a draw motion to unsheathe the weapon onto their shoulder. The hunter can choose to continue moving, or input an attack during the draw motion. This allows hunters to perform any of their normal moves (to play a note they desire) or perform various recitals, greatly enhancing the flexibility of the weapon.
+
+> Known Issues: The animations and transitions for the new draw animation will not look smooth for the time being. This will be addressed later.
 
 #### 【 General Changes 】 ####
 Hunting Horn has a lot of untapped potential, mainly as a result of poor damage tuning across its kit. While it has many interesting and unique attacks, most of them are too weak or situational to see much use. ICE aims to address these issues in the following ways:
@@ -560,42 +575,61 @@ Lance has a solid playstyle and was only lacking damage to compete with other we
 ### ──────────【 Gunlance 】────────── ###
 
 #### 【 XanSamHi's Omnilance Rework 】 ####
-Gunlance has received a major rework with three major changes:
+Gunlance has received a significant rework with four major changes:
 - Normal, Long, and Wide shelling types have been unified into a single new "Omni" type, which combines the strengths of all three. Hunters can now actively choose between all shelling attacks in combat, rather than being locked into spamming only a single optimal shelling attack for an entire run.
-- Wyrmstake Blast has been removed due to various problems with the implementation and the mostly negative impacts it had on Gunlance gameplay. Since Gunlance received Wyrmstake Blast instead of Master Rank's 1.5x Fixed Damage multiplier, we have opted to bake the damage difference into each shelling attack, as compensation. Shelling attacks should deal roughly 80% to 90% of the damage they used to deal while Wyrmstake Blast was active.
-- As a replacement for Wyrmstake Blast, the (mostly decorative) shield has gained a core role in Gunlance gameplay in the form of a guardpoint on Quick Reload. This guardpoint enables a more aggressive playstyle and allows hunters to keep pressuring monsters if timed correctly. For small or medium knockbacks, hunters can follow-up with any options already available after a Quick Reload, including comboing into an Overhead Smash and Full Burst.
+- The shelling level system has been reworked to span 9 shelling levels, to help smooth out weapon progression as High Rank effectively only had 1 shelling level (Lv4) compared to Low and Master Rank having 3 each. Now High Rank will also have 3 levels. This rework also includes better shelling level balance across all Gunlances, so there are more competitive weapon options available at all levels of progression.
+- Wyrmstake Blast has been removed due to various problems with the implementation and the mostly negative impacts it had on Gunlance gameplay. Since Gunlance received Wyrmstake Blast instead of Master Rank's 1.5x Fixed Damage multiplier, we have re-enabled this damage multiplier and rebalanced Shelling attacks around it. Shelling attacks should deal roughly 80% to 90% of the damage they used to deal while Wyrmstake Blast was active.
+- As a replacement for Wyrmstake Blast, the (previously decorative) shield has gained a core role in Gunlance gameplay in the form of a guardpoint on Quick Reload. This guardpoint enables a more aggressive playstyle and allows hunters to keep pressuring monsters if timed correctly. For small or medium knockbacks, hunters can follow-up with any options already available after a Quick Reload, including comboing into an Overhead Smash and Full Burst.
 
-The details of these changes are below:
-- Base shell capacity is 4. Capacity Boost skill can increase this by 2 (was 1).
+The details for these changes are below:
+- Base shell capacity for Omni type is 4. Capacity Boost skill can increase this by 2 (was 1).
+- All Shelling Attacks:
+  - Now affected by Master Rank's 1.5x Fixed Damage modifier.
 - Shelling (Uncharged):
   - Uses "Wide" type damage scaling and hitbox.
   - Consumes 2 shells per use (up from 1).
-  - Fixed Damage increased to 23/33/42/53/67/78/90 (up from 18/26/32/40/48/54/61).
+  - Fixed Damage changed to 10/16/20/26/30/40/46/50/60 (was 18/26/32/40/48/54/61).
+  - Fire Damage changed to 8/9/10/11/12/13/14/15/16 (was 6/8/10/11/12/13/14).
   - Partbreak Modifier increased to 1.16x (up from 1.00x).
 - Charged Shelling:
   - Uses "Wide" type damage scaling, but uses "Long" type hitbox.
   - Consumes 2 shells per use (up from 1).
-  - Fixed Damage multiplier increased to 2.17x (up from 1.4x).
+  - Fixed Damage multiplier increased to 1.8x (up from 1.4x).
   - Partbreak Modifier decreased to 1.32x (down from 1.5x).
+  - Charge time now affected by Artillery, instead of Focus.
+    - Artillery Lv3 grants a charge time reduction of 45% (equivalent to Focus Lv2).
+    - Artillery Lv5 grants a charge time reduction of 60% (equivalent to Focus Lv3).
 - Full Burst:
   - Uses "Wide" type damage scaling, but uses "Normal" type hitbox.
-  - Fixed Damage multiplier decreased to 0.75x (down from 0.9x), due to higher shell count.
+  - Fixed Damage multiplier decreased to 0.8x (down from 0.9x).
   - Partbreak Modifier increased to 1.22x (up from 1.0x).
-  - Per shell delay decreased to 0s (down from 0.05s).
+  - Per shell delay decreased to 0s (down from 0.05s), to increase consistency.
 - Wyvernfire:
   - Uses "Wide" type damage scaling and hitbox.
   - Changed to a single larger hit (was 3 small hits).
-  - Fixed Damage changed to 243/291/324/378/483/555/621 (up from 66/75/79/86/103/112).
-  - Fire Damage changed to 45/54/63/72/81/90/99 (up from 15/18/21/24/27/30/33).
+  - Fixed Damage changed to 80/90/100/150/200/250/266/355/444 (was 66/75/79/86/103/112).
+  - Fire Damage changed to 45/54/63/72/81/90/99/108/117 (was 15/18/21/24/27/30/33).
+  - Charge time increased to 3.5s (up from 2.0s).
+  - Cooldown Rate is no longer affected by Artillery skill.
 - Wyrmstake Cannon:
-  - Final Explosion Partbreak Modifier increased to 2.7x (up from 1.5x).
+  - Ticks:
+    - MV changed to 6/8/10/12/14/16/18/20/22 (was 6/8/11/14/17/20/23).
+    - Element and Status Modifiers increased to 0.8x (up from 0.0x).
+  - Final Explosion:
+    - MV changed to 31/36/41/46/55/61/67/70/76 (was 31/36/41/46/55/61/67).
+    - Fire Damage changed 12/15/18/21/24/27/30/33/36 (was 12/15/18/21/24/27/30).
+    - Partbreak Modifier increased to 2.7x (up from 1.5x).
 - Wyrmstake Blast:
-  - This attack has been removed.
+  - This attack has been removed for now.
 - Full Reload: Replaced by Quick Reload.
 - Quick Reload:
   - Now has a guardpoint starting from 0.166s from the start of the animation, lasting 0.60s.
-  - Now also reloads Wyrmstake ammo.
+  - Now reloads Wyrmstake ammo.
   - Now usable while at full ammo.
+- Step Dodge / Hop:
+  - Can now combo into Shelling attack or Quick Reload using their respective usual keybinds.
+  - Forward distance increased to 3.0m (up from 2.3m).
+  - Left & Right distance changed to 2.8m & 2.8m (was 2.6m & 2.8m).
 
 #### 【 Sharpness Changes 】 ####
 The following changes were made to reduce the significant sharpness consumption of Gunlance that generally makes Razor Sharp mandatory on every build. We believe this is an excessive restriction on build variety, given the high quantity of skills that Gunlance hunters want to use already.
@@ -608,22 +642,6 @@ The following changes were made to reduce the significant sharpness consumption 
   - Sharpness cost negation chance for shelling attacks increased to 50%/70% (up from 10%/20%).
   - > The above changes result in RS/TRS changing from 55%/60% to 50%/70% average cost reduction on Shelling, Charged Shelling, and Full Bursts, and its value is now more consistent with other melee weapons.
 
-#### 【 General Changes 】 ####
-Most of the following changes were made to ensure normal attacks would keep up with shelling attacks, so that hunters can continue benefiting from using a mix of normal and shelling attacks.
-- Lateral Thrust:
-  - MV increased to 32 (up from 24).
-- Guard Thrust:
-  - MV increased to 24 (up from 18).
-- Overhead Smash:
-  - MV increased to 52 (up from 48).
-- Wide Sweep:
-  - MV increased to 80 (up from 68).
-- Aerial Burst:
-  - First Hit MV increased to 80 (up from 68).
-- Step Dodge / Hop:
-  - Can now combo into Shelling attack or Quick Reload using their respective usual keybinds.
-  - Forward distance increased to 3.0m (up from 2.3m).
-  - Left & Right distance changed to 2.8m & 2.8m (was 2.6m & 2.8m).
 
 ### ──────────【 Switch Axe 】────────── ###
 
