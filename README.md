@@ -78,6 +78,9 @@ If you've continued to play on your vanilla save and want to overwrite your ICE 
 2. Make a new copy of "SAVEDATA1000".
 3. Rename that copy to "SAVEDATA_ICE".
 
+## Photo Data ##
+ICE currently does not isolate photo/image data. As such, if you do use the in-game photo feature, make sure to backup the 3 photo data files in your save folder at `...\Steam\userdata\<steamid>\582010\remote\`. If the game detects a mismatch between your save file and your photo data, it will ask to create a new one, which would delete your photo data in the process.
+
 - - - -
 
 # Known Issues #
@@ -87,6 +90,12 @@ ICE currently only officially supports English language for text. You can use an
 
 ## Incorrect Text / Descriptions ##
 Much of the text found in ICE has not yet been updated to reflect changes made to the game. Our primary focus is on testing gameplay changes first, in an effort to avoid losing time and effort to keep descriptions up-to-date as we try different changes. Once we're further in development, we'll put more effort into covering changes we've made, and also updating descriptions from the game that are inaccurate or ambigious.
+
+## Photo Data ##
+ICE currently does not isolate photo/image data. As such, if you do use the in-game photo feature, make sure to backup the 3 photo data files in your save folder at `...\Steam\userdata\<steamid>\582010\remote\`. If the game detects a mismatch between your save file and your photo data, it will ask to create a new one, which would delete your photo data in the process.
+
+## Quest: ★1 Learning the Clutch ##
+This quest cannot currently be completed as intended due to the fact that Clagger is removed in ICE. A temporary fix has been put in place to allow the quest to be completed by killing the Great Jagras. In the future, we'll address this issue properly by updating the quest to account for Clagger removal, or replace the quest entirely.
 
 - - - -
 
@@ -269,7 +278,7 @@ The following changes are intended to offer a new playstyle option for GS that i
   - Overhead Slash, Wide Slash, and Rising Slash increase combo count by 1, up to a maximum of 3.
   - These moves can now combo directly into Jumping Wide Slash (Triangle+R2). 
   - Jumping Wide Slash's power level will match the hunter's current combo count.
-  - Side Blow can be used after Overhead Slash, without resetting the current combo count.
+  - Side Blow and Tackle can be used without resetting the current combo count.
   - Combo count resets when performing any other actions or attacks (idle, evading, etc) not mentioned above.
 - Overhead Slash:
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
@@ -282,6 +291,15 @@ The following changes are intended to offer a new playstyle option for GS that i
 - Side Blow:
   - Stun buildup increased to 40 (up from 20).
   - Exhaust buildup increased to 30 (up from 15).
+- Jumping Wide Slash:
+  - MV increased to 90/120/150 (up from 75/96/118).
+  - Element and Status Modifiers increased to 4.5x/6.0x/7.5x (up from 2.2x/3.15x/3.5x).
+  - Partbreak Modifier increased to 1.2x/1.3x/1.4x (up from 1.0x/1.0x/1.0x).
+
+#### 【 General Changes 】 ####
+- Kick: 
+  - Stun value increased to 20 (up from 10).
+  - Exhaust value increased to 15 (up from 5).
 - Wide Slash v2:
   - MV increased to 42 (up from 26).
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
@@ -291,24 +309,6 @@ The following changes are intended to offer a new playstyle option for GS that i
 - Side Blow v2:
   - Stun buildup increased to 50 (up from 30).
   - Exhaust buildup increased to 35 (up from 20).
-- Jumping Wide Slash Lv1:
-  - MV increased to 92 (up from 75).
-  - Element and Status Modifiers increased to 2.6x (up from 2.2x).
-  - Partbreak Modifier increased to 1.2x (up from 1.0x).
-- Jumping Wide Slash Lv2:
-  - MV increased to 123 (up from 96).
-  - Element and Status Modifiers increased to 3.6x (up from 3.15x).
-  - Partbreak Modifier increased to 1.3x (up from 1.0x).
-- Jumping Wide Slash Lv3:
-  - MV increased to 163 (up from 118).
-  - Element and Status increased to 5.0x (up from 3.5x).
-  - Partbreak Modifier increased to 1.4x (up from 1.0x).
-
-#### 【 General Changes 】 ####
-Great Sword's main playstyle around charged-based attacks is in a solid place currently. As such, only 
-minor quality of life improvements were added.
-- Kick: 
-  - Stun value increased to 50 (up from 10).
 - True Charge Slash:
   - First Hit: 
     - Status Mod decreased to 0.0x (down from 1.0x). 
@@ -317,15 +317,17 @@ minor quality of life improvements were added.
     - Status modifiers increased by an additional 1.0x. 
     - > This change compensates for the loss of status application on the first hit.
 - Clutch Claw Weapon Attack:
-  - Repeated Hits: 
-    - Merged into a single hit.
-    - MV changed to 25 (was 6 per hit).
-    - Element and Status Modifiers changed to 2.0x (was 0.5x per hit).
-    - > This change brings sharpness drain more in-line with other GS attacks.
-  - Final Hit:
-    - Partbreak Modifier increased to 1.85x (up from 1.0x).
-    - > This change compensates for earlier hits having Partbreak Modifiers of 0.0x.
-    
+  - First Hit:
+    - No changes.
+  - Second Hit + Repeated Hits + Final Hit:
+    - Combined into a single larger hit.
+    - MV changed to 90 (was at minimum 6+6+60).
+    - Element and Status Modifiers changed to 4.0x (was at minimum 1.0x+0.5x+1.0x).
+    - Partbreak Modifier changed to 1.5x (was 0.0x+0.0x+1.0x).
+      - > Compensates for first hit having a Partbreak Modifier of 0.0x.
+    - Softening Buildup changed to 70 (was 30+40+0).
+
+
 ### ──────────【 Sword & Shield 】────────── ###
 There are no changes yet for this weapon.
 
@@ -503,6 +505,7 @@ The full details can be found below:
   - MV changed to 30/75/120 (was 45/65/85).
   - Deals element damage based on the equipped weapon's element type and damage.
     - Base Dragon damage removed (was 60/120/180).
+    - Base Elder Seal Buildup removed (was 15/30/55).
     - Element damage no longer scales with Attack stat.
     - Element Modifier increased to 4.0x/10.0x/16.0x (up from 1.0x/1.0x/1.0x).
     - > While the increase to element modifier looks significant, it is mainly compensating for the equally significant loss of Attack stat scaling.
@@ -578,7 +581,7 @@ Lance has a solid playstyle and was only lacking damage to compete with other we
 Gunlance has received a significant rework with four major changes:
 - Normal, Long, and Wide shelling types have been unified into a single new "Omni" type, which combines the strengths of all three. Hunters can now actively choose between all shelling attacks in combat, rather than being locked into spamming only a single optimal shelling attack for an entire run.
 - The shelling level system has been reworked to span 9 shelling levels, to help smooth out weapon progression as High Rank effectively only had 1 shelling level (Lv4) compared to Low and Master Rank having 3 each. Now High Rank will also have 3 levels. This rework also includes better shelling level balance across all Gunlances, so there are more competitive weapon options available at all levels of progression.
-- Wyrmstake Blast has been removed due to various problems with the implementation and the mostly negative impacts it had on Gunlance gameplay. Since Gunlance received Wyrmstake Blast instead of Master Rank's 1.5x Fixed Damage multiplier, we have re-enabled this damage multiplier and rebalanced Shelling attacks around it. Shelling attacks should deal roughly 80% to 90% of the damage they used to deal while Wyrmstake Blast was active.
+- Wyrmstake Blast has been removed due to various problems with the implementation and the mostly negative impacts it had on Gunlance gameplay. Since Gunlance received Wyrmstake Blast instead of Master Rank's 1.5x Fixed Damage multiplier, we have re-enabled this damage multiplier and rebalanced Shelling attacks around it. Shelling attacks in Master Rank content, should deal roughly 80% of the damage they used to deal while Wyrmstake Blast was active.
 - As a replacement for Wyrmstake Blast, the (previously decorative) shield has gained a core role in Gunlance gameplay in the form of a guardpoint on Quick Reload. This guardpoint enables a more aggressive playstyle and allows hunters to keep pressuring monsters if timed correctly. For small or medium knockbacks, hunters can follow-up with any options already available after a Quick Reload, including comboing into an Overhead Smash and Full Burst.
 
 The details for these changes are below:
@@ -590,26 +593,24 @@ The details for these changes are below:
   - Consumes 2 shells per use (up from 1).
   - Fixed Damage changed to 10/16/20/26/30/40/46/50/60 (was 18/26/32/40/48/54/61).
   - Fire Damage changed to 8/9/10/11/12/13/14/15/16 (was 6/8/10/11/12/13/14).
-  - Partbreak Modifier increased to 1.16x (up from 1.00x).
 - Charged Shelling:
   - Uses "Wide" type damage scaling, but uses "Long" type hitbox.
   - Consumes 2 shells per use (up from 1).
-  - Fixed Damage multiplier increased to 1.8x (up from 1.4x).
-  - Partbreak Modifier decreased to 1.32x (down from 1.5x).
+  - Fixed Damage multiplier increased to 2.0x (up from 1.4x).
+  - Partbreak Modifier decreased to 1.4x (down from 1.5x).
   - Charge time now affected by Artillery, instead of Focus.
     - Artillery Lv3 grants a charge time reduction of 45% (equivalent to Focus Lv2).
     - Artillery Lv5 grants a charge time reduction of 60% (equivalent to Focus Lv3).
 - Full Burst:
   - Uses "Wide" type damage scaling, but uses "Normal" type hitbox.
   - Fixed Damage multiplier decreased to 0.8x (down from 0.9x).
-  - Partbreak Modifier increased to 1.22x (up from 1.0x).
   - Per shell delay decreased to 0s (down from 0.05s), to increase consistency.
-- Wyvernfire:
+- Wyvern's Fire:
   - Uses "Wide" type damage scaling and hitbox.
   - Changed to a single larger hit (was 3 small hits).
   - Fixed Damage changed to 80/90/100/150/200/250/266/355/444 (was 66/75/79/86/103/112).
   - Fire Damage changed to 45/54/63/72/81/90/99/108/117 (was 15/18/21/24/27/30/33).
-  - Charge time increased to 3.5s (up from 2.0s).
+  - Charge time increased to 2.7s (up from 2.0s).
   - Cooldown Rate is no longer affected by Artillery skill.
 - Wyrmstake Cannon:
   - Ticks:
@@ -618,7 +619,6 @@ The details for these changes are below:
   - Final Explosion:
     - MV changed to 31/36/41/46/55/61/67/70/76 (was 31/36/41/46/55/61/67).
     - Fire Damage changed 12/15/18/21/24/27/30/33/36 (was 12/15/18/21/24/27/30).
-    - Partbreak Modifier increased to 2.7x (up from 1.5x).
 - Wyrmstake Blast:
   - This attack has been removed for now.
 - Full Reload: Replaced by Quick Reload.
