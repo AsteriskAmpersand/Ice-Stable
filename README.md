@@ -581,7 +581,7 @@ Lance has a solid playstyle and was only lacking damage to compete with other we
 Gunlance has received a significant rework with four major changes:
 - Normal, Long, and Wide shelling types have been unified into a single new "Omni" type, which combines the strengths of all three. Hunters can now actively choose between all shelling attacks in combat, rather than being locked into spamming only a single optimal shelling attack for an entire run.
 - The shelling level system has been reworked to span 9 shelling levels, to help smooth out weapon progression as High Rank effectively only had 1 shelling level (Lv4) compared to Low and Master Rank having 3 each. Now High Rank will also have 3 levels. This rework also includes better shelling level balance across all Gunlances, so there are more competitive weapon options available at all levels of progression.
-- Wyrmstake Blast has been removed due to various problems with the implementation and the mostly negative impacts it had on Gunlance gameplay. Since Gunlance received Wyrmstake Blast instead of Master Rank's 1.5x Fixed Damage multiplier, we have re-enabled this damage multiplier and rebalanced Shelling attacks around it. Shelling attacks in Master Rank content, should deal roughly 80% of the damage they used to deal while Wyrmstake Blast was active.
+- Wyrmstake Blast has been removed due to various problems with the implementation and the mostly negative impacts it had on Gunlance gameplay. Since Gunlance received Wyrmstake Blast instead of Master Rank's 1.5x Fixed Damage multiplier, we have re-enabled this damage multiplier and rebalanced Shelling attacks around it.
 - As a replacement for Wyrmstake Blast, the (previously decorative) shield has gained a core role in Gunlance gameplay in the form of a guardpoint on Quick Reload. This guardpoint enables a more aggressive playstyle and allows hunters to keep pressuring monsters if timed correctly. For small or medium knockbacks, hunters can follow-up with any options already available after a Quick Reload, including comboing into an Overhead Smash and Full Burst.
 
 The details for these changes are below:
@@ -591,7 +591,7 @@ The details for these changes are below:
 - Shelling (Uncharged):
   - Uses "Wide" type damage scaling and hitbox.
   - Consumes 2 shells per use (up from 1).
-  - Fixed Damage changed to 10/16/20/26/30/40/46/50/60 (was 18/26/32/40/48/54/61).
+  - Fixed Damage changed to 10/16/20/26/30/36/46/50/56 (was 18/26/32/40/48/54/61).
   - Fire Damage changed to 8/9/10/11/12/13/14/15/16 (was 6/8/10/11/12/13/14).
 - Charged Shelling:
   - Uses "Wide" type damage scaling, but uses "Long" type hitbox.
@@ -615,7 +615,7 @@ The details for these changes are below:
 - Wyrmstake Cannon:
   - Ticks:
     - MV changed to 6/8/10/12/14/16/18/20/22 (was 6/8/11/14/17/20/23).
-    - Element and Status Modifiers increased to 0.8x (up from 0.0x).
+    - Element and Status Modifiers increased to 0.3x (up from 0.0x).
   - Final Explosion:
     - MV changed to 31/36/41/46/55/61/67/70/76 (was 31/36/41/46/55/61/67).
     - Fire Damage changed 12/15/18/21/24/27/30/33/36 (was 12/15/18/21/24/27/30).
@@ -649,11 +649,11 @@ The following changes were made to reduce the significant sharpness consumption 
 Sword Gauge generation has been changed to be focused around the active use of Axe Mode attacks, instead of either waiting for Sword Gauge or only using Axe Mode Morph Attacks. In addition, gauge generation and consumption has been increased to reduce resource pooling and encourage more proactive switching between modes to manage Sword Gauge and Amp Charge.
 - Sword Mode minimum gauge requirement decreased to 0% (down from 30%).
 - Reload: Gauge generation decreased to 5% (down from 30%).
-- Axe Mode passive regen decreased to 0% (down from 4% per 1.5sec).
-- Axe Mode Attacks: Gauge generation increased to 8% (up from 0%).
+- Axe Mode passive regen removed (down from 4% per 1.5sec).
+- Axe Mode Attacks: Gauge generation increased to 8% per hit (up from 0%).
 - Axe Mode Morph Attack: 
   - Gauge generation decreased to 10% (down from 15%). 
-  - Also counts as an Axe Mode Attack, so generates 18% gauge in total.
+  - > This attack still counts as an Axe Mode Attack, so generates 18% gauge in total when successfully hitting a monster.
 - Sword Mode Attacks:
   - Gauge consumption increased.
   - See General Changes section for details on individual attacks.
