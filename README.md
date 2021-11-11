@@ -278,8 +278,8 @@ The following changes are intended to offer a new playstyle option for GS that i
   - Overhead Slash, Wide Slash, and Rising Slash increase combo count by 1, up to a maximum of 3.
   - These moves can now combo directly into Jumping Wide Slash (Triangle+R2). 
   - Jumping Wide Slash's power level will match the hunter's current combo count.
-  - Side Blow and Tackle can be used without resetting the current combo count.
-  - Combo count resets when performing any other actions or attacks (idle, evading, etc) not mentioned above.
+  - Side Blow, Tackle, and Slinger Burst can be used without resetting the current combo count.
+  - Combo count resets when performing any other actions or attacks not mentioned above (idle, evading, charging attacks, etc).
 - Overhead Slash:
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
 - Wide Slash:
@@ -295,11 +295,6 @@ The following changes are intended to offer a new playstyle option for GS that i
   - MV increased to 90/120/150 (up from 75/96/118).
   - Element and Status Modifiers increased to 4.5x/6.0x/7.5x (up from 2.2x/3.15x/3.5x).
   - Partbreak Modifier increased to 1.2x/1.3x/1.4x (up from 1.0x/1.0x/1.0x).
-
-#### 【 General Changes 】 ####
-- Kick: 
-  - Stun value increased to 20 (up from 10).
-  - Exhaust value increased to 15 (up from 5).
 - Wide Slash v2:
   - MV increased to 42 (up from 26).
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
@@ -309,6 +304,12 @@ The following changes are intended to offer a new playstyle option for GS that i
 - Side Blow v2:
   - Stun buildup increased to 50 (up from 30).
   - Exhaust buildup increased to 35 (up from 20).
+
+
+#### 【 General Changes 】 ####
+- Kick: 
+  - Stun value increased to 20 (up from 10).
+  - Exhaust value increased to 15 (up from 5).
 - True Charge Slash:
   - First Hit: 
     - Status Mod decreased to 0.0x (down from 1.0x). 
