@@ -524,27 +524,32 @@ The full details can be found below:
 ### ──────────【 Lance 】────────── ###
 
 #### 【 General Changes 】 ####
-Lance has a solid playstyle and was only lacking damage to compete with other weapons. As such, most attacks were simply increased in power. In addition, the Raw vs Element balance was adjusted to increase the variety of competitive weapon options.
+Lance has a solid playstyle and was only lacking damage to compete with other weapons. As such, most attacks were simply increased in power to an appropriate level relative to other weapons. In addition, the Raw vs Element balance of its attack was adjusted to increase the variety of competitive weapon options.
 
 - Mid Thrusts:
-  - MV increased to 24/24/32 (up from 20/20/27).
+  - MV increased to 23/23/30 (up from 20/20/27).
   - Element and Status Modifiers increased to 0.8x/0.8x/0.9x (up from 0.7x/0.7x/0.7x).
 - High Thrusts:
-  - MV increased to 26/26/32 (up from 22/22/27).
+  - MV increased to 25/25/30 (up from 22/22/27).
   - Element and Status Modifiers increased to 0.8x/0.8x/0.9x (up from 0.7x/0.7x/0.7x).
-- Wide Sweep:
-  - MV increased to 34 (up from 20).
-  - Element and Status Modifiers increased to 1.0x (up from 0.7x).
+- Wide Sweeps:
+  - MV increased to 32/32/40 (up from 20/20/20).
+  - Element and Status Modifiers increased to 1.0x/1.0x/1.2x (up from 0.7x/0.7x/0.7x).
   - Changed to have Mind's Eye effect.
-- Counter Thrust: 
+- Counter Thrust:
   - MV increased to 46 (up from 40).
   - Element and Status Modifiers increased to 1.25x (up from 0.7x).
+- Power Guard:
+	- When held for 1.2s, increases Counter Thrust physical damage by 1.3x and grants the effects of Guard Up (previously only granted the effects of Guard Up).
+	- > This change is intended to give an alternative incentive for committing to a Power Guard, rather than solely for Guard Up. While this option is powerful, it is limited by OFG procs, stamina usage, increased chip damage, and high animation commitment.
 - Leaping Thrust:
-  - MV increased to 10 (up from 8).
-  - Element and Status Modifiers increased to 0.35x (up from 0.3x).
+  - MV increased to 11 (up from 8).
+  - Element and Status Modifiers increased to 0.4x (up from 0.3x).
 - Dash Attack:
-  - MV increased to 14 (up from 11).
-  - Element and Status Modifiers increased to 0.4x (up from 0.2x).
+	- Startup time significantly reduced when used after Mid Thrust III, High Thrust III, or Wide Sweep III.
+	- No longer cancels when running into walls or terrain.
+  - MV increased to 12 (up from 11).
+  - Element and Status Modifiers increased to 0.5x (up from 0.2x).
 - Finishing Thrust:
   - MV increased to 60 (up from 50).
   - Element and Status Modifiers increased to 1.6x (up from 0.8x).
@@ -555,22 +560,27 @@ Lance has a solid playstyle and was only lacking damage to compete with other we
   - MV increased to 60 (up from 50).
   - Element and Status Modifiers increased to 1.6x (up from 0.8x).
 - Jumping Thrust / Advancing Jump Thrust:
-  - MV increased to 36 (up from 30).
+  - MV increased to 32 (up from 30).
   - Element and Status Modifiers increased to 1.0x (up from 0.7x).
 - Dash Attack (Midair):
   - MV increased to 30 (up from 25).
   - Element and Status Modifiers increased to 1.0x (up from 0.7x).
 - Shield Attack:
-  - MV increased to 20 (up from 14).
+  - MV increased to 24 (up from 14).
   - Partbreak Modifier increased to 1.2x (up from 1.0x).
   - Stun buildup increased to 45 (up from 27).
-  - Exhaust buildup decreased to 25 (down from 27).
+  - Exhaust buildup increased to 30 (up from 27).
 - Counter Claw (Second Hit):
   - MV increased to 24 (up from 16).
   - Stun buildup increased to 35 (up from 30).
   - Exhaust buildup decreased to 30 (down from 33).
 - Mounting Finishing Thrust: 
-  - MV increased to 80/20/40 (up from 40/10/20).
+  - MV increased to 40+20+80 (up from 40+10+20).
+	- Element Modifiers changed to 1.0x+0.5x+2.0x (was 1.0x+1.0x+1.0x).
+	- Status Modifiers changed to 1.0x+0.5x+2.0x (was 0.7x+0.7x+0.7x).
+	- Third Hit:
+		- Partbreak Modifier increased to 1.75x (up from 1.0x).
+		- > Compensates for first two hits having a Partbreak Mod of 0.0x.
 - Clutch Claw Weapon Attack:
   - Second Hit: 
     - Partbreak Modifier increased to 1.75x (up from 1.0x).
@@ -605,7 +615,6 @@ The details for these changes are below:
 - Full Burst:
   - Uses "Wide" type damage scaling, but uses "Normal" type hitbox.
   - Fixed Damage multiplier decreased to 0.8x (down from 0.9x).
-  - Per shell delay decreased to 0s (down from 0.05s), to increase consistency.
 - Wyvern's Fire:
   - Uses "Wide" type damage scaling and hitbox.
   - Changed to a single larger hit (was 3 small hits).
@@ -628,7 +637,7 @@ The details for these changes are below:
   - Now reloads Wyrmstake ammo.
   - Now usable while at full ammo.
 - Step Dodge / Hop:
-  - Can now combo into Shelling attack or Quick Reload using their respective usual keybinds.
+  - Can now combo into Shelling attack, Charged Shelling attack, or Quick Reload using their respective usual keybinds.
   - Forward distance increased to 3.0m (up from 2.3m).
   - Left & Right distance changed to 2.8m & 2.8m (was 2.6m & 2.8m).
 
@@ -910,6 +919,9 @@ The changes below mainly are intended to bring up underpowered moves to increase
   - Fixed a bug causing Power Shot Lv2 and Lv3 arrow patterns to be right-biased.
   - Patterns are now correctly symmetrical.
   - Reference: <https://twitter.com/AsteriskAmpers1/status/1235082146743803904>
+- Charge Step direction and aiming:
+  - Fixed a bug causing Charge Step to move in directions different than the player's directional input, when performed while the Hunter is starting to aim.
+
   
 ### ──────────【 Bowgun Ammos 】────────── ###
 Many of the following changes are intended to address ammo-to-ammo balance, with the intent of giving hunters more competitive options when choosing an ammo for a particular matchup.
