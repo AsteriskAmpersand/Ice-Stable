@@ -1020,6 +1020,19 @@ Many of the following changes are intended to address ammo-to-ammo balance, with
 
 ### ──────────【 Heavy Bowgun 】────────── ###
 
+
+#### 【 Melee Attack Hyper Armor 】 ####
+- Bowgun melee attack has been given 15 frames of hyperarmor (from frame 7 to 22).
+-> HBG wanted a way of dealing with calculated trades at short range but without completely invalidating its roll.
+- The animation was shortened by 25%.
+- If a hit connects it gets additional 15 frames of Hyperarmor and the animation finishes 10% faster.
+-> This rewards using the move when in melee range, vs using it freely at farther ranges.
+- It now consumes 25 points of stamina (affected by stamina cost reducers).
+- If one attempts to perform the move without stamina it will perform the traditional melee attack (without hyperarmor or accelerated animation).
+- The traditional melee attack now slows stamina regeneration to 10% during it's animation.
+-> This limits the spamming potential of the move
+
+#### 【 Numerical Changes 】 ####
 - Close Range Up Mod: Maximum active range increased to 8m (up from 6m).
 - Long Range Up Mod: Minimum active range decreased to 10m (down from 16m).
 - Special Scope Mod:
@@ -1046,7 +1059,7 @@ Many of the following changes are intended to address ammo-to-ammo balance, with
   - Perfect Match:
     - MV increased to 350 (up from 243).
     - Stun buildup increased to 300 (up from 60).
-    
+
 ### ──────────【 Light Bowgun 】────────── ###
 
 - Light Bowgun mod slot limit increased to 5 (up from 4).
