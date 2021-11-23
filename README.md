@@ -170,6 +170,17 @@ Dracolites have been added to Guiding Lands drop tables, providing hunters the o
 - Guiding Lands Material mining and gathering rates have been strongly boosted.
 - Full details can be found here: <https://www.nexusmods.com/monsterhunterworld/mods/2164>
 
+#### 【 High Rank Augments 】 ####
+Smithy costs for the following have been adjusted to better balance material usage in High Rank, and allow Rarity 6 weapons to act as a stronger progression step before Rarity 7 or 8 augmented weapons.
+- Augments for Rarity 6 weapons changed to use 1x Streamstone instead of 1x Warrior's Streamstone.
+- Augments for Rarity 7 weapons changed to use 1x Warrior's Streamstone (down from 2x Warrior's Streamstones).
+
+The following new melding recipes have been added at the Elder Melder, to give hunters more control over their experience around farming High Rank augments:
+- All 7 types of Warrior's Streamstones can be melded from 2 Warrior's Streamstones of any type.
+- All 7 types of Hero's Streamstones can be melded from 2 Hero's Streamstones of any type.
+- 2 Warrior's Streamstones can be melded from a single Hero's Streamstone of the same type.
+- Hero's Streamstones can be melded from 4 Warrior's Streamstones of the same type.
+
 ### ──────────【 Skills 】────────── ###
 While a more comprehensive rework and rebalancing of skills is planned for ICE in the future, some skills have been tweaked in the mean time with the an emphasis on increasing the variety of competitive options for hunters. This is mainly accomplished by:
 1. Changing skills to have a more meaningful impact on gameplay.
@@ -269,6 +280,9 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
     - Research Point costs for Mega Fertilizer, Choice Mushroom Substrate, Thick Summoner Jelly, and Ancient Catalyst have been reduced. 
     - Ancient Catalyst duration increased to 5 quests (up from 4), to justify its higher cost relative to normal Catalyst.
     - > Since these fertilizers have lost their main advantage of allowing hunters to stack fertilzers faster between quests, they are now positioned as slightly more efficient versions of the basic fertilizers.
+- Elder Melder:
+  - Seasonal event tickets can be melded from 2 similar event tickets (down from 3).
+  - Melding recipes for Whetfish Fin and Whetfish Fin + have been added. The plus variant is unlocked in MR.
 
 #### 【 Combat Changes 】 ####
 - Airborne Launches:
@@ -303,7 +317,7 @@ Due to element damage output increasing significantly on many weapon types, Alat
 ### ──────────【 Great Sword 】────────── ###
 
 #### 【 New Alternate Playstyle: Combo Great Sword 】 ####
-The following changes are intended to offer a new playstyle option for GS that is competitive with the current TCS-focused playstyle, without replacing it. Combat will be focused around utilizing non-charging combo attacks to lead into Jumping Wide Slash as a powerful combo finisher. Finding windows to fit in JWS safely and also achieving longer combos, will be core to mastering this playstyle. This playstyle will favor elemental builds.
+The following changes are intended to offer a new playstyle option for GS that is competitive with the current TCS-focused playstyle, without replacing it. Combat will be focused around utilizing non-charging combo attacks to lead into Jumping Wide Slash as a powerful combo finisher. Finding openings to fit powered-up Jumping Wide Slashes safely, will be core to mastering this playstyle. This playstyle will favor elemental builds.
 - New Combo System:
   - Overhead Slash, Wide Slash, and Rising Slash increase combo count by 1, up to a maximum of 3.
   - These moves can now combo directly into Jumping Wide Slash (Triangle+R2). 
@@ -322,9 +336,10 @@ The following changes are intended to offer a new playstyle option for GS that i
   - Stun buildup increased to 40 (up from 20).
   - Exhaust buildup increased to 30 (up from 15).
 - Jumping Wide Slash:
-  - MV increased to 90/120/150 (up from 75/96/118).
-  - Element and Status Modifiers increased to 4.5x/6.0x/7.5x (up from 2.2x/3.15x/3.5x).
+  - MV increased to 80/120/150 (up from 75/96/118).
+  - Element and Status Modifiers increased to 4.0x/6.0x/7.5x (up from 2.2x/3.15x/3.5x).
   - Partbreak Modifier increased to 1.2x/1.3x/1.4x (up from 1.0x/1.0x/1.0x).
+  - Recovery frames can be partially canceled by sheathing.
 - Wide Slash v2:
   - MV increased to 42 (up from 26).
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
@@ -447,7 +462,7 @@ The full changes are as follows:
   - > In vanilla, FSS's ability to instantly fill the Spirit bar (or delete the bar on failed counters) negated most of the value in generating Spirit with other moves. With these changes, FSS is no longer a Spirit generator, but it still remains a powerful defensive tool.
 - Special Sheathe:
   - Quick Sheathe bonus effect changed to apply fully to sheathing animation.
-  - Can be canceled via dodge roll.
+  - Upon sheathing, can be canceled by rolling after a 1 second delay.
 - Iai Slash:
   - MV decreased to 16+12 (down from 18+13).
   - Spirit generation increased to 5% per hit (up from 0%).
@@ -474,6 +489,10 @@ The full changes are as follows:
     - > These changes increase the damage per hit by 3x, but reduce the number of hits by 3x.
     - Partbreak Modifier increased to 1.4x (up from 1.0x).
     - > This change compensates for the first hit having a Partbreak Mod of 0.0x.
+
+#### 【 Quality of Life 】 ####
+- Spirit Gauge HUD components sharpened for improved visual clarity.
+- A subtle mark has been added to the gauge, representing the 35% Spirit needed for Spirit Roundslash and Iai Spirit Slash.
 
 ### ──────────【 Hammer 】────────── ###
 
@@ -847,6 +866,7 @@ Too much of Switch Axe's damage output was locked behind phial bonuses (especial
 - Amped Element Discharge:
   - MV increased to 90 (up from 82).
 - Super Amped Element Discharge:
+  - Timing of phial usage synchronized with the timing of the Phial explosions, to avoid losing phials when interrupted.
   - First Hit (Back Swing): 
     - Partbreak Modifier decreased to 0.0x (down from 1.00x). 
     - > Avoids situations where flinch/trips on first hit cause the rest of the attack to miss.
