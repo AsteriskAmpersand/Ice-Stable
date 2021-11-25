@@ -223,6 +223,8 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
   - Element Conversion rate for normal weapons increased to 8% (up from 5%).
   - Element Conversion rate for Bowguns increased to 8% (up from 2%).
   > The above changes allow the Alatreon set to perform closer to other element oriented sets.
+- Master's Touch (Set Bonus):
+  - Changed from triggering on critical hits to triggering on hitting weak spots.
 
 ### ──────────【 Equipment 】────────── ###
 
