@@ -1,0 +1,196 @@
+{
+    "functions": [
+                {
+            "name": "unaryOpExport",
+            "id": "0x80"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x81"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x82"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x83"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x84"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x85"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x86"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x87"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x88"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x89"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x8a"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x8b"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x8c"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x8d"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x8e"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x8f"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x90"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x91"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x92"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0x93"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0xa8"
+        },
+        {
+            "name": "unaryOpExport",
+            "id": "0xaa"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0x94"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0x95"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0x96"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0x97"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0x98"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0x99"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0x9a"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0x9b"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0x9c"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0x9d"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0x9e"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0x9f"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0xa0"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0xa1"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0xa2"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0xa3"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0xa4"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0xa5"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0xa6"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0xa7"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0xa9"
+        },
+        {
+            "name": "binaryOpExport",
+            "id": "0xab"
+        },
+        {
+            "name": "modifyHP",
+            "id": "0x3000"
+        },
+        {
+            "name": "modifyStamina",
+            "id": "0x3001"
+        },
+        {
+            "name": "enrageMonster",
+            "id": "0x3002"
+        },
+        {
+            "name": "decayTimer",
+            "id": "0x3003"
+        }
+        ]
+}
