@@ -213,6 +213,8 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
 - Power Prolonger: 
   - Dual Blades & Switch Axe bonus decreased to 1.15x/1.30x/1.40x (down from 1.3x/1.6x/2.0x).
   - Long Sword, Charge Blade, & Insect Glaive bonus changed to 1.15x/1.30x/1.40x (was 1.1x/1.2x/1.4x).
+- Item Prolonger:
+  - Increased bonus to 33%/66%/100% (from 10%/25%/50%)
 - Critical Element / True Critical Element:
   - Great Sword multipliers decreased to 1.35x/1.55x (down from 1.5x/1.7x).
   - Hunting Horn multipliers decreased to 1.35x/1.55x (down from 1.5x/1.7x).
@@ -248,6 +250,11 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 - These sets should still be competitive compared to options before their introduction.
 - Changes to armors will be tracked separately on the Armor Spreadsheet.
 
+#### 【 Weapon Changes 】 ####
+Fatalis Weapons have been normalized (with the exception of LBG) to be 340 Raw, -30% affinity.
+
+While weapons are normally dealt with on a more specific basis, this is a cross weapon nerf that was necessary both because of the inconsistencies it generates with weapon progressions as well as the aberrant stat values it had in specific outliers. This is a nerf that is still under evaluation but it will happen in one shape or another.
+
 #### 【 General Changes 】 ####
 - Health Regen augment:
   - For melee weapons, cooldown between procs decreased to 0.00s (down from 0.2s).
@@ -264,6 +271,10 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 - Equipment UIs now show true Attack (aka Raw) and true Element values for weapons.
   - > This removes the useless bloat multipliers that aren't actually used by the game for any calculations.
 - Chat channel no longer changes during certain actions (joining party/session/etc).
+- Quantity selection UIs now support two new behaviors when increment/decrementing by 1:
+  - Decrementing below 1 will now loop around to the maximum possible quantity.
+  - Incrementing above the maximum possible quantity will now loop around to 1.
+  - > These changes allow faster buying, selling, or melding of full stacks of items.
 
 #### 【 Systems Changes 】 ####
 - Despawn time for item drops from Monsters increased to 30 minutes (up from 1 or 2 minutes).
