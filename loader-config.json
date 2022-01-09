@@ -1,0 +1,19 @@
+{
+  "logfile": false,
+  "logcmd": false,
+  "logLevel": "ERROR",
+  "outputEveryPath": false,
+  "enablePluginLoader": true,
+  "useLoadLibrary": true,
+  "crashLogger": {
+    "Enabled": false,
+    "Log XMM Registers": true,
+    "Clear Existing Crash Dump": true,
+    "Suspend Process Upon Exception": true,
+    "Stacktrace": {
+        "Enabled": true,
+        "Log Loaded Modules": false,
+        "Sanitize Output": true
+    }
+  }
+}
