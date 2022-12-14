@@ -421,9 +421,19 @@ The following changes are intended to offer a new playstyle option for GS that i
 The following changes are intended to give hunters an additional defensive option that fits the theme of the weapon (parrying with a buckler shield) while increasing variety in gameplay. Hunters that master this new technique will be able to weave counter-attacks against weaker Monster attacks into their existing play.
 - Parry (previously Guard Slash):
 	- Now has a guardpoint starting from 0.10s from the start of the animation, lasting 0.20s (12 frames at 60fps).
-	- When hit during the guardpoint, small knockbacks will result in immediately counter-attacking with a Shield Bash. This Shield Bash can combo into Leaping Slash (Triangle) or directly into Perfect Rush (Circle).
-	- Most attacks that previously could combo into Backstep, now can also combo into Parry.
+	- When hit during the guardpoint, small knockbacks will result in immediately counter-attacking with a Shield Bash. This Shield Bash can combo into Leaping Slash (△ on PS, Y on XB) or directly into Perfect Rush (O on PS, B on XB).
+	- Consumes 25 stamina on use.
+  - Most attacks that previously could combo into Backstep, now can also combo into Parry.
   - > Hunters will need to recognize and react accordingly to which attacks they can and cannot parry, as many Monster attacks will be too strong for a small shield. In addition, when comboing directly from Shield Bash into Perfect Rush, the Shield Bash will effectively replace the first hit in Perfect Rush I. Skilling for Guard is advised, to maximize the number of attacks that can be parried.
+
+#### 【 Helm Breaker 】 ####
+The Helm Breaker attack (aka Helm Splitter) has been reworked to offer a sword-based alternative to Falling Bash. This change provides hunters with additional combo choices and allows them to choose between the benefits of sword vs shield attacks, just as they can for ground-based moves.
+- Helm Breaker
+  - Can now be performed in the air after a successful Charged Slash using △ + O on PS or Y + B on XB (was only available after scaling a wall).
+  - Jump trajectory adjusted to be more similar to Falling Bash.
+  - MV changed to 40+24+24 (was 14 per hit).
+  - Element and Status Modifier changed to 1.0x+1.0x+1.0x (was 0.3x per hit).
+  - Mount Buildup removed (was 25).
 
 #### 【 Quality of Life Changes 】 ####
 - Backstep (aka Backhop):
@@ -459,6 +469,8 @@ Many of the following changes are targeted at one of the following goals:
 	- MV decreased to 40+40+50 (down from 45+45+60).
 - Perfect Rush II:
 	- MV increased to 60 (up from 55).
+- Slinger Burst:
+  - Now combos into Charged Slash (O on PS, B on XB).
 - Clutch Claw Weapon Attack:
 	- Final Hit:
 		- Partbreak Modifier increased to 2.35x (up from 1.00x).
