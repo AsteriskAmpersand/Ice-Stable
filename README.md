@@ -327,8 +327,9 @@ While weapons are normally dealt with on a more specific basis, this is a cross 
 ### ──────────【 Bug Fixes 】────────── ###
 
 - DPS Tick Fix: The engine components responsible for specifically handling ticking damage effects have been upgraded to mitigate the negative effects of frame rate on player damage output. In some cases, player damage could be reduced as much as 25% just for not playing at a stable 60fps. Some examples here: <https://bit.ly/MHWEffectsOfFPS>
+- Corrected some attacks that were incorrectly gaining extra hits at lower frame rates.
 - Moonshots Fix: Aim behavior has been adjusted for Bow and Bowgun at short ranges to mitigate the occurrence of projectiles that incorrectly fly straight up (seemingly towards the moon/sky) and completely miss the intended target. This is sometimes refered to as "moonshots" by the community. An example can be seen here around the midpoint of the clip: <https://twitter.com/Irh_umbreon/status/1409001644411408391>
-- Weapon-specific bug fixes will be covered in each weapon's section instead of here.
+- Other weapon-specific bug fixes will be covered in each weapon's section instead of here.
 
 ### ──────────【 Monster Changes 】────────── ###
 
@@ -437,19 +438,19 @@ The Helm Breaker attack (aka Helm Splitter) has been reworked to offer a sword-b
 
 #### 【 Quality of Life Changes 】 ####
 - Backstep (aka Backhop):
-	- When performed after an unsheathed forward roll, hunters can now hold a desired direction and press Circle early to queue a directional Backstep.
+	- During a forward roll, hunters can now hold a desired direction and queue a directional Backstep before the roll ends.
 		- > Previously, early inputs would result in comboing into a backwards Backstep and late inputs would result in comboing into other attacks, leaving only a small 0.250s window that was difficult for hunters to consistently hit. With this change, early inputs are no longer an issue.
-	- When performed after starting to guard, the time available to input a Backstep safely has been increased to 0.417s (up from 0.283s).
+	- When starting a Guard, the time available to input a Backstep safely has been increased to 0.417s (up from 0.283s).
 		- > This increases the window that hunters have by 50%, which should greatly increase the reliability of using Backstep right after a guard.
 - Slinger Aim vs Slinger Burst Aim Mode Toggle:
 	- The hunter's current selected mode will now still be retained upon sheathing (previously was resetting to Slinger Aim Mode).
 
 #### 【 General Changes 】 ####
-Many of the following changes are targeted at one of the following goals:
+Many of the following changes are targeted at one or more of the following goals:
 - Increasing the variety of combos and options available to hunters.
   - > Less used slashing attacks can now be better combined with existing high damage slashes (Lateral Slash + Return Stroke) to create longer and stronger combos without needing to utilize the weaker Spiral Slash as often. In addition, shield attacks can be comfortably used in place of slashes, allowing hunters to trade only a small amount of damage for added Stun buildup.
 - Reducing the dominance of Perfect Rush. 
-  - > The changes to Perfect Rush's damage help provide shorter combos (Slash combos, Shield combos, Falling Bash) a chance at competing in shorter windows of opportunities, while still maintaining Perfect Rush's advantage of dealing high damage for larger windows. In many situations, it can be better to use other options if the hunter does not have a large enough window to safely perform up to Perfect Rush II.
+  - > The changes to Perfect Rush's damage help provide shorter combos (Slash combos, Shield combos, Falling Bash, Helm Breaker) a chance at competing in shorter windows of opportunities, while still maintaining Perfect Rush's advantage of dealing high damage for larger windows. In many situations, it can be better to use other options if the hunter does not have a large enough window to safely perform up to Perfect Rush II.
 
 - Chop:
 	- MV increased to 17 (up from 14).
@@ -471,13 +472,15 @@ Many of the following changes are targeted at one of the following goals:
 	- MV increased to 60 (up from 55).
 - Slinger Burst:
   - Now combos into Charged Slash (O on PS, B on XB).
+  - > Previously, only Slinger Burst into Perfect Rush I/II provided a strong option for gap closing into medium windows of opportunity (~5 seconds). With this addition, hunters have a new option to trade damage for faster attacks through Falling Bash and Helm Breaker.
 - Clutch Claw Weapon Attack:
 	- Final Hit:
 		- Partbreak Modifier increased to 2.35x (up from 1.00x).
 		- > Compensates for first three hits having a Partbreak Mod of 0.0x.
 
 ### ──────────【 Dual Blades 】────────── ###
-There are no changes yet for this weapon.
+
+There are changes available for testing in the Experimental version.
 
 ### ──────────【 Long Sword 】────────── ###
 
