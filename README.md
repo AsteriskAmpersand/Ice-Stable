@@ -535,7 +535,7 @@ The full changes are as follows:
   - MV decreased to 24 (down from 26).
   - Spirit generation decreased to 0% (down from 10%).
   - Partbreak Modifier decreased to 0.0x (down from 1.0x).
-  - Avoids situations where flinch/trips on first hit cause the rest of the attack to miss.
+  - > Avoids situations where flinch/trips on first hit cause the rest of the attack to miss.
 - Spirit Helm Breaker:
   - MV decreased to 10/15/24 (down from 10/15/25).
   - Element and Status Modifiers increased to 0.4x/0.6x/1.0x per Gauge level (up from 0.3x).
@@ -844,6 +844,22 @@ Too much of Switch Axe's damage output was locked behind phial bonuses (especial
 - Sword Mode attacks for all Phial types:
   - MVs increased. See General Changes section for details on individual attacks.
   - Element Modifiers of most attacks increased to 1.20x (up from 1.00x).
+  
+#### 【 Zero Sum Discharge Rework 】 ####
+Iceborne introduced a new way to access ZSD through the Clutch Claw. However, this could be combined with Health Regen Augment and certain mantles (such as Rocksteady or Temporal) to create a problematic gameplay loop of repeatedly using Claw ZSD to trivialize even the hardest content in the game. To prevent this, the following changes were made to bring back World's version of ZSD as a situational punishing tool or finisher.
+
+- Amp State is now consumed upon completing a Zero Sum Discharge.
+- Zero Sum Discharge:
+  - Initial Thrust:
+    - MV increased to 20 (up from 18).
+    - Element Modifier increased to 1.2x (up from 1.0x).
+  - Repeating Phial Bursts:
+    - MV increased to 14 (up from 13).
+    - Element modifier increased to 1.38x (up from 0.5x).
+  - Finisher:
+    - MV increased to 188 (up from 119).
+    - Element Modifier increased to 1.2x (up from 1.0x).
+    - The chance of hitting the wrong Monster part has been greatly decreased, especially for fast-moving Monsters.
 
 #### 【 General Changes 】 ####
 - When performed from idle stance, "Axe: Side Slash" replaced with "Axe: Overhead Slash".
@@ -903,19 +919,6 @@ Too much of Switch Axe's damage output was locked behind phial bonuses (especial
   - Finisher:    
     - MV increased to 94 (up from 85).
     - Element Modifier increased to 1.2x (up from 1.0x).
-- "Zero Sum Discharge":
-  - Thrust:
-    - MV increased to 20 (up from 18).
-    - Element Modifier increased to 1.2x (up from 1.0x).
-  - Ticks:
-    - MV increased to 14 (up from 13).
-    - Element modifier increased to 1.38x (up from 0.5x).
-  - Finisher:
-    - MV increased to 94 (up from 85).
-    - Element Modifier increased to 1.2x (up from 1.0x).
-    - Raw damage multiplier increased to 2.0x (up from 1.4x).
-    - Amp State is now terminated upon completing a Zero Sum Discharge.
-    - When releasing early, the chance of hitting the wrong Monster part has been greatly decreased, especially for fast-moving Monsters.
 - Element Discharge (Mounted):
   - Thrust:
     - MV increased to 22 (up from 20).
