@@ -2,7 +2,19 @@
 
 Welcome to the download page for Iceborne Community Edition. Join us at https://discord.gg/xPDVbhZgFJ to follow the development of this mod!
 
-Iceborne Community Edition is a holistic rework of MHW: Iceborne. We attempt to address multiple major gripes a significant section of the playerbase had with an otherwise great game. The goal of ICE is to preserve the spirit of the game's core design, but improve on its limitations and flaws to provide a more enjoyable experience that can still be recognized as Monster Hunter gameplay.
+Iceborne Community Edition (ICE) is an overhaul mod for MHW: Iceborne, driven by community feedback and suggestions. ICE preserves the spirit of the game's core design and direction, but offers improvements to the game in an effort to provide a more balanced and diverse experience for all hunters.
+
+This mod is a work-in-progress, and still in developement. 
+
+ICE is compatible with online play. ICE hunters are matched exclusively with other ICE hunters to prevent negatively affecting vanilla hunters.
+
+Features:
+- Smoother Progression: Play through at your own pace, without being held back by cutscenes or unreasonable grinds.
+- Quality-of-Life Additions: Spend more time enjoying each hunt, and less time in menus or stuck in base.
+- Clutch Claw Rework: Let the Clutch Claw take a backseat, as you re-experience the fast-paced combat of MHW as it was originally intended. 
+- Weapon Moveset Reworks: Master the 14 weapon types in new ways, with increased depth and variety in optimal combos for hunters.
+- Skill Reworks: Make more impactful choices when it comes to skill loadouts. More variety, more active skills, less passives.
+- Bug Fixes: Play the game with less pesky bugs to hold you back.
 
 - - - -
 
@@ -480,7 +492,7 @@ Many of the following changes are targeted at one or more of the following goals
 
 ### ──────────【 Dual Blades 】────────── ###
 
-There are changes available for testing in the Experimental version.
+> There are changes available for testing in the Experimental version.
 
 ### ──────────【 Long Sword 】────────── ###
 
@@ -586,6 +598,8 @@ The full changes are as follows:
 - A subtle mark has been added to the gauge, representing the 35% Spirit needed for Spirit Roundslash and Iai Spirit Slash.
 
 ### ──────────【 Hammer 】────────── ###
+
+> There are additional changes available for testing in the Experimental version.
 
 #### 【 Multiplayer Playability 】 ####
 Certain moves for Hammer lacked the necessary innate knockback resistance needed to be appropriately used in multiplayer, despite their core role in Hammer gameplay. The following moves will now grant the hunter innate minor knockback resistance (roughly equivalent to Flinch Free III):
@@ -753,7 +767,7 @@ Lance has a solid playstyle and was only lacking damage to compete with other we
 
 #### 【 XanSamHi's Omnilance Rework 】 ####
 Gunlance has received a significant rework with four major changes:
-- Normal, Long, and Wide shelling types have been unified into a single new "Omni" type, which combines the strengths of all three. Hunters can now actively choose between all shelling attacks in combat, rather than being locked into spamming only a single optimal shelling attack for an entire run.
+- Normal, Long, and Wide shelling types have been unified into a single new "Omni" type, which combines the strengths of all three. Hunters can now actively choose between all shelling attacks in combat, rather than being locked into spamming only a single optimal shelling attack for an entire hunt.
 - The shelling level system has been reworked to span 9 shelling levels, to help smooth out weapon progression as High Rank effectively only had 1 shelling level (Lv4) compared to Low and Master Rank having 3 each. Now High Rank will also have 3 levels. This rework also includes better shelling level balance across all Gunlances, so there are more competitive weapon options available at all levels of progression.
 - Wyrmstake Blast has been removed due to various problems with the implementation and the mostly negative impacts it had on Gunlance gameplay. Since Gunlance received Wyrmstake Blast instead of Master Rank's 1.5x Fixed Damage multiplier, we have re-enabled this damage multiplier and rebalanced Shelling attacks around it.
 - As a replacement for Wyrmstake Blast, the (previously decorative) shield has gained a core role in Gunlance gameplay in the form of a guardpoint on Quick Reload. This guardpoint enables a more aggressive playstyle and allows hunters to keep pressuring monsters if timed correctly. For small or medium knockbacks, hunters can follow-up with any options already available after a Quick Reload, including comboing into an Overhead Smash and Full Burst.
@@ -763,35 +777,39 @@ The details for these changes are below:
 - All Shelling Attacks:
   - Now affected by Master Rank's 1.5x Fixed Damage modifier.
 - Shelling (Uncharged):
-  - Uses "Wide" type damage scaling and hitbox.
-  - Consumes 2 shells per use (up from 1).
-  - Fixed Damage changed to 10/16/20/26/30/36/46/50/56 (was 18/26/32/40/48/54/61).
+  - Based on "Wide" Shelling.
+  - Consumes 2 shells per use (up from 1), allowing for up to 3 shots per magazine (was 3 shots).
+  - Fixed Damage changed to 16/19/22/28/32/36/44/50/56 (was 18/26/32/40/48/54/61).
   - Fire Damage changed to 8/9/10/11/12/13/14/15/16 (was 6/8/10/11/12/13/14).
 - Charged Shelling:
-  - Uses "Wide" type damage scaling, but uses "Long" type hitbox.
-  - Consumes 2 shells per use (up from 1).
-  - Fixed Damage multiplier increased to 2.0x (up from 1.4x).
+  - Based on "Long" Charged Shelling.
+  - Consumes 2 shells per use (up from 1), allowing for up to 3 shots per magazine (was 4 shots).
+  - Fixed Damage changed to 32/38/44/56/64/72/88/100/112 (was approximately 28/42/59/68/87/101/118).
+  - Fire Damage changed to 8/9/10/11/12/13/14/15/16 (was 9/11/14/16/18/20/22).
   - Partbreak Modifier decreased to 1.4x (down from 1.5x).
   - Charge time now affected by Artillery, instead of Focus.
     - Artillery Lv3 grants a charge time reduction of 45% (equivalent to Focus Lv2).
     - Artillery Lv5 grants a charge time reduction of 60% (equivalent to Focus Lv3).
-- Full Burst:
-  - Uses "Wide" type damage scaling, but uses "Normal" type hitbox.
-  - Fixed Damage multiplier decreased to 0.8x (down from 0.9x).
+- Burst Fire:
+  - Based on "Normal" Burst Fire.
+  - Fixed Damage changed to 16/19/22/28/32/36/44/50/56 per shell (was 8/12/16/20/24/28/32).
+  - Fire Damage changed to 8/9/10/11/12/13/14/15/16 (was 4/5/6/7/8/9/10).
+  - Fixed Damage multiplier decreased to 0.6x (down from 0.9x).
 - Wyvern's Fire:
-  - Uses "Wide" type damage scaling and hitbox.
+  - Based on "Wide" Wyvern's Fire.
   - Changed to a single larger hit (was 3 small hits).
-  - Fixed Damage changed to 80/90/100/150/200/250/266/355/444 (was 66/75/79/86/103/112).
-  - Fire Damage changed to 45/54/63/72/81/90/99/108/117 (was 15/18/21/24/27/30/33).
-
+  - Fixed Damage changed to 128/152/176/224/256/288/352/400/448 (was 66/75/79/86/103/112/120 per hit).
+  - Fire Damage changed to 64/72/80/88/96/104/112/120/128 (was 15/18/21/24/27/30/33).
   - Cooldown Rate is no longer affected by Artillery skill.
 - Wyrmstake Cannon:
-  - Ticks:
-    - MV changed to 6/8/10/12/14/16/18/20/22 (was 6/8/11/14/17/20/23).
+  - Repeated Hits:
+    - MV changed to 6/6/6/7/7/8/8/9/9 (was 6/8/11/14/17/20/23).
     - Element and Status Modifiers increased to 0.3x (up from 0.0x).
+    - Partbreak Modifier increased to 1.0x (up from 0.3x).
   - Final Explosion:
     - MV changed to 31/36/41/46/55/61/67/70/76 (was 31/36/41/46/55/61/67).
     - Fire Damage changed 12/15/18/21/24/27/30/33/36 (was 12/15/18/21/24/27/30).
+  - > These changes were made to better enable Wyrmstake Cannon's usage through out all levels of progression, as well as balance its power level relative to other moves now that its ammo is easily replenished with Quick Reload.
 - Wyrmstake Blast:
   - This attack has been removed for now.
 - Full Reload: Replaced by Quick Reload.
@@ -815,8 +833,7 @@ The following changes were made to reduce the significant sharpness consumption 
 - Razor Sharp / True Razor Sharp:
   - Sharpness cost reduction for shelling attacks decreased to 0 (down from 1).
   - Sharpness cost negation chance for shelling attacks increased to 50%/70% (up from 10%/20%).
-  - > The above changes result in RS/TRS changing from 55%/60% to 50%/70% average cost reduction on Shelling, Charged Shelling, and Full Bursts, and its value is now more consistent with other melee weapons.
-
+  - > The above changes result in RS/TRS changing from an average cost reduction of 55%/60% to 50%/70% on Shelling, Charged Shelling, and Full Bursts. Its value is now more consistent with other melee weapons.
 
 ### ──────────【 Switch Axe 】────────── ###
 
