@@ -298,8 +298,10 @@ While weapons are normally dealt with on a more specific basis, this is a cross 
 
 #### 【 User Interface Changes 】 ####
 - Equipment UIs now show true Attack (aka Raw) and true Element values for weapons.
-  - > This removes the useless bloat multipliers that aren't actually used by the game for any calculations.
-- Chat channel no longer changes during certain actions (joining party/session/etc).
+  - > This removes the useless bloat multipliers that were artificially inflating numbers in UIs, but weren't actually being used by the game for any calculations.
+- Chat UI:
+  - Maximum message length increased to 60 (up from 40).
+  - The selected chat channel no longer changes during certain actions (joining party/session/etc).
 - Quantity selection UIs now support two new behaviors when increment/decrementing by 1:
   - Decrementing below 1 will now loop around to the maximum possible quantity.
   - Incrementing above the maximum possible quantity will now loop around to 1.
@@ -308,8 +310,11 @@ While weapons are normally dealt with on a more specific basis, this is a cross 
 #### 【 Systems Changes 】 ####
 - Despawn time for item drops from Monsters increased to 30 minutes (up from 1 or 2 minutes).
   - > This was done to help avoid situations where a hunter has to choose between interrupting their epic fight or forfeiting their rightfully earned loot. This wasn't a very interesting decision, in our opinion.
-- Cutscene Skip option enabled on most cutscenes in the game. Given most players will be experiencing ICE as a second (or later) playthrough, this quality of life improvement should help shorten the time required to complete main story quests across all ranks.
+- Cutscenes:
+  - A cutscene skip option has been enabled on most cutscenes in the game. Given most players will be experiencing ICE as a second (or later) playthrough, this QoL improvement should help shorten the time required to complete main story quests across all ranks.
   - > This is still a work-in-progress feature. Some cutscene audio might not skip correctly due to not being defined by the game as cutscene audio.
+- Quest End Timer:
+  - The timer for returning to base can now be skipped by holding the "Cancel Animation" input for 2 seconds ("Options" on PS, "Menu" on XB, X on PC).
 - Astera Lift System:
   - Hunters can now utilize the lift system from the entrance of Astera, where they generally arrive after quests or expeditions (in front of the Resource Center).
   - When traveling to the "Tradeyard" using the lift system, the hunter will now arrive in the center of the Tradeyard.
@@ -327,6 +332,8 @@ While weapons are normally dealt with on a more specific basis, this is a cross 
   - Melding recipes for Whetfish Fin and Whetfish Fin + have been added. The plus variant is unlocked in MR.
 
 #### 【 Combat Changes 】 ####
+- Mantle Expiration:
+  - When a mantle expires, it will now automatically be unequipped without any interaction from the hunter.
 - Airborne Launches:
   - Hunters can now protect themselves from being launched airborne by other hunters, using any of the available options that would protect against being knocked onto their butts. For example, Flinch Free Lv2 will reduce the launch to a trip, and Flinch Free Lv3 will negate the launch entirely.
   - Monster attacks are unaffected by this change.
@@ -356,6 +363,65 @@ Due to element damage output increasing significantly on many weapon types, Alat
 
 
 ## Weapon Changes (Stable Build) ##
+
+### ──────────【 Slinger 】────────── ###
+
+The following changes to Slinger damage are intended to address one or more of the following goals:
+1. Incorporate damage scaling on all Slinger ammos to allow them to not fall behind as the hunter progresses through the game.
+2. Balance Slinger Burst damage so it doesn't completely overshadow other options in early-game, due to Slinger Burst being balanced specifically around Master Rank.
+3. Maintain "Field" ammos as niche utility options with the most value in early game, but ultimately low damage options due to their availability.
+4. Balance "Monster" ammos to all have good value throughout progression, without being overpowered in early game.
+  - Pierce Pods will continue to be the highest damage option.
+  - Thorn Pods will continue to be high damage, with added Stun and Exhaust Buildup.
+  - Bomb Pods will continue to be good against low HZV targets.
+  - Dragon pods will continue to be best for Dragon damage and Elderseal Buildup, but will provide good general damage as well.
+5. Remove some inconsistencies between normal and burst variants of some ammos.
+  - Brightmoss now deals Thunder damage on both versions.
+  - Bomb Pod now deals Fire damage on both versions.
+
+
+- All Ammo Types:
+  - Non-element damage now scales with Attack.
+- Slinger:
+  - Brightmoss:
+    - Element Damage changed to 30 Thunder (was none), to match its burst variant.
+  - Bomb Pod (Explosion):
+    - MV changed to 30 HZI (was 35 Fixed Damage).
+  - Pierce Pod:
+    - MV decreased to 6 (down from 10).
+  - Thorn Pod:
+    - Initial Hit:
+      - MV increased to 10 (up from 5).
+      - Stun Buildup increased to 30 (up from 10).
+      - Exhaust Buildup increased to 15 (up from 10).
+    - Explosions:
+      - MV decreased to 10 (down from 20).
+      - Stun Buildup decreased to 30 (down from 45).
+      - Exhaust Buildup decreased to 15 (down from 20).
+  - Dragon Pod:
+    - MV increased to 30 (up from 5).
+- Slinger Burst:
+  - Stone:
+    - MV decreased to 10 (down from 15).
+  - Scatter Nut / Crystalburst:
+    - MV decreased to 12 (down from 18).
+  - Bomb Pod (Explosion):
+    - MV changed to 40 HZI (was 100 Fixed Damage).
+    - Element Damage changed to 20 Fire (was none), to match non-burst variant.
+  - Pierce Pod:
+    - MV decreased to 8 (down from 20).
+  - Thorn Pod:
+    - Initial Hit:
+      - Stun Buildup increased to 30 (down from 90).
+      - Exhaust Buildup increased to 15 (up from 10).
+      - Generates 2 stuck pods (down from 3).
+    - Explosions:
+      - MV decreased to 10 (down from 20).
+      - Stun Buildup decreased to 30 (down from 45).
+      - Exhaust Buildup decreased to 15 (down from 20).
+    - Dragon Pod Explosions:
+      - MV increased to 15 (up from 5).
+      - Element Damage decreased to 50 Dragon (down from 80 Dragon).
 
 ### ──────────【 Great Sword 】────────── ###
 
@@ -425,7 +491,7 @@ The following changes are intended to offer a new playstyle option for GS that i
     - MV changed to 90 (was at minimum 6+6+60).
     - Element and Status Modifiers changed to 3.0x (was at minimum 1.0x+0.5x+1.0x).
     - Partbreak Modifier changed to 1.5x (was 0.0x+0.0x+1.0x).
-      - > Compensates for first hit having a Partbreak Modifier of 0.0x.
+      - > This change compensates for the first hit having a Partbreak Modifier of 0.0x.
     - Softening Buildup changed to 70 (was 30+40+0).
 
 ### ──────────【 Sword & Shield 】────────── ###
@@ -488,7 +554,7 @@ Many of the following changes are targeted at one or more of the following goals
 - Clutch Claw Weapon Attack:
 	- Final Hit:
 		- Partbreak Modifier increased to 2.35x (up from 1.00x).
-		- > Compensates for first three hits having a Partbreak Mod of 0.0x.
+		- > This change compensates for the first three hits having a Partbreak Modifier of 0.0x.
 
 ### ──────────【 Dual Blades 】────────── ###
 
@@ -591,7 +657,7 @@ The full changes are as follows:
     - Overall delay between hits increased to 0.21 seconds (up from 0.07).
     - > These changes increase the damage per hit by 3x, but reduce the number of hits by 3x.
     - Partbreak Modifier increased to 1.4x (up from 1.0x).
-    - > This change compensates for the first hit having a Partbreak Mod of 0.0x.
+      - > This change compensates for the first hit having a Partbreak Modifier of 0.0x.
 
 #### 【 Quality of Life 】 ####
 - Spirit Gauge HUD components sharpened for improved visual clarity.
@@ -697,7 +763,7 @@ The full details can be found below:
   - Element and Status Modifiers increased to 1.2x+1.2x (up from 1.0x+1.0x).
   - Second Hit: 
     - Partbreak Modifier increased to 1.65x (up from 1.0x). 
-    - > Compensates for the first hit having a Partbreak Mod of 0.0x.
+    - > This change compensates for the first hit having a Partbreak Modifier of 0.0x.
 
 ### ──────────【 Lance 】────────── ###
 
@@ -761,7 +827,7 @@ Lance has a solid playstyle and was only lacking damage to compete with other we
 - Clutch Claw Weapon Attack:
   - Second Hit: 
     - Partbreak Modifier increased to 1.75x (up from 1.0x).
-    - > Compensates for the first hit having a Partbreak Mod of 0.0x.
+    - > This change compensates for the first hit having a Partbreak Modifier of 0.0x.
 
 ### ──────────【 Gunlance 】────────── ###
 
@@ -965,7 +1031,7 @@ Iceborne introduced a new way to access ZSD through the Clutch Claw. However, th
 - Clutch Claw Weapon Attack:
   - Second Hit: 
     - Partbreak Modifier increased to 1.4x (up from 1.0x). 
-    - Compensates for the first hit having a Partbreak Mod of 0.0x.
+    - > This change compensates for the first hit having a Partbreak Modifier of 0.0x.
     
 ### ──────────【 Charge Blade 】────────── ###
 
@@ -1069,7 +1135,7 @@ The changes below mainly are intended to bring up underpowered moves to increase
 - Clutch Claw Weapon Attack:
   - Finisher Hit:
     - Partbreak Modifier increased to 2.0x (up from 1.0x).
-    - > Compensates for the first four hits having a Partbreak Mod of 0.0x.
+    - > This change compensates for the first four hits having a Partbreak Modifier of 0.0x.
     
 #### 【 Bug Fixes 】 ####
 - Attempting to use "Kinsect: Harvest Extract" after dodging sideways to the left, will now correctly send the kinsect out. Previously, this would result in using "Thrust" or "Strong Thrust".
@@ -1099,7 +1165,7 @@ The changes below mainly are intended to bring up underpowered moves to increase
 - Clutch Claw Weapon Attack:
   - Final Hit: 
     - Partbreak Modifier increased to 1.875x (up from 1.0x). 
-    - > Compensates for first two hits having a Partbreak Mod of 0.0x.
+    - > This change compensates for the first two hits having a Partbreak Modifier of 0.0x.
     
 #### 【 Bug Fixes 】 ####
 - Power Shot arrow spread patterns:
