@@ -214,24 +214,23 @@ The following new melding recipes have been added at the Elder Melder, to give h
 While a more comprehensive rework and rebalancing of skills is planned for ICE in the future, some skills have been tweaked in the mean time with the an emphasis on increasing the variety of competitive options for hunters. This is mainly accomplished by:
 1. Changing skills to have a more meaningful impact on gameplay.
 2. Increasing the value of skills at lower levels.
-> Weapon-specific interactions with certain skills will be covered in that weapon's section instead of here.
+> Weapon-specific interactions with certain skills will be covered in each weapon's section instead of here.
 
 #### 【 General Changes 】 ####
-- Weakness Exploit:
-  - Affinity bonus changed to 15/30/50%. Softening requirement removed. 
-  - > This reverts a nerf from IB and is intended to reduce reliance on Clutch Claw softening.
+- Coalescence:
+  - Attack bonus changed to 12/18/24 (up from 12/15/18).
+- Flinch Free:
+  - "Brace Jewel 3" decoration size decreased to Lv1 (from Lv3).
+  - Now affects airborne launches from other hunters. Lv2 will reduce the effect to a normal trip. Lv3 will negate the launches entirely. (See "Airborne Launches" under "Quality of Life" section for more details)
 - Focus:
   - Bonus gauge generation increased to 10/18/25% (up from 5/10/20%).
   - > This change helps gauge-based weapons reach certain meaningful breakpoints.
-- Heroics: Base Attack bonus changed from 0/5/5/10/15/25/40% to 5/10/15/20/25/30/40%.
-- Flinch Free:
-  - "Brace" decoration size decreased to Lv1 (from Lv3).
-  - Now affects airborne launches from other hunters. Lv2 will reduce the effect to a normal trip. Lv3 will negate the launches entirely. (See "Airborne Launches" under "Quality of Life" section for more details)
 - Fortify:
   - Duration increased to 9.1 hours (up from 50 minutes). 
   - > This partially reverts a nerf from IB, as Capcom's nerf only encouraged players to restart their Guiding Lands session every 50 minutes, rather than addressing any balance issues with Fortify.
-- Quick Sheathe:
-  - Speed bonus changed to 15/30/40% (from 10/20/40%).
+- Heroics: Base Attack bonus changed from 0/5/5/10/15/25/40% to 5/10/15/20/25/30/40%.
+- Item Prolonger:
+  - Increased bonus to 33%/66%/100% (from 10%/25%/50%).
 - Maximum Might:
   - Level 5 Affinity bonus increased to 50% (up from 40%).
   - Max Stamina time requirement decreased to 0 seconds (down from 5).
@@ -242,33 +241,28 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
 - Power Prolonger: 
   - Dual Blades & Switch Axe bonus decreased to 1.15x/1.30x/1.40x (down from 1.3x/1.6x/2.0x).
   - Long Sword, Charge Blade, & Insect Glaive bonus changed to 1.15x/1.30x/1.40x (was 1.1x/1.2x/1.4x).
-- Item Prolonger:
-  - Increased bonus to 33%/66%/100% (from 10%/25%/50%)
-- Critical Element / True Critical Element:
+- Quick Sheathe:
+  - Speed bonus changed to 15/30/40% (from 10/20/40%).
+- Weakness Exploit:
+  - Affinity bonus changed to 15/30/50%. Softening requirement removed. 
+  - > This reverts a nerf from IB and is intended to reduce reliance on Clutch Claw softening.
+
+- Critical Element / True Critical Element (Set Bonus Skill):
   - Great Sword multipliers decreased to 1.35x/1.55x (down from 1.5x/1.7x).
   - Hunting Horn multipliers decreased to 1.35x/1.55x (down from 1.5x/1.7x).
-- Critical Status / True Critical Status:
+- Critical Status / True Critical Status (Set Bonus Skill):
   - Great Sword multipliers decreased to 1.2x/1.4x (down from 1.4x/1.6x).
   - Hunting Horn multipliers decreased to 1.2x/1.4x (down from 1.4x/1.6x).
-- Alatreon Divinity (Set Bonus):
-  - Element Conversion rate for normal weapons increased to 8% (up from 5%).
-  - Element Conversion rate for Bowguns increased to 8% (up from 2%).
-  > The above changes allow the Alatreon set to perform closer to other element oriented sets.
-- Master's Touch (Set Bonus):
+- Element Conversion (Set Bonus Skill):
+  - Conversion rate increased to 8x for all weapons (up from 5x, or 2x for Bowguns).
+  > This change brings the power level of the Alatreon set close to other element-based sets, allowing it to be used as a competitive alternative.
+- Master's Touch (Set Bonus Skill):
   - Changed from triggering on critical hits to triggering on hitting weak spots.
 
 ### ──────────【 Equipment 】────────── ###
 
-#### 【 Raw vs Element Balancing 】 ####
+#### 【 Element/Status Balancing 】 ####
 Some weapon types have been rebalanced to increase the variety in competitive equipment options for hunters to choose from. The following lists show what the rebalancing goals are for those weapon types. Some weapons will be able to better take advantage of at least the element/status available on their weapon. For these weapons, raw will still be competitive and be the most consistent option when not planning for specific match ups. Other weapons may now be able to run full element builds for certain playstyles.
-
-Raw/Element Weapon + Raw Build:
-- Long Sword
-- Lance
-- Insect Glaive
-
-Element Weapon + Element Build:
-- Great Sword (only for new alternative combo playstyle)
 
 #### 【 Armor Changes 】 ####
 While a more comprehensive rework and rebalancing of armors is planned for ICE to increase the variety in build options for hunters that have meaningful impact on gameplay (with effects like Frostcraft from Velkhana), some specific sets have been adjusted in the mean time to preserve the limited options the game already did offer.
@@ -297,7 +291,7 @@ While weapons are normally dealt with on a more specific basis, this is a cross 
 ### ──────────【 Quality of Life 】────────── ###
 
 #### 【 User Interface Changes 】 ####
-- Equipment UIs now show true Attack (aka Raw) and true Element values for weapons.
+- Equipment UIs now show true Attack (aka Raw) and true Element Damage/Buildup values for weapons.
   - > This removes the useless bloat multipliers that were artificially inflating numbers in UIs, but weren't actually being used by the game for any calculations.
 - Chat UI:
   - Maximum message length increased to 60 (up from 40).
@@ -329,7 +323,7 @@ While weapons are normally dealt with on a more specific basis, this is a cross 
     - > Since these fertilizers have lost their main advantage of allowing hunters to stack fertilzers faster between quests, they are now positioned as slightly more efficient versions of the basic fertilizers.
 - Elder Melder:
   - Seasonal event tickets can be melded from 2 similar event tickets (down from 3).
-  - Melding recipes for Whetfish Fin and Whetfish Fin + have been added. The plus variant is unlocked in MR.
+  - Melding recipes for Whetfish Fin and Whetfish Fin+ have been added. The plus variant is unlocked in MR.
 
 #### 【 Combat Changes 】 ####
 - Mantle Expiration:
@@ -412,7 +406,7 @@ The following changes to Slinger damage are intended to address one or more of t
     - MV decreased to 8 (down from 20).
   - Thorn Pod:
     - Initial Hit:
-      - Stun Buildup increased to 30 (down from 90).
+      - Stun Buildup decreased to 30 (down from 90).
       - Exhaust Buildup increased to 15 (up from 10).
       - Generates 2 stuck pods (down from 3).
     - Explosions:
