@@ -204,11 +204,7 @@ Smithy costs for the following have been adjusted to better balance material usa
 - Augments for Rarity 6 weapons changed to use 1x Streamstone instead of 1x Warrior's Streamstone.
 - Augments for Rarity 7 weapons changed to use 1x Warrior's Streamstone (down from 2x Warrior's Streamstones).
 
-The following new melding recipes have been added at the Elder Melder, to give hunters more control over their experience around farming High Rank augments:
-- All 7 types of Warrior's Streamstones can be melded from 2 Warrior's Streamstones of any type.
-- All 7 types of Hero's Streamstones can be melded from 2 Hero's Streamstones of any type.
-- 2 Warrior's Streamstones can be melded from a single Hero's Streamstone of the same type.
-- Hero's Streamstones can be melded from 4 Warrior's Streamstones of the same type.
+New melding recipes have been added at the Elder Melder to allow hunters to trade Warrior's and Hero's Streamstones. See details for Elder Melder under [Quality of Life](https://github.com/AsteriskAmpersand/Ice-Stable#-quality-of-life-) for more details.
 
 ### ──────────【 Skills 】────────── ###
 While a more comprehensive rework and rebalancing of skills is planned for ICE in the future, some skills have been tweaked in the mean time with the an emphasis on increasing the variety of competitive options for hunters. This is mainly accomplished by:
@@ -323,7 +319,17 @@ While weapons are normally dealt with on a more specific basis, this is a cross 
     - > Since these fertilizers have lost their main advantage of allowing hunters to stack fertilzers faster between quests, they are now positioned as slightly more efficient versions of the basic fertilizers.
 - Elder Melder:
   - Seasonal event tickets can be melded from 2 similar event tickets (down from 3).
-  - Melding recipes for Whetfish Fin and Whetfish Fin+ have been added. The plus variant is unlocked in MR.
+  - Whetfish Fin and Whetfish Fin+ can be melded. The plus variant is unlocked in MR.
+  - High Rank augment materials:
+    - Any of the 7 types of Warrior's Streamstones can be melded from 2 Warrior's Streamstones of any other type.
+    - Any of the 7 types of Hero's Streamstones can be melded from 2 Hero's Streamstones of any other type.
+    - 2 Warrior's Streamstones can be melded from a single Hero's Streamstone of the same type.
+    - Hero's Streamstones can be melded from 4 Warrior's Streamstones of the same type.
+  - Guiding Lands materials:
+    - Elder Dragonvein Bone can be melded from Elder Spiritvein Bone.
+    - Dragonvein Solid Bone can be melded from Spiritvein Solidbone.
+    - Heavy Dragonvein Bone can be melded from Spiritvein Slogbone.
+    - > These options were added to allow hunters to directly downgrade tempered bones into non-tempered variants, similar to other Guiding Lands materials.
 
 #### 【 Combat Changes 】 ####
 - Mantle Expiration:
@@ -901,7 +907,9 @@ The following changes were made to reduce the significant sharpness consumption 
 Sword Gauge generation has been changed to be focused around the active use of Axe Mode attacks, instead of either waiting for Sword Gauge or only using Axe Mode Morph Attacks. In addition, gauge generation and consumption has been increased to reduce resource pooling and encourage more proactive switching between modes to manage Sword Gauge and Amp Charge.
 - Sword Mode minimum gauge requirement decreased to 0% (down from 30%).
 - Reload: Gauge generation decreased to 5% (down from 30%).
-- Axe Mode passive regen removed (down from 4% per 1.5sec).
+- Axe Mode Passive Gauge Regen (4% per 1.5s):
+  - Changed to only activate while sheathed.
+  - There is now an additional 10s delay after most combat actions before the regen effect will activate.
 - Axe Mode Attacks:
   - Gauge generation increased to 8% per hit (up from 0%).
   - Gauge generation benefits from Focus skill.
@@ -1156,6 +1164,7 @@ The changes below mainly are intended to bring up underpowered moves to increase
   - Element Modifier increased to 0.3x/0.3x/0.45x/0.45x (up from 0.15x/0.2x/0.3x/0.3x).
   - Status Modifier increased to 0.3x/0.35x/0.4x/0.5x (up from 0.15x/0.2x/0.3x/0.3x).
   - Fixed Damage Removed (was 1/1/2/2).
+  - Damage and Buildup decreased to 4% after 18th hit (was 20%).
 - Clutch Claw Weapon Attack:
   - Final Hit: 
     - Partbreak Modifier increased to 1.875x (up from 1.0x). 
