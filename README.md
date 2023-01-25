@@ -64,8 +64,9 @@ Follow these steps if you've never installed ICE before:
 ## Updating Or Re-installing ICE ##
 Follow these steps if you want to grab the latest version of ICE:
 1. Click on the green "Code" button and then "Download ZIP".
-2. Extract the contents of the ZIP directly to your root Monster Hunter World install folder (where MonsterHunterWorld.exe is located).
-3. When asked about file conflicts, overwrite any existing files.
+2. Extract the contents of the ZIP file to a temporary location (Desktop, Downloads, etc).
+3. Copy all the contents within the "ice-stable-main" (or "ice-experimental-main") folder directly to your root Monster Hunter World install folder (default path is `...\Steam\steamapps\common\Monster Hunter World\`. You have the right folder if "MonsterHunterWorld.exe" exists in that folder).
+4. When asked about file conflicts, overwrite any existing files.
 
 ## Turning ICE ON / OFF ##
 ICE supports easy on/off in case you want to switch back and forth between mods.
@@ -214,7 +215,7 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
 
 #### 【 General Changes 】 ####
 - Coalescence:
-  - Attack bonus changed to 12/18/24 (up from 12/15/18).
+  - Attack bonus changed to 6/12/18 (was 12/15/18).
 - Flinch Free:
   - "Brace Jewel 3" decoration size decreased to Lv1 (from Lv3).
   - Now affects airborne launches from other hunters. Lv2 will reduce the effect to a normal trip. Lv3 will negate the launches entirely. (See "Airborne Launches" under "Quality of Life" section for more details)
