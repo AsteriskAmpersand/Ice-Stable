@@ -869,6 +869,9 @@ The details for these changes are below:
   - Fire Damage changed to 64/72/80/88/96/104/112/120/128 (was 15/18/21/24/27/30/33).
   - Cooldown Rate is no longer affected by Artillery skill.
 - Wyrmstake Cannon:
+  - Thrust:
+    - Partbreak Modifier decreased to 0.0x/0.0x (down from 1.0x/1.0x).
+    - > Avoids situations where flinch/trips on the first two hits cause the rest of the attack to miss.
   - Repeated Hits:
     - MV changed to 6/6/6/7/7/8/8/9/9 (was 6/8/11/14/17/20/23).
     - Element and Status Modifiers increased to 0.3x (up from 0.0x).
