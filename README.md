@@ -331,6 +331,8 @@ While weapons are normally dealt with on a more specific basis, this is a cross 
     - Dragonvein Solid Bone can be melded from Spiritvein Solidbone.
     - Heavy Dragonvein Bone can be melded from Spiritvein Slogbone.
     - > These options were added to allow hunters to directly downgrade tempered bones into non-tempered variants, similar to other Guiding Lands materials.
+- Steamworks:
+  - The time required to complete each three-button round has been drastically reduced.
 
 #### 【 Combat Changes 】 ####
 - Mantle Expiration:
