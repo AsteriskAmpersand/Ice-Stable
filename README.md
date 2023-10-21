@@ -282,6 +282,9 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
 - Critical Status / True Critical Status (Set Bonus Skill):
   - Great Sword multipliers decreased to 1.2x/1.4x (down from 1.4x/1.6x).
   - Hunting Horn multipliers decreased to 1.2x/1.4x (down from 1.4x/1.6x).
+- Dragonvein Awakening / True Dragonvein Awakening (Set Bonus Skill):
+  - Element Limit Override increased to 3.5x/4.0x of Base Element (up from 2.2x/2.55x generally, up from 1.8x/2.35x for Bowguns).
+  - Status Limit Override increased to 3.5x/4.0x of Base Status (up from 1.7x/2.0x).
 - Element Conversion (Set Bonus Skill):
   - Conversion rate increased to 8x for all weapons (up from 5x, or 2x for Bowguns).
   > This change brings the power level of the Alatreon set close to other element-based sets, allowing it to be used as a competitive alternative.
@@ -324,8 +327,11 @@ Fatalis Weapons:
 
 #### 【 Stat Limits 】 ####
 - Attack Limit increased to 3.0x of Base Attack (up from 2.0x). This reverts a nerf from IB.
-- Element Limit increased to 3.0x/+30 of Base Element (up from 1.6x/+15).
+- Element Limit increased to 3.0x/+30 of Base Element (up from 1.6x/+15 generally, up from 1.57x/+15 for Bowguns).
 - Status Limit increased to 3.0x of Base Status (up from 1.6x).
+- Stun Buildup Limit increased to 3.0x of Base Stun Buildup (up from 2.0x).
+- Exhaust Buildup Limit increased to 3.0x of Base Exhaust Buildup (up from 2.0x).
+- Mount Buildup Limit increased to 3.0x of Base Mount Buildup (up from 2.0x).
 
 ### ──────────【 Quality of Life 】────────── ###
 
@@ -339,6 +345,17 @@ Fatalis Weapons:
   - Decrementing below 1 will now loop around to the maximum possible quantity.
   - Incrementing above the maximum possible quantity will now loop around to 1.
   - > These changes allow faster buying, selling, or melding of full stacks of items.
+- Many UIs have been made more responsive to inputs and interactions. Some examples are listed below.
+  - Start Menu:
+    - Intro and outro animations sped up.
+    - Automatically skips the intro animation without needing a "Skip Animation" input.
+  - Quest Board:
+    - Automatically accelerates the camera zoom effect without needing a "Skip Animation" input.
+    - Quest list loading delay removed.
+  - Menu Lists (Item Box, NPC options, etc):
+    - Removed delay between each option fading in.
+  - Other UIs:
+    - Intro and outro animations sped up.
 
 #### 【 Systems Changes 】 ####
 - Despawn time for item drops from Monsters increased to 30 minutes (up from 1 or 2 minutes).
@@ -672,7 +689,7 @@ Most following changes are targeted at increasing the variety of combos and opti
 	- MV increased to 11+11 (up from 7).
 	- Element and Status Modifier increased to 0.75x+0.75x (was 0.8x).
 	- > This move found very little use in vanilla with such low damage and minor repositioning value. With this change, both Fade Slashes can be used to situationally loop and extend the Demon Slash combo, during windows of opportunity that are too short for stronger/longer follow-up attacks.
-- Rising Slash:
+- Rising Slash (Demon Mode):
 	- MV increased to 12 (up from 9).
 	- > Rising Slash bridges many different moves, but was too heavily dragging down the efficacy of any combo that included it.
 - Left/Right Roundslash:
@@ -803,7 +820,16 @@ The full changes are as follows:
 
 ### ──────────【 Hammer 】────────── ###
 
-> There are additional changes available for testing in the Experimental version.
+#### 【 Power Charge Dash Addition 】 ####
+- Power Charge when you are already in Power Charge State instead starts a dash which removes Power Charge State and instead sets the Charge Level to 3. This move is treated as part of a Charge and can combo into any Charge follow-up or continued into a Charge.
+	
+#### 【 Combo Continuation 】 ####
+The following combo continuation is intoduced and is inteded to be a possible continuation of the above listed addition of the Power Charge Dash.
+- Spinning Bludgeon into Spinning Strong Upswing can now combo into Big Bang IV
+- By Releasing R without Directional Input it combos into [Half] Brutal Big Bang
+- By Releasing R with Directional Input it combos into Spinning Bludgeon
+- By Holding R through it, it leads back into Charging.
+- The Dash has 30 frames of Hyperarmor (Frame 10 to Frame 40)
 
 #### 【 Multiplayer Playability 】 ####
 Certain moves for Hammer lacked the necessary innate knockback resistance needed to be appropriately used in multiplayer, despite their core role in Hammer gameplay. The following moves will now grant the Hunter innate minor knockback resistance (roughly equivalent to Flinch Free III):
@@ -1020,18 +1046,18 @@ The details for these changes are below:
 - Wyrmstake Blast:
   - This attack has been removed for now.
 - Quick Reload:
-  - Can be performed instead of Full Reload in most situations (except after a backwards Step Dodge / Hop).
+  - Can be performed instead of Full Reload in most situations (except after a Backstep / Backhop).
   - New Guardpoint added:
     - Guardpoint starts after a 0.1s delay, and lasts 0.40s.
     - Interrupts reloading if used against a medium or high knockback attack.
   - Now usable while at full ammo.
 - Full Reload:
-  - Can only be performed after a backwards Step Dodge / Hop.
+  - Can only be performed after a after a Backstep / Backhop.
   - Now usable while at full ammo.
-- Step Dodge / Hop:
+- Step Dodges / Hops:
   - Can now combo into Shelling attack, Charged Shelling attack, or Quick Reload using their respective usual keybinds.
-  - Forward distance increased to 3.0m (up from 2.3m).
-  - Left & Right distance changed to 2.8m & 2.8m (was 2.6m & 2.8m).
+  - Forward Step: Distance increased to 3.0m (up from 2.3m).
+  - Left Sidestep: Distance changed to 2.8m (was 2.6m), to match Right Sidestep distance.
 
 #### 【 Sharpness Changes 】 ####
 The following changes were made to reduce the significant sharpness consumption of Gunlance that generally makes Razor Sharp mandatory on every build. We believe this is an excessive restriction on build variety, given the high quantity of skills that Gunlance Hunters want to use already.
@@ -1047,7 +1073,8 @@ The following changes were made to reduce the significant sharpness consumption 
 ### ──────────【 Switch Axe 】────────── ###
 
 #### 【 Sword Gauge Rework 】 ####
-Sword Gauge generation has been changed to be focused around the active use of Axe Mode attacks, instead of either waiting for Sword Gauge or only using Axe Mode Morph Attacks. In addition, gauge generation and consumption has been increased to reduce resource pooling and encourage more proactive switching between modes to manage Sword Gauge and Amp Charge.
+Sword Gauge generation has been changed to be focused around the active use of Axe Mode attacks, instead of either waiting for Sword Gauge or only using Morph Attacks. In addition, gauge generation and consumption has been increased to reduce resource pooling and encourage more proactive switching between modes to manage Sword Gauge and Amp Charge.
+
 - Sword Mode minimum gauge requirement decreased to 0% (down from 30%).
 - Reload: Gauge generation decreased to 5% (down from 30%).
 - Axe Mode Passive Gauge Regen (4% per 1.5s):
@@ -1064,17 +1091,34 @@ Sword Gauge generation has been changed to be focused around the active use of A
   - Gauge consumption increased.
   - See General Changes section below for details on individual attacks.
 
+#### 【 Morph vs Morph Slash 】 ####
+Morph Slashes have been enabled where previously only a normal Morph was possible, to provide Hunters more ways to fluidly weave between Sword and Axe Mode attacks.
+
+- "Axe: Morph Slash":
+  - Normal Version:
+    - Can now be performed from Left/Right Sidesteps or backwards roll using "Weapon Special Attack" (R2 on PS, RT on XB).
+  - Advancing Version:
+    - Can now be performed from Left/Right Sidesteps or backwards roll using "Weapon Special Attack" with a forwards directional input (R2 + Forward on PS, RT + Forward on XB).
+    - Can now be performed from neutral stance using "Weapon Special Attack" with a forwards directional input (R2 + Forward on PS, RT + Forward on XB).
+- "Sword: Morph Slash":
+  - Normal Version:
+    - Can now be performed from all step dodges using "Weapon Special Attack" (R2 on PS, RT on XB).
+  - Advancing Version:
+    - Can now be performed from all step dodges using "Weapon Special Attack" with a forwards directional input (R2 + Forward on PS, RT + Forward on XB).
+    - Can now be performed from neutral stance using "Weapon Special Attack" with a forwards directional input (R2 + Forward on PS, RT + Forward on XB).
+
 #### 【 Phial Type Rebalancing 】 ####
 Too much of Switch Axe's damage output was locked behind phial bonuses (especially Power Phial), thus limiting the number of competitive weapons to choose from. To correct this, phial effects have been rebalanced, with much of their original power now baked directly into Sword Mode attacks instead.
+
 - Power Phial: Total Attack multiplier decreased to 1.07x (down from 1.17x).
 - Power Element Phial: Total Element multiplier decreased to 1.21x (down from 1.45x).
 - Exhaust Phial: Bonus Stun buildup for Sword Mode increased to 10 (up from 5).
 - Sword Mode attacks for all Phial types:
   - MVs increased. See General Changes section for details on individual attacks.
   - Element Modifiers of most attacks increased to 1.20x (up from 1.00x).
-  
+
 #### 【 Zero Sum Discharge Rework 】 ####
-Iceborne introduced a new way to access ZSD through the Clutch Claw. However, this could be combined with Health Regen Augment and certain mantles (such as Rocksteady or Temporal) to create a problematic gameplay loop of repeatedly using Claw ZSD to trivialize even the hardest content in the game. To prevent this, the following changes were made to bring back World's version of ZSD as a situational punishing tool or finisher.
+Iceborne introduced a convenient new way to access ZSD through the Clutch Claw. However, this could be combined with Health Regen Augment and certain mantles (such as Rocksteady or Temporal) to create a problematic gameplay loop of repeatedly using Claw ZSD to trivialize even the hardest content in the game. To prevent this, the following changes were made to bring back World's version of ZSD as a situational punishing tool or finisher.
 
 - Amp State is now consumed upon completing a Zero Sum Discharge.
 - Zero Sum Discharge:
@@ -1090,7 +1134,7 @@ Iceborne introduced a new way to access ZSD through the Clutch Claw. However, th
     - The chance of hitting the wrong Monster part has been greatly decreased, especially for fast-moving Monsters.
 
 #### 【 General Changes 】 ####
-- When performed from idle stance, "Axe: Side Slash" replaced with "Axe: Overhead Slash".
+- When performed from neutral stance, "Axe: Side Slash" replaced with "Axe: Overhead Slash".
 - "Axe: Side Slash":
   - MV increased to 30 (up from 23).
 - "Axe: Forward Slash":
@@ -1106,6 +1150,7 @@ Iceborne introduced a new way to access ZSD through the Clutch Claw. However, th
 - "Axe: Sweep Morph":
   - MV decreased to 16+58+29 (down from 20+70+35).
 - "Sword: Phial Burst":
+  - MV increased to 10 (up from 9).
   - Delay significantly decreased to mitigate situations of missing the intended attack location on fast moving monsters.
   - Now also applies to Axe mode attacks.
 - "Sword: Overhead Slash":
@@ -1162,14 +1207,14 @@ Iceborne introduced a new way to access ZSD through the Clutch Claw. However, th
   - Amp State duration increased to 80 seconds (up from 45).
 - Power Axe:
   - Duration increased to 80 seconds (up from 45).
-- "Sword: Hop":
-  - All sword hops can now be cancelled into a roll, just like forward hop.
-  - Reduced endlag on sword hops.
-  - Forward: Hop distance increased to 2.45m (up from 1.8m).
-  - Left: Hop distance increased to 2.5m (up from 1.7m).
-  - Right: Hop distance increased to 2.5m (up from 2.0m).
-  - Backward: Hop distance increased to 2.35m (up from 1.7m).
-  - > Sword hops in vanilla have a significant issue with spacing, as the limited distance combined with the low iframes make it difficult or in many cases impossible to iframe or out space attacks without investing in evasion skills. These changes aim to improve the overall survivability and mobility of sword mode. Also fixes an odd discrepancy in vanilla where the left hop is significantly shorter than the right hop.
+- "Sword: Step" (AKA Hop):
+  - Can now be cancelled into a roll (was previously only possible for forward steps).
+  - Reduced recovery animation.
+  - Forward Step: Distance increased to 2.45m (up from 1.8m).
+  - Left Sidestep: Distance increased to 2.5m (up from 1.7m).
+  - Right Sidestep: Distance increased to 2.5m (up from 2.0m).
+  - Backstep: Distance increased to 2.35m (up from 1.7m).
+  - > Sword Steps in vanilla have a significant issue with spacing, as the limited distance combined with the low i-frames make it difficult or in many cases impossible to i-frame or out distance attacks without investing in evasion skills. These changes aim to improve the overall survivability and mobility of Sword Mode. Also fixes an odd discrepancy where Left Sidestep is significantly shorter than Right Sidestep.
 - Special Claw Shot:
   - MV increased to 8+61 (up from 7+55).
   - Element Modifier increased to 1.2x (up from 1.0x).
@@ -1350,7 +1395,7 @@ Many of the following changes are intended to address ammo-to-ammo balance, with
   - Fire damage decreased to 0+0 (was 40+20).
   - > Wyvern ammo wasn't particularly strong, but the fire damage further limited its usefulness.
 - Elemental Ammo:
-  - Damage decreased by 17.5%
+  - Physical and Element Damage decreased by 20.0%
   - Damage reduced to 0% after the 6th hit (down from 20% after the 9th hit).
 - Dragon Ammo:
   - MV increased to 4 (up from 2).
