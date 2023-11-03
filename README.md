@@ -356,6 +356,7 @@ Fatalis Weapons:
     - Removed delay between each option fading in.
   - Other UIs:
     - Intro and outro animations sped up.
+- Item Loadout and Equipment Loadout maximum name length increased to 20 (up from 16).
 
 #### 【 Systems Changes 】 ####
 - Despawn time for item drops from Monsters increased to 30 minutes (up from 1 or 2 minutes).
@@ -484,6 +485,13 @@ The following changes to Slinger damage are intended to address one or more of t
     - Dragon Pod Explosions:
       - MV increased to 15 (up from 5).
       - Element Damage decreased to 50 Dragon (down from 80 Dragon).
+      
+### ──────────【 Clutch Claw 】────────── ###
+
+- Claw Shot:
+  - Maximum range increased to 13m for Blademasters (up from 9m).
+  - > This change makes Claw Shot's range consistent between Blademasters and Gunners.
+
 
 ### ──────────【 Great Sword 】────────── ###
 
@@ -1347,7 +1355,6 @@ The changes below mainly are intended to bring up underpowered moves to increase
 - "Sticky Aim" behavior has been removed.
   - > In vanilla, when using certain moves like Power Shots and Charge Step, the aiming reticle will "stick" to where the Hunter was aiming. This can often lead to missed shots when the reticle stays in mid-air where the monster has already moved away from. While this behavior can be canceled by momentarily aiming at something else, this can be annoying and tiresome for many Hunters.
 - Dragon Piercer:
-  - Damage type changed to Sever (was Shot).
   - MV increased to 21/25/30/36 (up from 19/20/23/24).
   - Element Modifier increased to 0.3x/0.3x/0.45x/0.45x (up from 0.15x/0.2x/0.3x/0.3x).
   - Status Modifier increased to 0.3x/0.35x/0.4x/0.5x (up from 0.15x/0.2x/0.3x/0.3x).
