@@ -261,9 +261,10 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
 - Item Prolonger:
   - Increased bonus to 33%/66%/100% (from 10%/25%/50%).
 - Maximum Might:
-  - Level 5 Affinity bonus increased to 50% (up from 40%).
-  - Max Stamina time requirement decreased to 0 seconds (down from 5).
-  - Lingering buff duration changed to only apply at level 4 (2 seconds) and level 5 (3 seconds).
+  - Affinity bonus changed to 10%/20%/30%/40%/50% (from 10%/20%/30%/40%/40%).
+  - Max Stamina time requirement changed to 0/0/0/0/0 (from 5/5/5/5/0).
+  - Lingering buff duration changed to 0/0/0/1/2 (from 2/3/3/4/0).
+  - Lingering buff duration changed to only apply at level 4 (1 second) and level 5 (2 seconds).
 - Non-Elemental Boost:
   - Base Attack bonus increased to 10% (up from 5%).
   - > This reverts a nerf from IB.
