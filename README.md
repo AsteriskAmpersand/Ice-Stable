@@ -795,7 +795,8 @@ The full changes are as follows:
   - > In vanilla, FSS's ability to instantly fill the Spirit bar (or delete the bar on failed counters) negated most of the value in generating Spirit with other moves. With these changes, FSS is no longer a Spirit generator, but it still remains a powerful defensive tool.
 - Special Sheathe:
   - Quick Sheathe bonus effect changed to apply fully to sheathing animation.
-  - Upon sheathing, can be canceled by rolling after a 1 second delay.
+  - Upon sheathing for at least 1 second, can be canceled by evading in any direction.
+  - An audio and visual cue will be triggered When performed with at least 35% spirit (for ISS).
 - Iai Slash:
   - MV decreased to 16+12 (down from 18+13).
   - Spirit generation increased to 5% per hit (up from 0%).
@@ -1022,6 +1023,7 @@ The details for these changes are below:
   - Fixed Damage changed to 16/19/22/28/32/36/44/50/56 (was 18/26/32/40/48/54/61).
   - Fire Damage changed to 8/9/10/11/12/13/14/15/16 (was 6/8/10/11/12/13/14).
 - Charged Shelling:
+  - Can now be performed from a neutral stance.
   - Based on "Long" Charged Shelling.
   - Consumes 2 shells per use (up from 1), allowing for up to 3 shots per magazine (was 4 shots).
   - Fixed Damage changed to 32/38/44/56/64/72/88/100/112 (was approximately 28/42/59/68/87/101/118).
@@ -1109,6 +1111,7 @@ Morph Slashes have been enabled where previously only a normal Morph was possibl
   - Advancing Version:
     - Can now be performed from Left/Right Sidesteps or backwards roll using "Weapon Special Attack" with a forwards directional input (R2 + Forward on PS, RT + Forward on XB).
     - Can now be performed from neutral stance using "Weapon Special Attack" with a forwards directional input (R2 + Forward on PS, RT + Forward on XB).
+    - Can now be performed from the landing stance after a Clutch Claw Weapon Attack (Forward + R2 on PS, or Forward + RT on XB).
 - "Sword: Morph Slash":
   - Normal Version:
     - Can now be performed from all step dodges using "Weapon Special Attack" (R2 on PS, RT on XB).
@@ -1420,15 +1423,14 @@ Many of the following changes are intended to address ammo-to-ammo balance, with
 
 
 #### 【 Melee Attack Hyper Armor 】 ####
-- Bowgun melee attack has been given 15 frames of hyperarmor (from frame 7 to 22).
--> HBG wanted a way of dealing with calculated trades at short range but without completely invalidating its roll.
-- The animation was shortened by 25%.
-- If a hit connects it gets additional 15 frames of Hyperarmor and the animation finishes 10% faster.
--> This rewards using the move when in melee range, vs using it freely at farther ranges.
-- It now consumes 25 points of stamina (affected by stamina cost reducers).
-- If one attempts to perform the move without stamina it will perform the traditional melee attack (without hyperarmor or accelerated animation).
-- The traditional melee attack now slows stamina regeneration to 10% during it's animation.
--> This limits the spamming potential of the move
+The following changes are targeted at providing HBG a way of dealing with calculated trades at short range, without invalidating its roll.
+- Melee Attack:
+  - Stamina consumption increased to 25 (up from 0).
+  - Hitlag reduced to effectively 1 frame (down from 20).
+  - When performed with sufficient stamina:
+    - Has 15 frames of Hyperarmor (from frame 7 to 22).
+    - Attack speed increased by about 16%.
+    - When successfully hitting a Monster, the hunter gets an additional 15 frames of Hyperarmor.
 
 #### 【 Numerical Changes 】 ####
 - Close Range Up Mod: Maximum active range increased to 8m (up from 6m).
