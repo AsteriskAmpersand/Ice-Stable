@@ -4,14 +4,14 @@ Welcome to the download page for Iceborne Community Edition. Join us at https://
 
 Iceborne Community Edition (ICE) is an overhaul mod for MHW: Iceborne, driven by community feedback and suggestions. ICE preserves the spirit of the game's core design and direction, but offers improvements to the game in an effort to provide a more balanced and diverse experience for all hunters.
 
-This mod is a work-in-progress, and still in developement. 
+This mod is a work-in-progress, and still in developement.
 
 ICE is compatible with online play. ICE hunters are matched exclusively with other ICE hunters to prevent negatively affecting vanilla hunters.
 
 Features:
 - Smoother Progression: Play through at your own pace, without being held back by cutscenes or unreasonable grinds.
 - Quality-of-Life Additions: Spend more time enjoying each hunt, and less time in menus or stuck in base.
-- Clutch Claw Rework: Let the Clutch Claw take a backseat, as you re-experience the fast-paced combat of MHW as it was originally intended. 
+- Clutch Claw Rework: Let the Clutch Claw take a backseat, as you re-experience the fast-paced combat of MHW as it was originally intended.
 - Weapon Moveset Reworks: Master the 14 weapon types in new ways, with increased depth and variety in optimal combos for hunters.
 - Skill Reworks: Make more impactful choices when it comes to skill loadouts. More variety, more active skills, less passives.
 - Bug Fixes: Play the game with less pesky bugs to hold you back.
@@ -20,124 +20,22 @@ Features:
 
 # Table of Contents #
 
-- [ICE Manager](#ice-manager)
-- [Legacy - Installation Guide](#installation-guide)
-- [Legacy - Save File System](#save-file-system)
-- [Known Issues](#known-issues)
+- [Setup Information](#ice-setup-information)
 - [Change Log](#change-log)
   - [General Changes](#general-changes)
-  - [Weapon Changes (Stable Build)](#weapon-changes-stable-build)
-  - [Weapon Changes (Experimental Build)](#weapon-changes-experimental-build)
+  - [Weapon Changes (Stable Build)](https://github.com/AsteriskAmpersand/Ice-Stable#weapon-changes-stable-build)
+  - [Weapon Changes (Experimental Build)](https://github.com/AsteriskAmpersand/Ice-Experimental#experimental-weapon-changes)
 
 - - - -
 
-# ICE Manager #
-As of the latest release. ICE now has a version manager. It can be found here: <https://github.com/AsteriskAmpersand/Ice-Experimental/releases>.
-
-The ICE Manager simplifies the ICE install and update process. As well as transferring save files and mods on your first install.
-
-![](https://cdn.discordapp.com/attachments/920464605367644200/985342975871680602/unknown.png)
-
-- You can first pick whichever version of ICE you prefer (the manager allows switching versions with one click). 
-- You can transfer your base game save file and mods to ICE (mods may not all be compatible, the game will tell you of this when first booting up). 
-- You can also update from now on, simply by clicking the "Update" button.
-- You can Disable and Enable ICE with a single click as well
-- You can fully uninstall ICE if you so desire.
-
-
-
-# Installation Guide #
-
-This instructions are no longer necessary, simply grabbing the [ICE Manager](#ice-manager) should be all that you need to install ICE.
-
-## First Time Installation ##
-Follow these steps if you've never installed ICE before:
-1. Install Stracker's Loader and all it's prerequisites found here: <https://www.nexusmods.com/monsterhunterworld/mods/1982/>
-2. On this Github page, click on the green "Code" button and then "Download ZIP".
-3. Extract the contents of the ZIP file to a temporary location (Desktop, Downloads, etc).
-4. Copy all the contents within the "ice-stable-main" (or "ice-experimental-main") folder directly to your root Monster Hunter World install folder (default path is `...\Steam\steamapps\common\Monster Hunter World\`. You have the right folder if "MonsterHunterWorld.exe" exists in that folder).
-5. When asked about file conflicts, overwrite any existing files.
-6. (Optional) Install any mods you want to use with ICE in the `...\Monster Hunter World\ICE\ntPC\` folder. Install any plugins in `...\Monster Hunter World\ICE\ntPC\plugins\`.
-7. Launch game in Admin Mode (required only on first time installs). 
-8. Check save file management section when you are asked to create a new ICE save file when launching the game.
-
-## Updating Or Re-installing ICE ##
-Follow these steps if you want to grab the latest version of ICE:
-1. Click on the green "Code" button and then "Download ZIP".
-2. Extract the contents of the ZIP file to a temporary location (Desktop, Downloads, etc).
-3. Copy all the contents within the "ice-stable-main" (or "ice-experimental-main") folder directly to your root Monster Hunter World install folder (default path is `...\Steam\steamapps\common\Monster Hunter World\`. You have the right folder if "MonsterHunterWorld.exe" exists in that folder).
-4. When asked about file conflicts, overwrite any existing files.
-
-## Turning ICE ON / OFF ##
-ICE supports easy on/off in case you want to switch back and forth between mods.
-- If you want to disable ICE: Rename the main ICE folder to anything else.
-- If you want to re-enable ICE: Rename the main ICE folder back to "ICE"
-- If you want to reinstall ICE just download from repo and unzip into MHW.exe folder
-
-## Uninstallation ##
-If you want to uninstall ICE:
-- (Easy Version) In the Monster Hunter World folder, delete the main ICE folder.
-- (Full Version) In the Monster Hunter World folder, delete the main ICE folder, cryptbase.dll, loader.dll, ice_managed_code.dll. Then reinstall Stracker's Loader if you need it for other mods: <https://www.nexusmods.com/monsterhunterworld/mods/1982/>
-
-## Installing Other Mods with ICE ##
-If you want to install mods alongside ICE, we strongly recommend hunters stick with cosmetic/visual mods only. Gameplay mods will likely cause conflicts and compatibility issues. If you do wish to try gameplay mods at your own risk, we ask you to be considerate of other hunters and play offline only, just like you would without ICE.
-1. Install mods in the `...\Monster Hunter World\ICE\ntPC\` folder. This ntPC folder is used instead of nativePC, while ICE is enabled.
-2. Similarly, plugins are installed in the `...\Monster Hunter World\ICE\ntPC\plugins\` folder.
-While ICE is enabled, mods and plugins are only loaded from the above folders. This allows you to manage your mods for ICE separately.
-
-## Migrating from old ICE ##
-If you were trying ICE before we switched to GitHub downloads, follow these one-time steps to update your ICE install:
-1. Delete your old nativePC folder meant for ICE (save any mods you still want though, if you don't have a copy elsewhere).
-2. On this Github page, click on the green "Code" button and then "Download ZIP".
-3. Extract the contents of the ZIP file to a temporary location (Desktop, Downloads, etc).
-4. Copy all the contents within the "ice-stable-main" (or "ice-experimental-main") folder directly to your root Monster Hunter World install folder (default path is `...\Steam\steamapps\common\Monster Hunter World\`. You have the right folder if "MonsterHunterWorld.exe" exists in that folder).
-5. When asked about file conflicts, overwrite any existing files.
-6. (Optional) Install any mods you want to use with ICE in the `...\Monster Hunter World\ICE\ntPC\` folder. Install any plugins in `...\Monster Hunter World\ICE\ntPC\plugins\`.
-7. Launch game in Admin Mode (required only on first time installs)
-8. Check save file management section when you are asked to create a new save file when launching the game.
-
-- - - -
-
-# Save File System #
-This instructions are no longer necessary, simply grabbing the [ICE Manager](#ice-manager) should be all that you need to transfer your save file. First install ICE through the manager (on your preferred version), and then simply click Transfer Save.
-
-ICE manages your character data in a separate save file named "SAVEDATA_ICE". The game normally uses the file named "SAVEDATA1000". These are both located in the standard save folder found at: `...\Steam\userdata\<steamId>\582010\remote\`
-
-Because ICE incorporates changes that are not backwards compatible with the base game, it is necessary for us to separate your save data in this way. This system also allows hunters to quickly switch between ICE and vanilla freely without having to swap out save files. If enabled, ICE will automatically use the "SAVEDATA_ICE" save file. Otherwise, your game will continue to use the "SAVEDATA1000" save file as normal.
-
-As always, it is recommended to make backups of your saves. It only takes one mistake to lose all your save data.
-
-## Creating Your ICE Save File ##
-If you boot up the game with ICE enabled for the first time and it says no save data detected, but you want to use your existing character data, then just follow these steps:
-1. Hit yes to create a new ICE save but DON'T select a language.
-2. If you want to start a new save file, then continue with the setup process in-game and skip the rest of the steps. Otherwise, continue with step 3.
-3. Close the game after the game creates the save file but before selecting a language.
-4. Navigate to your save folder at `...\Steam\userdata\<steamid>\582010\remote\`.
-5. Delete the "SAVEDATA_ICE" file that's in that folder.
-6. Make a copy of your "SAVEDATA1000" file and rename that copy to "SAVEDATA_ICE"
-7. Start the game again.
-
-## Updating Your ICE Save File ##
-If you've continued to play on your vanilla save and want to overwrite your ICE save progress, then follow these steps:
-1. Remove "SAVEDATA_ICE" if it exists (or throw it into another folder for safe keeping).
-2. Make a new copy of "SAVEDATA1000".
-3. Rename that copy to "SAVEDATA_ICE".
-
-## Photo Data ##
-ICE currently does not isolate photo/image data. As such, if you do use the in-game photo feature, make sure to backup the 3 photo data files in your save folder at `...\Steam\userdata\<steamid>\582010\remote\`. If the game detects a mismatch between your save file and your photo data, it will ask to create a new one, which would delete your photo data in the process.
-
-- - - -
-
-# Known Issues #
-
-## Language Support ##
-ICE currently only officially supports English language for text. You can use any voice language you prefer though.
-
-## Incorrect Text / Descriptions ##
-Much of the text found in ICE has not yet been updated to reflect changes made to the game. Our primary focus is on testing gameplay changes first, in an effort to avoid losing time and effort to keep descriptions up-to-date as we try different changes. Once we're further in development, we'll put more effort into covering changes we've made, and also updating descriptions from the game that are inaccurate or ambigious.
-
-## Photo Data ##
-ICE currently does not isolate photo/image data. As such, if you do use the in-game photo feature, make sure to backup the 3 photo data files in your save folder at `...\Steam\userdata\<steamid>\582010\remote\`. If the game detects a mismatch between your save file and your photo data, it will ask to create a new one, which would delete your photo data in the process.
+# Setup Information #
+Information for the following topics can now be found on our GitHub Wiki here: <https://github.com/AsteriskAmpersand/Ice-Stable/wiki>
+- Installing ICE
+- Updating ICE
+- Switching between ICE and vanilla
+- Uninstalling ICE
+- Managing ICE save data
+- Known Issues
 
 - - - -
 
@@ -158,19 +56,20 @@ The dominance of the Clutch Claw has been drastically reduced to bring back the 
   - Clutch Claw Boost skill (Shaver Decoration) no longer has any effect for now.
 
 ### ──────────【 Monster Hitzones 】────────── ###
-Since Capcom balanced Monster hitzone values (HZV) in Master Rank to accommodate the powerful effects of softening, some Monster hitzone values have been rebalanced with the following general goals:
-- Compensate for the Clutch Claw nerfs as necessary.
-- Ensure all hunter weapons have primary weakzones to aim for, without the need for softening.
-- Ensure that secondary weakzones that previously required softening, are either always weakzones or can still become weakzones.
+Monster hitzone values (HZV) have been rebalanced in Master Rank to compensate for reduction in Clutch Claw power. All weapons have a primary weakzone to aim for, without the need for softening. Some secondary weakzones that previously required softening to active, are now either always weakzones or can still become weakzones through softening. Additionally, some monsters have had their existing element weakness amplified so that bringing element is more of an option.
 
-Full details for individual monsters can be found here: https://docs.google.com/spreadsheets/d/1nzN2zYD1VbeEuKGlrYPRDZPHjfyy0y-SawwSEaTZ8OQ/edit?usp=sharing
+Full details for individual monsters can be found on our HZV Rework spreadsheet: https://docs.google.com/spreadsheets/d/1nzN2zYD1VbeEuKGlrYPRDZPHjfyy0y-SawwSEaTZ8OQ/edit?usp=sharing
 
-In addition, the following monsters received changes that are worth calling out specifically.
+In addition, the following monsters received other changes that are worth calling out specifically.
 
 - Alatreon:
   - Head & Neck: Shot HZV increased to 50 (up from 30).
   - Body: Shot HZV decreased to 30 (down from 45).
   - Arms: Shot HZV increased to 40 (up from 20).
+  - Dragon HZV modifier:
+    - Increased to 0.5x during Fire and Ice states (up from 0.1x).
+    - Increased to 1.1x during Dragon state (up from 0.7x).
+    - > These changes are intended to enable Dragon to be a 3rd alternative element pick for a wider range of weapon types.
 - Behemoth:
   - Head: Blunt HZV increased to 65 (up from 55).
   - Arms: Blunt HZV increased to 45 (up from 40).
@@ -180,7 +79,7 @@ In addition, the following monsters received changes that are worth calling out 
 - Lunastra:
   - Head: Sever HZV increased to 45 (up from 40) for both HR and MR.
   - Body: Sever and Blunt HZV increased to 20 (up from 17) for MR.
-  - Back: Sever and Blunt HZV increased to 20 (up from 17) for MR.    
+  - Back: Sever and Blunt HZV increased to 20 (up from 17) for MR.
   - Hindlegs:
     - Sever HZV increased to 45 (up from 30) for both HR and MR.
     - Blunt HZV increased to 40 (up from 25) for both HR and MR.
@@ -222,7 +121,7 @@ Certain Decorations are now guaranteed to drop at least once during game progres
 #### 【 Decoration Drop Rates 】 ####
 Decoration drop rates have been completely reworked and drastically improved.
 - Decorations are classified by their value, which is based on the strength and usability of skills provided.
-- Higher value decorations will drop from higher rarity Feystones. 
+- Higher value decorations will drop from higher rarity Feystones.
 - Full details can be found here: <https://www.nexusmods.com/monsterhunterworld/mods/2162>
 
 #### 【 Dracolites 】 ####
@@ -255,26 +154,28 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
   - Bonus gauge generation increased to 10/18/25% (up from 5/10/20%).
   - > This change helps gauge-based weapons reach certain meaningful breakpoints.
 - Fortify:
-  - Duration increased to 9.1 hours (up from 50 minutes). 
+  - Duration increased to 9.1 hours (up from 50 minutes).
   - > This partially reverts a nerf from IB, as Capcom's nerf only encouraged players to restart their Guiding Lands session every 50 minutes, rather than addressing any balance issues with Fortify.
-- Heroics: Base Attack bonus changed from 0/5/5/10/15/25/40% to 5/10/15/20/25/30/40%.
+- Heroics:
+  - Base Attack bonus changed from 0/5/5/10/15/25/40% to 5/10/15/20/25/30/40%.
 - Item Prolonger:
-  - Increased bonus to 33%/66%/100% (from 10%/25%/50%).
+  - Item duration bonus increased to 33%/66%/100% (from 10%/25%/50%).
 - Maximum Might:
   - Affinity bonus changed to 10%/20%/30%/40%/50% (from 10%/20%/30%/40%/40%).
-  - Max Stamina time requirement changed to 0/0/0/0/0 (from 5/5/5/5/0).
-  - Lingering buff duration changed to 0/0/0/1/2 (from 2/3/3/4/0).
-  - Lingering buff duration changed to only apply at level 4 (1 second) and level 5 (2 seconds).
+  - Max Stamina time requirement changed to 0/0/0/0/0s (from 5/5/5/5/0s).
+  - Lingering buff duration changed to 0/0/0/1/2s (from 2/3/3/4/0s).
 - Non-Elemental Boost:
   - Base Attack bonus increased to 10% (up from 5%).
   - > This reverts a nerf from IB.
-- Power Prolonger: 
-  - Dual Blades & Switch Axe bonus decreased to 1.15x/1.30x/1.40x (down from 1.3x/1.6x/2.0x).
-  - Long Sword, Charge Blade, & Insect Glaive bonus changed to 1.15x/1.30x/1.40x (was 1.1x/1.2x/1.4x).
+- Offensive Gaurd:
+  - Base Attack bonus increased to 6%/12%/20% (up from 5%/10%/15%).
+- Power Prolonger:
+  - Dual Blades & Switch Axe duration bonus decreased to 1.15x/1.30x/1.40x (down from 1.3x/1.6x/2.0x).
+  - Long Sword, Charge Blade, & Insect Glaive duration bonus changed to 1.15x/1.30x/1.40x (was 1.1x/1.2x/1.4x).
 - Quick Sheathe:
   - Speed bonus changed to 15/30/40% (from 10/20/40%).
 - Weakness Exploit:
-  - Affinity bonus changed to 15/30/50%. Softening requirement removed. 
+  - Affinity bonus changed to 15/30/50%. Softening requirement removed.
   - > This reverts a nerf from IB and is intended to reduce reliance on Clutch Claw softening.
 
 - Critical Element / True Critical Element (Set Bonus Skill):
@@ -288,9 +189,9 @@ While a more comprehensive rework and rebalancing of skills is planned for ICE i
   - Status Limit Override increased to 3.5x/4.0x of Base Status (up from 1.7x/2.0x).
 - Element Conversion (Set Bonus Skill):
   - Conversion rate increased to 8x for all weapons (up from 5x, or 2x for Bowguns).
-  > This change brings the power level of the Alatreon set close to other element-based sets, allowing it to be used as a competitive alternative.
+  > This change brings the power level of the Alatreon set close to other element sets, allowing it to be used as a competitive alternative.
 - Master's Touch (Set Bonus Skill):
-  - Changed from triggering on critical hits to triggering on hitting weak spots.
+  - Activation condition changed to "on weakspot hits" (was "on Critical hits").
 
 ### ──────────【 Equipment 】────────── ###
 
@@ -304,14 +205,15 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 
 - Fatalis and Velkhana Gamma Sets have been reduced in skills and deco slots. Fatalis Set no longer has access to Transcendence.
 - These sets should still be competitive compared to options before their introduction.
-- Changes to armors will be tracked separately on the Armor Spreadsheet.
+- Changes can be seen using Chantox's MHW Builder when selecting "ICE" mode: <https://mhw-builder.vercel.app/>
 
 #### 【 Weapon Changes 】 ####
 Safi'Jiiva Light Bowguns:
   - Ammo tables have been updated to match Aquashot, but for each of their respective element types.
-Fatalis Weapons:
-  - Normalized (with the exception of LBG) to 340 Attack, -30% affinity.
-  - > While weapons are normally dealt with on a more specific basis, this is a cross-weapon nerf that was necessary both because of the inconsistencies it generates with weapon progression as well as the aberrant stat values it had in specific outliers.
+Fatalis Rarity 12 Weapons (All, except for LBG):
+  - Base Attack standardized to 340 Attack (was 340 to 370).
+  - Base Affinity standardized to -30% (was -20% to -40%).
+  - > This cross-weapon nerf was performed to address a number of issues introduced by these weapons such as unnecessarily shifting the meta away from element. We also understand some weapons likely were given higher stats (such as Lance) to compensate for their poor performance relative to other weapons. However, we believe improving these weapons' core movesets is a better solution than to only tack on a buff to Fatalis weapons.
 
 #### 【 Augments and Upgrades 】 ####
 - Health Regen augment:
@@ -337,8 +239,10 @@ Fatalis Weapons:
 ### ──────────【 Quality of Life 】────────── ###
 
 #### 【 User Interface Changes 】 ####
-- Equipment UIs now show true Attack (aka Raw) and true Element Damage/Buildup values for weapons.
-  - > This removes the useless bloat multipliers that were artificially inflating numbers in UIs, but weren't actually being used by the game for any calculations.
+- Equipment UIs:
+  - Attack values now show true Attack (was inflated by 1.2x to 5.2x depending on weapon).
+  - Element Damage/Buildup values now show true Element Damage/Buildup (was inflated by 10x for all weapons).
+  - > Player damage is unaffected. These changes only remove the various "bloat" multipliers that were causing misleading values to be displayed in the UI. Now players can see the true values being used by the game, which will correctly match values indicated in skill bonuses.
 - Chat UI:
   - Maximum message length increased to 60 (up from 40).
   - The selected chat channel no longer changes during certain actions (joining party/session/etc).
@@ -376,7 +280,7 @@ Fatalis Weapons:
   - Fertilizer maximum stackable duration increased to 20 quests (up from 9).
   - > Theses changes remove the constant attention required to maintain the Botanical Research Center. Hunters will only have to check on their BRC to reapply fertilizers as often as they need to collect their harvests (about every 15 to 20 quests once fully upgraded). These changes also make it so that restarting fertilizers (if expired) isn't a significant hassle.
   - Fertilizer balancing:
-    - Research Point costs for Mega Fertilizer, Choice Mushroom Substrate, Thick Summoner Jelly, and Ancient Catalyst have been reduced. 
+    - Research Point costs for Mega Fertilizer, Choice Mushroom Substrate, Thick Summoner Jelly, and Ancient Catalyst have been reduced.
     - Ancient Catalyst duration increased to 5 quests (up from 4), to justify its higher cost relative to normal Catalyst.
     - > Since these fertilizers have lost their main advantage of allowing hunters to stack fertilzers faster between quests, they are now positioned as slightly more efficient versions of the basic fertilizers.
 - Elder Melder:
@@ -406,7 +310,7 @@ Fatalis Weapons:
   - Hunters will still see a hit effect (sparks), but the guarding hunter no longer consumes stamina and does not get locked into any follow-up guard reaction animations.
   - This change does not affect how hunters react to attacks they cannot block (attacks from behind, unblockable attacks, etc).
   - > In vanilla, shield weapons experienced extra downsides compared to other weapons when fighting in close proximity with other hunters. In particular, Lance hunters could have their Counter Thrusts triggered early by another hunter, resulting in getting hit by the Monster attack that they were preparing to counter. With this change, these potentially frustrating situations are removed from the game.
-  
+
 ### ──────────【 Bug Fixes 】────────── ###
 
 - DPS Tick Fix: The engine components responsible for specifically handling ticking damage effects have been upgraded to mitigate the negative effects of frame rate on player damage output. In some cases, player damage could be reduced as much as 25% just for not playing at a stable 60fps. Some examples here: <https://bit.ly/MHWEffectsOfFPS>
@@ -417,13 +321,12 @@ Fatalis Weapons:
 ### ──────────【 Monster Changes 】────────── ###
 
 #### ──────────【 Monster Hitzones / Softening 】────────── ####
-Details for this section are covered under General Changes near the top of this Change Log.
+Details for Monster Hitzone changes and Clutch Claw Softening are found near the top of [General Changes](#general-changes).
 
 #### ──────────【 Alatreon 】────────── ####
 Due to element damage output increasing significantly on many weapon types, Alatreon's weapon-specific element topple multipliers have been adjusted. A lower multiplier means a weapon's element damage will count for less and the hunter will need to deal more total element damage to reach each topple.
 - Great Sword modifier decreased to 0.8x (down from 1.1x).
 - Hunting Horn modifier decreased to 0.8x (down from 1.0x).
-- Gunlance modifier decreased to 1.0x (down from 1.1x).
 
 
 ## Weapon Changes (Stable Build) ##
@@ -486,7 +389,7 @@ The following changes to Slinger damage are intended to address one or more of t
     - Dragon Pod Explosions:
       - MV increased to 15 (up from 5).
       - Element Damage decreased to 50 Dragon (down from 80 Dragon).
-      
+
 ### ──────────【 Clutch Claw 】────────── ###
 
 - Claw Shot:
@@ -500,7 +403,7 @@ The following changes to Slinger damage are intended to address one or more of t
 The following changes are intended to offer a new playstyle option for GS that is competitive with the current TCS-focused playstyle, without replacing it. Combat will be focused around utilizing non-charging combo attacks to lead into Jumping Wide Slash as a powerful combo finisher. Finding openings to fit powered-up Jumping Wide Slashes safely, will be core to mastering this playstyle. This playstyle will favor elemental builds.
 - New Combo System:
   - Overhead Slash, Wide Slash, and Rising Slash increase combo count by 1, up to a maximum of 3.
-  - Jumping Wide Slash can be used immediately after the above moves by pressing △ + R2 on PS, or Y + RT on XB. 
+  - Jumping Wide Slash can be used immediately after the above moves by pressing △ + R2 on PS, or Y + RT on XB.
   - Jumping Wide Slash's power level will match the Hunter's current combo count.
   - Side Blow, Tackle, and Slinger Burst can be used without resetting the current combo count.
   - Combo count resets when performing any other actions or attacks not mentioned above (idle, evading, charging attacks, sheathing, etc).
@@ -539,7 +442,7 @@ The following changes are intended to offer a new playstyle option for GS that i
 - True Charge Slash:
   - First Hit:
     - Element Modifier increased to 1.2x (up from 1.0x).
-    - Status Mod decreased to 0.0x (down from 1.0x). 
+    - Status Mod decreased to 0.0x (down from 1.0x).
       - > This change prevents niche cases where the first hit might cause the monster to move out of range of the second hit.
   - Second Hit:
     - Element Modifier increased to 1.65x/1.8x/2.05x (up from 1.4x/1.5x/1.7x).
@@ -551,7 +454,7 @@ The following changes are intended to offer a new playstyle option for GS that i
       - > This change compensates for the loss of status application on the first hit.
 - Strong Wide Slash:
   - Element and Status Modifiers increased to 1.20x/1.55x/1.80x (up from 1.0x/1.3x/1.5x).
-- Kick: 
+- Kick:
   - Stun value increased to 20 (up from 10).
   - Exhaust value increased to 15 (up from 5).
 - Clutch Claw Weapon Attack:
@@ -567,12 +470,13 @@ The following changes are intended to offer a new playstyle option for GS that i
 
 ### ──────────【 Sword & Shield 】────────── ###
 
-#### 【 New Parry Option 】 ####
-The following changes are intended to give Hunters an additional defensive option that fits the theme of the weapon (parrying with a buckler shield) while increasing variety in gameplay. Hunters that master this new technique will be able to weave counter-attacks against weaker Monster attacks into their existing play.
+#### 【 New Move: Parry 】 ####
+The following changes are intended to give Hunters an additional defensive option that fits the theme of the weapon (parrying with a buckler shield). Hunters that master this new technique will be able to weave counter-attacks into their existing play when confronting Monsters' light attacks (such as quick swipes and roars).
 - Parry (previously Guard Slash):
-	- Now has a guardpoint starting from 0.10s from the start of the animation, lasting 0.20s (12 frames at 60fps).
-	- When hit during the guardpoint, small knockbacks will result in immediately counter-attacking with a Shield Bash. This Shield Bash can combo into Leaping Slash (△ on PS, Y on XB) or directly into Perfect Rush (O on PS, B on XB).
-	- Consumes 25 stamina on use.
+  - Now has a guardpoint at the start, lasting 0.30s (18 frames at 60fps).
+  - Guard Thresholds increased by +10 (relative to normal guarding).
+  - When hit during the guardpoint, small knockbacks will result in immediately counter-attacking with a Shield Bash. This Shield Bash can combo into Leaping Slash (△ on PS, Y on XB) or directly into Perfect Rush (O on PS, B on XB).
+  - Consumes 25 stamina on use.
   - Most attacks that previously could combo into Backstep, now can also combo into Parry.
   - > Hunters will need to recognize and react accordingly to which attacks they can and cannot parry, as many Monster attacks will be too strong for a small shield. In addition, when comboing directly from Shield Bash into Perfect Rush, the Shield Bash will effectively replace the first hit in Perfect Rush I. Skilling for Guard is advised, to maximize the number of attacks that can be parried.
 
@@ -585,47 +489,47 @@ The Helm Breaker attack (aka Helm Splitter) has been reworked to offer a sword-b
   - Element and Status Modifier changed to 1.0x+1.0x+1.0x (was 0.3x per hit).
   - Mount Buildup removed (was 25).
 
-#### 【 Quality of Life Changes 】 ####
+#### 【 Quality of Life 】 ####
 - Backstep (aka Backhop):
-	- During a forward roll, Hunters can now hold a desired direction and queue a directional Backstep before the roll ends.
-		- > Previously, early inputs would result in comboing into a backwards Backstep and late inputs would result in comboing into other attacks, leaving only a small 0.250s window that was difficult for Hunters to consistently hit. With this change, early inputs are no longer an issue.
-	- When starting a Guard, the time available to input a Backstep safely has been increased to 0.417s (up from 0.283s).
-		- > This increases the window that Hunters have by 50%, which should greatly increase the reliability of using Backstep right after a guard.
+  - During a forward roll, Hunters can now hold a desired direction and queue a directional Backstep before the roll ends.
+    - > Previously, early inputs would result in comboing into a backwards Backstep and late inputs would result in comboing into other attacks, leaving only a small 0.250s window that was difficult for Hunters to consistently hit. With this change, early inputs are no longer an issue.
+  - When starting a Guard, the time available to input a Backstep safely has been increased to 0.417s (up from 0.283s).
+    - > This increases the window that Hunters have by 50%, which should greatly increase the reliability of using Backstep right after a guard.
 - Slinger Aim vs Slinger Burst Aim Mode Toggle:
-	- The Hunter's current selected mode will now still be retained upon sheathing (previously was resetting to Slinger Aim Mode).
+  - The Hunter's current selected mode will now still be retained upon sheathing (previously was resetting to Slinger Aim Mode).
 
 #### 【 General Changes 】 ####
 Many of the following changes are targeted at one or more of the following goals:
 - Increasing the variety of combos and options available to Hunters.
   - > Less used slashing attacks can now be better combined with existing high damage slashes (Lateral Slash + Return Stroke) to create longer and stronger combos without needing to utilize the weaker Spiral Slash as often. In addition, shield attacks can be comfortably used in place of slashes, allowing Hunters to trade only a small amount of damage for added Stun buildup.
-- Reducing the dominance of Perfect Rush. 
+- Reducing the dominance of Perfect Rush.
   - > The changes to Perfect Rush's damage help provide shorter combos (Slash combos, Shield combos, Falling Bash, Helm Breaker) a chance at competing in shorter windows of opportunities, while still maintaining Perfect Rush's advantage of dealing high damage for larger windows. In many situations, it can be better to use other options if the Hunter does not have a large enough window to safely perform up to Perfect Rush II.
 
 - Chop:
-	- MV increased to 17 (up from 14).
+  - MV increased to 17 (up from 14).
 - Side Slash:
-	- MV increased to 14 (up from 13).
+  - MV increased to 14 (up from 13).
 - Rising Slash:
-	- MV increased to 15 (up from 14).
+  - MV increased to 15 (up from 14).
 - Short Shield Bash:
-	- MV increased to 15 (up from 6).
+  - MV increased to 15 (up from 6).
 - Shield Attack:
-	- MV increased to 20 (up from 8).
+  - MV increased to 20 (up from 8).
 - Shield Bash:
-	- MV increased to 20 (up from 16).
+  - MV increased to 20 (up from 16).
 - Hard Bash:
-	- MV increased to 36 (up from 31).
+  - MV increased to 36 (up from 31).
 - Perfect Rush I:
-	- MV decreased to 40+40+50 (down from 45+45+60).
+  - MV decreased to 40+40+50 (down from 45+45+60).
 - Perfect Rush II:
-	- MV increased to 60 (up from 55).
+  - MV increased to 60 (up from 55).
 - Slinger Burst:
   - Now combos into Charged Slash (O on PS, B on XB).
   - > Previously, only Slinger Burst into Perfect Rush I/II provided a strong option for gap closing into medium windows of opportunity (~5 seconds). With this addition, Hunters have a new option to trade damage for faster attacks through Falling Bash and Helm Breaker.
 - Clutch Claw Weapon Attack:
-	- Final Hit:
-		- Partbreak Modifier increased to 2.35x (up from 1.00x).
-		- > This change compensates for the first three hits having a Partbreak Modifier of 0.0x.
+  - Final Hit:
+    - Partbreak Modifier increased to 2.35x (up from 1.00x).
+    - > This change compensates for the first three hits having a Partbreak Modifier of 0.0x.
 
 ### ──────────【 Dual Blades 】────────── ###
 
@@ -633,25 +537,25 @@ Many of the following changes are targeted at one or more of the following goals
 Demon Gauge generation and consumption has been reworked in an effort to make the management of Demon vs Archdemon Mode a more impactful component of Dual Blades gameplay. These changes should provide Hunters more options for combos as they flow back and forth between the two modes. Demon Mode will continue to be the primary method of dealing high damage at the cost of stamina, while Archdemon Mode will offer supplemental damage while stamina regenerates.
 
 - Demon Mode:
-	- Stamina consumption increased to 10/s (up from 5/s).
-	- Demon Gauge generation has been reduced overall.
-		- Most attacks generate 2.75% per hit (up from 2.5%).
-		- Heavier hitting attacks generate 5.5% per hit (up from 5%).
+  - Stamina consumption increased to 10/s (up from 5/s).
+  - Demon Gauge generation has been reduced overall.
+    - Most attacks generate 2.75% per hit (up from 2.5%).
+    - Heavier hitting attacks generate 5.5% per hit (up from 5%).
     - The last two hits of Sixfold Demon Slash generate 8.25% (down from 20% per hit).
-		- > This mainly addresses specific moves that were disproportionately generating far more Demon Gauge than other moves, and trivializing gauge generation.
-	- Automatically de-activates if the Hunter is sent flying by an attack, to avoid wasting stamina.
-	- Turning Demon Mode Off:
-		- When performed after an attack, the downward swing with both weapons now has an active hitbox with the following stats:
-			- MV of 8+8
-			- Element and Status Modifier of 0.6x+0.6x 
-		- Can be performed sooner after Blade Dance.
-		- > These changes allow Demon Mode attacks to flow directly into Archdemon Mode attacks, enabling the Hunter to continue fighting while regenerating stamina.
+    - > This mainly addresses specific moves that were disproportionately generating far more Demon Gauge than other moves, and trivializing gauge generation.
+  - Automatically de-activates if the Hunter is sent flying by an attack, to avoid wasting stamina.
+  - Turning Demon Mode Off:
+    - When performed after an attack, the downward swing with both weapons now has an active hitbox with the following stats:
+      - MV of 8+8
+      - Element and Status Modifier of 0.6x+0.6x
+    - Can be performed sooner after Blade Dance.
+    - > These changes allow Demon Mode attacks to flow directly into Archdemon Mode attacks, enabling the Hunter to continue fighting while regenerating stamina.
 
 - Archdemon Mode:
-	- Enables the use of Demon Mode Dashes.
-		- Each dash will consume 5% Demon Gauge while not in Demon Mode.
-		- > Known Issue: These dashes do not have a proper animation for handling weapon grip style (standard vs reverse). This will be fixed in a future update.
-	- Rising Slash:
+  - Enables the use of Demon Mode Dashes.
+    - Each dash will consume 5% Demon Gauge while not in Demon Mode.
+    - > Known Issue: These dashes do not have a proper animation for handling weapon grip style (standard vs reverse). This will be fixed in a future update.
+  - Rising Slash:
     - Uses Demon Mode versions with higher damage and faster animation.
     - Attack Speed increased by 20% while Archdemon Mode is active.
   - Double Slash:
@@ -660,17 +564,17 @@ Demon Gauge generation and consumption has been reworked in an effort to make th
   - Double Slash Return Stroke:
     - Attack Speed increased by 20% while Archdemon Mode is active.
     - Damage has been enhanced (see General Changes section).
-  - Circle Slash: 
+  - Circle Slash:
     - Attack Speed increased by 20% while Archdemon Mode is active.
     - Damage has been enhanced (see General Changes section).
-	- Left/Right Roundslash:
-		- Consumes 5% Demon Gauge while not in Demon Mode.
-		- Damage has been enhanced (see General Changes section).
-	- Demon Flurry:
-		- MV increased to 12+12+9+9+9+22+22 (up from 9+9+7+7+3+17+17).
-		- Element and Status Modifier increased to 0.8x+0.8x+0.6x+0.6x+0.6x+1.5x+1.5x (up from 0.8x+0.8x+0.8x+1.0x+1.0x+1.0x).
-		- Now combos into Demon Flurry Rush.
-		- > These changes properly set up Demon Flurry as a strong Archdemon Mode attack that is worth its Demon Gauge cost, without overshadowing Demon Mode.
+  - Left/Right Roundslash:
+    - Consumes 5% Demon Gauge while not in Demon Mode.
+    - Damage has been enhanced (see General Changes section).
+  - Demon Flurry:
+    - MV increased to 12+12+9+9+9+22+22 (up from 9+9+7+7+3+17+17).
+    - Element and Status Modifier increased to 0.8x+0.8x+0.6x+0.6x+0.6x+1.5x+1.5x (up from 0.8x+0.8x+0.8x+1.0x+1.0x+1.0x).
+    - Now combos into Demon Flurry Rush.
+    - > These changes properly set up Demon Flurry as a strong Archdemon Mode attack that is worth its Demon Gauge cost, without overshadowing Demon Mode.
 
 #### 【 Status Buildup Modifiers 】 ####
 Each attack's Status Modifier has been increased to match their Element Modifier.
@@ -695,29 +599,29 @@ Most following changes are targeted at increasing the variety of combos and opti
   - MV increased to 12+15+15 (up from 9+11+11).
   - Element and Status Modifier increased to 0.9x (up from 0.7x).
 - Left/Right Fade Slash:
-	- MV increased to 11+11 (up from 7).
-	- Element and Status Modifier increased to 0.75x+0.75x (was 0.8x).
-	- > This move found very little use in vanilla with such low damage and minor repositioning value. With this change, both Fade Slashes can be used to situationally loop and extend the Demon Slash combo, during windows of opportunity that are too short for stronger/longer follow-up attacks.
+  - MV increased to 11+11 (up from 7).
+  - Element and Status Modifier increased to 0.75x+0.75x (was 0.8x).
+  - > This move found very little use in vanilla with such low damage and minor repositioning value. With this change, both Fade Slashes can be used to situationally loop and extend the Demon Slash combo, during windows of opportunity that are too short for stronger/longer follow-up attacks.
 - Rising Slash (Demon Mode):
-	- MV increased to 12 (up from 9).
-	- > Rising Slash bridges many different moves, but was too heavily dragging down the efficacy of any combo that included it.
+  - MV increased to 12 (up from 9).
+  - > Rising Slash bridges many different moves, but was too heavily dragging down the efficacy of any combo that included it.
 - Left/Right Roundslash:
-	- MV increased to 19+11+7 (up from 15+7+5).
-	- Element and Status Modifier increased to 0.8x+0.8x+0.8x (up from 0.6x+0.6x+0.6x).
-	- > While the damage on these attacks may have seemed reasonable per hit, the damage was too low relative to animation length for a Demon Mode attack.
+  - MV increased to 19+11+7 (up from 15+7+5).
+  - Element and Status Modifier increased to 0.8x+0.8x+0.8x (up from 0.6x+0.6x+0.6x).
+  - > While the damage on these attacks may have seemed reasonable per hit, the damage was too low relative to animation length for a Demon Mode attack.
 - Left/Right Double Roundslash:
-	- MV increased to 24+14+9 (up from 19+11+7).
-	- > While the damage on these attacks may have seemed reasonable per hit, the damage was too low relative to animation length for a Demon Mode attack.
+  - MV increased to 24+14+9 (up from 19+11+7).
+  - > While the damage on these attacks may have seemed reasonable per hit, the damage was too low relative to animation length for a Demon Mode attack.
 - Special Claw Attack:
-	- Claw Attack:
-		- Can be performed outside of Demon Mode, if Archdemon Mode is active. Consumes 20% Demon Gauge if used in this way.
-		- Can be performed after Left/Right Roundslash (L2 on PS, LT on XB).
-		- Can be performed after Blade Dance (L2 on PS, LT on XB).
-		- Can be performed after Demon Flurry (L2 on PS, LT on XB).
-		- > Using a directional input in addition to the input indicated above, will instead result in performing an Evade Shot.
-	- Spinning Rising Slash:
-		- Element and Status Modifier increased to 1.25x+1.25x+1.25x+1.25x (up from 1.0x+1.0x+1.0x+1.0x).
-	- > These changes allow Spinning Rising Slash to be used as a combo finisher, since the move can no longer be used to extend Monster Claggers in ICE.
+  - Claw Attack:
+    - Can be performed outside of Demon Mode, if Archdemon Mode is active. Consumes 20% Demon Gauge if used in this way.
+    - Can be performed after Left/Right Roundslash (L2 on PS, LT on XB).
+    - Can be performed after Blade Dance (L2 on PS, LT on XB).
+    - Can be performed after Demon Flurry (L2 on PS, LT on XB).
+    - > Using a directional input in addition to the input indicated above, will instead result in performing an Evade Shot.
+  - Spinning Rising Slash:
+    - Element and Status Modifier increased to 1.25x+1.25x+1.25x+1.25x (up from 1.0x+1.0x+1.0x+1.0x).
+  - > These changes allow Spinning Rising Slash to be used as a combo finisher, since the move can no longer be used to extend Monster Claggers in ICE.
 - Clutch Claw Weapon Attack:
   - Final Repeated Hits:
     - Partbreak Modifier changed to 2.0x (was 0.0x).
@@ -728,7 +632,7 @@ Most following changes are targeted at increasing the variety of combos and opti
 
 #### 【 Spirit Economy Rework 】 ####
 Spirit generation and consumption has been reworked in an effort to make Spirit management a more impactful component of Long Sword gameplay. The new Spirit changes will offer Hunters a deeper system that better ties together the LS moveset. A summary of the biggest changes are listed here, but full details can be found in the General Changes section, along with explanations of the changes.
-- Foresight Slash no longer generates 100% spirit on success, but it also no longer deletes 100% spirit on use. 
+- Foresight Slash no longer generates 100% spirit on success, but it also no longer deletes 100% spirit on use.
 - Spirit regeneration buffs from Iai Slash and Spirit Helmbreaker have been drastically reduced.
 - Spirit Roundslash no longer deletes remaining Spirit on use, however its cost has been increased.
 - Spirit consuming moves have been adjusted where necessary to justify their Spirit costs.
@@ -753,8 +657,8 @@ The full changes are as follows:
   - Spirit generation decreased to 10% (down from 12%).
 - Rising Slash:
   - MV decreased to 15 (down from 18).
-  - Element and Status Modifiers decreased to 0.7x (down from 1.0x).  
-- Fade Slash: 
+  - Element and Status Modifiers decreased to 0.7x (down from 1.0x).
+- Fade Slash:
   - Spirit generation decreased to 24% (down from 26%).
   - Combo timings now match Lateral Fade Slash timings more closely (was slower).
 - Lateral Fade Slash:
@@ -830,18 +734,7 @@ The full changes are as follows:
 
 ### ──────────【 Hammer 】────────── ###
 
-#### 【 Power Charge Dash Addition 】 ####
-- Power Charge when you are already in Power Charge State instead starts a dash which removes Power Charge State and instead sets the Charge Level to 3. This move is treated as part of a Charge and can combo into any Charge follow-up or continued into a Charge.
-	
-#### 【 Combo Continuation 】 ####
-The following combo continuation is intoduced and is inteded to be a possible continuation of the above listed addition of the Power Charge Dash.
-- Spinning Bludgeon into Spinning Strong Upswing can now combo into Big Bang IV
-- By Releasing R without Directional Input it combos into [Half] Brutal Big Bang
-- By Releasing R with Directional Input it combos into Spinning Bludgeon
-- By Holding R through it, it leads back into Charging.
-- The Dash has 30 frames of Hyperarmor (Frame 10 to Frame 40)
-
-#### 【 Multiplayer Playability 】 ####
+#### 【 Quality of Life 】 ####
 Certain moves for Hammer lacked the necessary innate knockback resistance needed to be appropriately used in multiplayer, despite their core role in Hammer gameplay. The following moves will now grant the Hunter innate minor knockback resistance (roughly equivalent to Flinch Free III):
 - Big Bang Combo
 - Side Slap -> Overhead Smash II -> Upswing Combo
@@ -935,8 +828,8 @@ The full details can be found below:
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
 - Clutch Claw Weapon Attack:
   - Element and Status Modifiers increased to 1.2x+1.2x (up from 1.0x+1.0x).
-  - Second Hit: 
-    - Partbreak Modifier increased to 1.65x (up from 1.0x). 
+  - Second Hit:
+    - Partbreak Modifier increased to 1.65x (up from 1.0x).
     - > This change compensates for the first hit having a Partbreak Modifier of 0.0x.
 
 ### ──────────【 Lance 】────────── ###
@@ -957,14 +850,14 @@ Lance has a solid playstyle and was only lacking damage to compete with other we
 - Counter Thrust:
   - Element and Status Modifiers increased to 1.1x (up from 0.7x).
 - Power Guard:
-	- When held for 1.2s, increases Counter Thrust physical damage by 1.3x and grants the effects of Guard Up (previously only granted the effects of Guard Up).
-	- > This change is intended to give an alternative incentive for committing to a Power Guard, rather than solely for Guard Up. While this option is powerful, it is limited by OFG procs, stamina usage, increased chip damage, and high animation commitment.
+  - When held for 1.2s, increases Counter Thrust physical damage by 1.3x and grants the effects of Guard Up (previously only granted the effects of Guard Up).
+  - > This change is intended to give an alternative incentive for committing to a Power Guard, rather than solely for Guard Up. While this option is powerful, it is limited by OFG procs, stamina usage, increased chip damage, and high animation commitment.
 - Leaping Thrust:
   - MV increased to 11 (up from 8).
   - Element and Status Modifiers increased to 0.4x (up from 0.3x).
 - Dash Attack:
-	- Startup time significantly reduced when used after Mid Thrust III, High Thrust III, or Wide Sweep III.
-	- No longer cancels when running into walls or terrain.
+  - Startup time significantly reduced when used after Mid Thrust III, High Thrust III, or Wide Sweep III.
+  - No longer cancels when running into walls or terrain.
   - MV increased to 12 (up from 11).
   - Element and Status Modifiers increased to 0.5x (up from 0.2x).
 - Finishing Thrust:
@@ -972,7 +865,7 @@ Lance has a solid playstyle and was only lacking damage to compete with other we
   - Element and Status Modifiers increased to 1.6x (up from 0.8x).
 - Finishing Twin Thrust:
   - MV increased to 30+60 (up from 25+50).
-  - Element and Status Modifiers increased to 0.8x+1.6x (up from 0.7x+0.8x). 
+  - Element and Status Modifiers increased to 0.8x+1.6x (up from 0.7x+0.8x).
 - Reverse Attack:
   - MV increased to 60 (up from 50).
   - Element and Status Modifiers increased to 1.6x (up from 0.8x).
@@ -991,15 +884,15 @@ Lance has a solid playstyle and was only lacking damage to compete with other we
   - MV increased to 24 (up from 16).
   - Stun buildup increased to 35 (up from 30).
   - Exhaust buildup decreased to 30 (down from 33).
-- Mounting Finishing Thrust: 
+- Mounting Finishing Thrust:
   - MV increased to 40+20+80 (up from 40+10+20).
-	- Element Modifiers changed to 1.0x+0.5x+2.0x (was 1.0x+1.0x+1.0x).
-	- Status Modifiers changed to 1.0x+0.5x+2.0x (was 0.7x+0.7x+0.7x).
-	- Third Hit:
-		- Partbreak Modifier increased to 1.75x (up from 1.0x).
-		- > Compensates for first two hits having a Partbreak Mod of 0.0x.
+  - Element Modifiers changed to 1.0x+0.5x+2.0x (was 1.0x+1.0x+1.0x).
+  - Status Modifiers changed to 1.0x+0.5x+2.0x (was 0.7x+0.7x+0.7x).
+  - Third Hit:
+    - Partbreak Modifier increased to 1.75x (up from 1.0x).
+    - > Compensates for first two hits having a Partbreak Mod of 0.0x.
 - Clutch Claw Weapon Attack:
-  - Second Hit: 
+  - Second Hit:
     - Partbreak Modifier increased to 1.75x (up from 1.0x).
     - > This change compensates for the first hit having a Partbreak Modifier of 0.0x.
 
@@ -1094,9 +987,9 @@ Sword Gauge generation has been changed to be focused around the active use of A
 - Axe Mode Attacks:
   - Gauge generation increased to 8% per hit (up from 0%).
   - Gauge generation benefits from Focus skill.
-    - > In vanilla, Focus was in an unfortunate position where it did affect Amp generation, but not enough to warrant the use of the skill. Focus now has a significantly more noticeable effect that will reduce the required number of hits to reach amped sword mode, increasing its overall viability without making it a necessity for general SA gameplay. It can now be a good option when facing Monsters where Axe Mode is less useful. 
-- Axe Mode Morph Attack: 
-  - Gauge generation decreased to 10% (down from 15%). 
+    - > In vanilla, Focus was in an unfortunate position where it did affect Amp generation, but not enough to warrant the use of the skill. Focus now has a significantly more noticeable effect that will reduce the required number of hits to reach amped sword mode, increasing its overall viability without making it a necessity for general SA gameplay. It can now be a good option when facing Monsters where Axe Mode is less useful.
+- Axe Mode Morph Attack:
+  - Gauge generation decreased to 10% (down from 15%).
   - > This attack still counts as an Axe Mode Attack, so it will generate 18% gauge in total when successfully hitting a monster, which is a buff overall.
 - Sword Mode Attacks:
   - Gauge consumption increased.
@@ -1181,7 +1074,7 @@ Iceborne introduced a convenient new way to access ZSD through the Clutch Claw. 
   - MV increased to 31+34 (up from 22+26).
   - Element Modifier increased to 1.2x (up from 1.0x).
   - Sword Gauge consumption increased to 17% (up from 10%).
-- "Sword: Bridging Slash": 
+- "Sword: Bridging Slash":
   - MV increased to 25 (up from 15).
   - Element Modifier increased to 1.2x (up from 1.0x).
 - "Sword: Heavenward Flurry":
@@ -1193,7 +1086,7 @@ Iceborne introduced a convenient new way to access ZSD through the Clutch Claw. 
   - Element Modifier increased to 1.2x (up from 1.0x).
 - "Sword: Jumping Rising Slash":
   - MV increased to 39 (up from 35).
-  - Element Modifier increased to 1.2x (up from 1.0x).    
+  - Element Modifier increased to 1.2x (up from 1.0x).
 - "Element Discharge":
   - Thrust:
     - MV increased to 11 (up from 10).
@@ -1201,7 +1094,7 @@ Iceborne introduced a convenient new way to access ZSD through the Clutch Claw. 
   - Ticks:
     - MV increased to 9 (up from 8).
     - Element Modifier increased to 0.6x (up from 0.5x).
-  - Finisher:    
+  - Finisher:
     - MV increased to 94 (up from 85).
     - Element Modifier increased to 1.2x (up from 1.0x).
 - Element Discharge (Mounted):
@@ -1231,10 +1124,10 @@ Iceborne introduced a convenient new way to access ZSD through the Clutch Claw. 
   - MV increased to 8+61 (up from 7+55).
   - Element Modifier increased to 1.2x (up from 1.0x).
 - Clutch Claw Weapon Attack:
-  - Second Hit: 
-    - Partbreak Modifier increased to 1.4x (up from 1.0x). 
+  - Second Hit:
+    - Partbreak Modifier increased to 1.4x (up from 1.0x).
     - > This change compensates for the first hit having a Partbreak Modifier of 0.0x.
-    
+
 ### ──────────【 Charge Blade 】────────── ###
 
 #### 【 General Changes 】 ####
@@ -1248,15 +1141,15 @@ Iceborne introduced a convenient new way to access ZSD through the Clutch Claw. 
   - MV increased to 90 (up from 82).
 - Super Amped Element Discharge:
   - Timing of phial usage synchronized with the timing of the Phial explosions, to avoid losing phials when interrupted.
-  - First Hit (Back Swing): 
-    - Partbreak Modifier decreased to 0.0x (down from 1.00x). 
+  - First Hit (Back Swing):
+    - Partbreak Modifier decreased to 0.0x (down from 1.00x).
     - > Avoids situations where flinch/trips on first hit cause the rest of the attack to miss.
 - Savage Axe Slash:
   - MV increased to 65 (up from 30).
   - Backwards movement greatly reduced to avoid forcing the Hunter out of range.
 - Impact Phials:
   - > The following changes are targeted at increasing the effectiveness of Impact Phial CBs.
-  - All Types: 
+  - All Types:
     - Scaling penalty for Bonus Attack removed (was 50%).
     - > This reverts a nerf from base MHW. This should result in roughly a 5% buff to phial damage in endgame gear.
   - Normal Type:
@@ -1287,13 +1180,13 @@ Iceborne introduced a convenient new way to access ZSD through the Clutch Claw. 
 
 #### 【 Kinsect Changes 】 ####
 - Extract Durations:
-  - Red: Increased to 150 seconds (up from 90).
-  - White: Increased to 180 seconds (up from 120).
-  - Orange: Increased to 210 seconds (up from 150).
-  - Triple: Increased to 150 seconds (up from 90).
+  - Red: Increased to 120 seconds (up from 90).
+  - White: Increased to 150 seconds (up from 120).
+  - Orange: Increased to 180 seconds (up from 150).
+  - Triple: Increased to 120 seconds (up from 90).
 - Extract "Low Duration" Warning Threshold:
   - Increased to 15 seconds (up from 10).
-- Kinsect Charge Durations have been normalized for field ammo types (150s) and Monster ammo types (300s).
+- Kinsect Charge Durations have been standardized for field ammo types (150s) and Monster ammo types (300s).
   - Pierce Pod: Unchanged (was 300).
   - Stone: Increased to 150 (was 75).
   - Redpit: Increased to 150 (was 90).
@@ -1304,9 +1197,9 @@ Iceborne introduced a convenient new way to access ZSD through the Clutch Claw. 
   - Dragon Pod: Increased to 300 (was 150).
   - Bomb Pod: Unchanged (was 300).
   - Brightmoss: Increased to 150 (was 120).
-  
+
 #### 【 General Changes 】 ####
-The changes below mainly are intended to bring up underpowered moves to increase the variety of useful attacks available to Hunters, or are intended to address Raw vs Element damage balance to increase the variety of competitive weapon options.
+The changes below are mainly intended to bring up underpowered moves to increase the variety of useful attacks available to Hunters, or are intended to address Element damage balance to increase the variety of competitive weapon options.
 - Wide Sweep:
   - MV increased to 26 (up from 22).
   - Element and Status Modifiers increased to 1.0x (up from 0.8x).
@@ -1338,7 +1231,7 @@ The changes below mainly are intended to bring up underpowered moves to increase
   - Finisher Hit:
     - Partbreak Modifier increased to 2.0x (up from 1.0x).
     - > This change compensates for the first four hits having a Partbreak Modifier of 0.0x.
-    
+
 #### 【 Bug Fixes 】 ####
 - Attempting to use "Kinsect: Harvest Extract" after dodging sideways to the left, will now correctly send the kinsect out. Previously, this would result in using "Thrust" or "Strong Thrust".
 
@@ -1365,10 +1258,10 @@ The changes below mainly are intended to bring up underpowered moves to increase
   - Fixed Damage Removed (was 1/1/2/2).
   - Damage and Buildup decreased to 4% after 18th hit (was 20%).
 - Clutch Claw Weapon Attack:
-  - Final Hit: 
-    - Partbreak Modifier increased to 1.875x (up from 1.0x). 
+  - Final Hit:
+    - Partbreak Modifier increased to 1.875x (up from 1.0x).
     - > This change compensates for the first two hits having a Partbreak Modifier of 0.0x.
-    
+
 #### 【 Bug Fixes 】 ####
 - Power Shot arrow spread patterns:
   - Fixed a bug causing Power Shot Lv2 and Lv3 arrow patterns to be right-biased.
@@ -1377,7 +1270,7 @@ The changes below mainly are intended to bring up underpowered moves to increase
 - Charge Step direction and aiming:
   - Fixed a bug causing Charge Step to move in directions different than the player's directional input, when performed while the Hunter is starting to aim.
 
-  
+
 ### ──────────【 Bowgun Ammos 】────────── ###
 Many of the following changes are intended to address ammo-to-ammo balance, with the intent of giving Hunters more competitive options when choosing an ammo for a particular matchup.
 - Rapid Fire:
@@ -1426,11 +1319,11 @@ Many of the following changes are intended to address ammo-to-ammo balance, with
 The following changes are targeted at providing HBG a way of dealing with calculated trades at short range, without invalidating its roll.
 - Melee Attack:
   - Stamina consumption increased to 25 (up from 0).
+  - Stamina regeneration is paused during the attack.
   - Hitlag reduced to effectively 1 frame (down from 20).
   - When performed with sufficient stamina:
     - Has 15 frames of Hyperarmor (from frame 7 to 22).
     - Attack speed increased by about 16%.
-    - When successfully hitting a Monster, the hunter gets an additional 15 frames of Hyperarmor.
 
 #### 【 Numerical Changes 】 ####
 - Close Range Up Mod: Maximum active range increased to 8m (up from 6m).
@@ -1474,6 +1367,6 @@ The following changes are targeted at providing HBG a way of dealing with calcul
 - Wyvernblast:
   - Charge consumption decreased to 1/2/3 (down from 1/2/4).
 - Wyvernblast Type 2:
-  - MV increased to 43/75/87/130 (up from 26/49/73/110). 
+  - MV increased to 43/75/87/130 (up from 26/49/73/110).
   - Fire damage decreased to 0/0/0/0 (down from 3/5/6/7).
 
