@@ -3,5 +3,5 @@
   "logcmd": true,
   "logLevel": "ERROR",
   "outputEveryPath": false,
-  "enablePluginLoader": true,
+  "enablePluginLoader": true
 }
