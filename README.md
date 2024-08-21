@@ -210,6 +210,7 @@ While a more comprehensive rework and rebalancing of armors is planned for ICE t
 #### 【 Weapon Changes 】 ####
 Safi'Jiiva Light Bowguns:
   - Ammo tables have been updated to match Aquashot, but for each of their respective element types.
+
 Fatalis Rarity 12 Weapons (All, except for LBG):
   - Base Attack standardized to 340 Attack (was 340 to 370).
   - Base Affinity standardized to -30% (was -20% to -40%).
@@ -298,6 +299,7 @@ Fatalis Rarity 12 Weapons (All, except for LBG):
     - > These options were added to allow hunters to directly downgrade tempered bones into non-tempered variants, similar to other Guiding Lands materials.
 - Steamworks:
   - The time required to complete each three-button round has been drastically reduced.
+- Kulve Taroth and the Safi'jiva Siege are no longer on rotation and are now permanently active.
 
 #### 【 Combat Changes 】 ####
 - Mantle Expiration:
