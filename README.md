@@ -212,9 +212,9 @@ Safi'Jiiva Light Bowguns:
   - Ammo tables have been updated to match Aquashot, but for each of their respective element types.
 
 Fatalis Rarity 12 Weapons (All, except for LBG):
-  - Base Attack standardized to 340 Attack (was 340 to 370).
+  - Base Attack standardized to 340 Attack (was 340 to 390).
   - Base Affinity standardized to -30% (was -20% to -40%).
-  - > This cross-weapon nerf was performed to address a number of issues introduced by these weapons such as unnecessarily shifting the meta away from element. We also understand some weapons likely were given higher stats (such as Lance) to compensate for their poor performance relative to other weapons. However, we believe improving these weapons' core movesets is a better solution than to only tack on a buff to Fatalis weapons.
+  - > This cross-weapon nerf was performed to address a number of issues introduced by these weapons such as unnecessarily shifting the meta away from element. We also understand some weapons likely were given higher stats (such as Lance) to compensate for their poor performance relative to other weapons. However, we believe improving these weapons' core movesets is a better solution.
 
 #### 【 Augments and Upgrades 】 ####
 - Health Regen augment:
@@ -299,7 +299,8 @@ Fatalis Rarity 12 Weapons (All, except for LBG):
     - > These options were added to allow hunters to directly downgrade tempered bones into non-tempered variants, similar to other Guiding Lands materials.
 - Steamworks:
   - The time required to complete each three-button round has been drastically reduced.
-- Kulve Taroth and the Safi'jiva Siege are no longer on rotation and are now permanently active.
+- Gathering Hub:
+  - Weekly Siege Rotation has been removed. Hunters can individually choose to hunt Kulve Taroth or Safi'jiiva.
 
 #### 【 Combat Changes 】 ####
 - Mantle Expiration:
@@ -799,6 +800,7 @@ The full details can be found below:
 - Recital:
   - MV increased to 32 (up from 29).
   - Element and Status Modifiers increased to 1.2x (up from 1.0x).
+  - A fast upwards Recital can now be performed when used after a Backwards Strike (aka Back Slam) with no directional input.
 - Encore:
   - MV increased to 40 (up from 35).
   - Element and Status Modifiers increased to 1.5x (up from 1.0x).
